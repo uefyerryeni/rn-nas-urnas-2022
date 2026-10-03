@@ -1,6 +1,6 @@
 const $=s=>document.querySelector(s);const fmt=n=>Number(n||0).toLocaleString('pt-BR');const pct=n=>Number(n||0).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+'%';
 const PARTY_COLORS={"PT":"#C62828","PL":"#184E8A","UNIÃO":"#008C95","PP":"#4A54A8","MDB":"#2E7D32","PSD":"#7A5C00","PSDB":"#0077B6","REPUBLICANOS":"#5B3C88","PSB":"#B56A00","PDT":"#AD1457","PODE":"#3569B7","SOLIDARIEDADE":"#6A3D9A","SDD":"#6A3D9A","PSOL":"#D4A000","NOVO":"#8C6D1F","CIDADANIA":"#9B4D5F","AVANTE":"#006B6B","PV":"#3E8E41","REDE":"#5AAE61"};
-const OFFICES={gov:'Governador',sen:'Senado',depf:'Deputado federal',depe:'Deputado estadual',pres:'Presidente'};const SEATS_2022={gov:1,sen:1,depf:8,depe:24};
+const OFFICES={gov:'Governador',sen:'Senado',depf:'Deputado federal',depe:'Deputado estadual',pres:'Presidente'};const SEATS_2022={gov:1,sen:1,depf:8,depe:24},SEATS_2026={gov:1,sen:2,depf:8,depe:24};
 const ELECTED_2022={gov:{PT:1},sen:{PL:1},depf:{PL:4,PT:2,'UNIÃO':2},depe:{PSDB:10,PT:3,PV:3,PL:3,SOLIDARIEDADE:2,'UNIÃO':2,MDB:1}};
 let hist=null,live=null;
 function partyColor(p){return PARTY_COLORS[String(p||'').toUpperCase()]||'#777f86'}
