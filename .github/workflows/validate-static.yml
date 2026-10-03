@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Verificar sintaxe JavaScript
-        run: node --check app.js
+        run: node --check app.js && node --check rn2022-core.js
       - name: Verificar associação TSE/IBGE
         run: |
           python - <<'PY'
@@ -36,5 +36,8 @@ jobs:
           issues=[k for k in d["municipios"] if sum(norm(k) in s for s in mesos.values())!=1]
           assert not issues, issues
           assert keys[norm("Açu")]=="ASSÚ"
+          assert open("rn2022-core.js",encoding="utf-8").read().startswith("window.__rn2022Booted=true;")
+          assert json.load(open("rn2022-results.json",encoding="utf-8"))["meta"]["ano"]==2022
+          assert len(json.load(open("rn2022-map.json",encoding="utf-8"))["features"])==167
           print("OK: 167 municípios associados entre mapa, TSE e mesorregiões")
           PY
