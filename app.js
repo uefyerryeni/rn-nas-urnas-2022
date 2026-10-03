@@ -276,7 +276,7 @@ function drawMapShareCanvas(s=currentSelection()){
 
   ctx.fillStyle="#F5C400";ctx.fillRect(70,54,22,22);
   ctx.fillStyle="#17191C";ctx.font="800 38px Arial";ctx.fillText("RN NAS URNAS",112,80);
-  ctx.fillStyle="#565D64";ctx.font="700 23px Arial";ctx.fillText("MAPA ELEITORAL · ELEIÇÕES 2022",70,122);
+  ctx.fillStyle="#565D64";ctx.font="700 23px Arial";ctx.fillText(s.scope==="municipality"?"MAPA DO MUNICÍPIO · ELEIÇÕES 2022":"MAPA ELEITORAL · ELEIÇÕES 2022",70,122);
 
   const title=officeTitle(s);
   ctx.fillStyle="#17191C";fit(ctx,title,70,194,940,64,800);
@@ -289,34 +289,42 @@ function drawMapShareCanvas(s=currentSelection()){
   if(!mapFC){
     ctx.fillStyle="#626970";ctx.font="700 30px Arial";ctx.fillText("Mapa indisponível",120,590);
   }else{
-    const p=projector(mapFC,900,445,8),ox=90,oy=350;
     const partyCount=new Map();
-
-    mapFC.features.forEach(f=>{
-      const name=f.properties?.nome||"";
-      const inScope=s.scope==="state"
-        ||(s.scope==="meso"&&mesos[s.label]?.has(norm(name)))
-        ||(s.scope==="municipality"&&norm(name)===norm(s.label));
-      const rows=rowsForMunicipality(name,s.office,s.round);
-      const lead=rows[0],party=lead?.partido||"";
-      let fill="#E3DFD6";
-      if(inScope&&party){
-        fill=partyColor(party);
-        partyCount.set(party,(partyCount.get(party)||0)+1);
-      }
-
-      drawCanvasMapGeometry(ctx,f.geometry,p,ox,oy);
-      ctx.fillStyle=fill;
-      try{ctx.fill("evenodd")}catch{ctx.fill()}
-      ctx.strokeStyle="#FFFFFF";ctx.lineWidth=1.1;ctx.stroke();
-    });
 
     if(s.scope==="municipality"){
       const f=mapFC.features.find(f=>norm(f.properties?.nome)===norm(s.label));
       if(f){
+        const localFC={type:"FeatureCollection",features:[f]};
+        const p=projector(localFC,860,450,22),ox=110,oy=342;
+        const rows=rowsForMunicipality(s.label,s.office,s.round);
+        const lead=rows[0],party=lead?.partido||"";
+        const fill=party?partyColor(party):"#E3DFD6";
+        if(party)partyCount.set(party,1);
+
         drawCanvasMapGeometry(ctx,f.geometry,p,ox,oy);
-        ctx.strokeStyle="#17191C";ctx.lineWidth=5;ctx.stroke();
+        ctx.fillStyle=fill;
+        try{ctx.fill("evenodd")}catch{ctx.fill()}
+        ctx.strokeStyle="#17191C";ctx.lineWidth=4;ctx.stroke();
       }
+    }else{
+      const p=projector(mapFC,900,445,8),ox=90,oy=350;
+      mapFC.features.forEach(f=>{
+        const name=f.properties?.nome||"";
+        const inScope=s.scope==="state"
+          ||(s.scope==="meso"&&mesos[s.label]?.has(norm(name)));
+        const rows=rowsForMunicipality(name,s.office,s.round);
+        const lead=rows[0],party=lead?.partido||"";
+        let fill="#E3DFD6";
+        if(inScope&&party){
+          fill=partyColor(party);
+          partyCount.set(party,(partyCount.get(party)||0)+1);
+        }
+
+        drawCanvasMapGeometry(ctx,f.geometry,p,ox,oy);
+        ctx.fillStyle=fill;
+        try{ctx.fill("evenodd")}catch{ctx.fill()}
+        ctx.strokeStyle="#FFFFFF";ctx.lineWidth=1.1;ctx.stroke();
+      });
     }
 
     const entries=[...partyCount.entries()].sort((a,b)=>b[1]-a[1]);
@@ -329,7 +337,7 @@ function drawMapShareCanvas(s=currentSelection()){
       let x=startX,y=baseY;
 
       shown.forEach(([party,count])=>{
-        const label=party+" · "+count+" mun.";
+        const label=s.scope==="municipality"?party:party+" · "+count+" mun.";
         ctx.font="700 16px Arial";
         const itemW=Math.max(150,ctx.measureText(label).width+48);
         if(x+itemW>startX+maxW){x=startX;y+=34;}
@@ -345,9 +353,13 @@ function drawMapShareCanvas(s=currentSelection()){
   ctx.fillStyle="#17191C";ctx.font="800 23px Arial";ctx.fillText("Fonte: Tribunal Superior Eleitoral",70,1001);
 
   ctx.fillStyle="#5C6369";ctx.font="600 17px Arial";
-  const note=s.office==="party"
-    ?($("#partyOfficeSelect")?.value==="Senador"?"Cores = partido da candidatura ao Senado mais votada em cada município.":"Cores = partido com maior votação em cada município.")
-    :"Cores = partido da candidatura com maior votação em cada município.";
+  const note=s.scope==="municipality"
+    ?(s.office==="party"
+      ?($("#partyOfficeSelect")?.value==="Senador"?"Cor = partido da candidatura ao Senado mais votada no município.":"Cor = partido com maior votação no município.")
+      :"Cor = partido da candidatura com maior votação no município.")
+    :(s.office==="party"
+      ?($("#partyOfficeSelect")?.value==="Senador"?"Cores = partido da candidatura ao Senado mais votada em cada município.":"Cores = partido com maior votação em cada município.")
+      :"Cores = partido da candidatura com maior votação em cada município.");
   ctx.fillText(note,70,1032);
 
   if(["depf","depe"].includes(s.office)){
