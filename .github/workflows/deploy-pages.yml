@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths-ignore:
       - 'data/eleicoes-2022.json'
+      - 'data/rn-municipios.geojson'
+      - 'data/mesorregioes.json'
   workflow_dispatch:
 permissions:
   contents: write
@@ -22,6 +24,8 @@ jobs:
       - name: Homologação real da base
         run: |
           test -s data/eleicoes-2022.json
+          test -s data/rn-municipios.geojson
+          test -s data/mesorregioes.json
           python - <<'PY'
           import json
           d=json.load(open('data/eleicoes-2022.json'))
@@ -30,13 +34,18 @@ jobs:
           assert 'NATAL' in d['municipios']
           assert set(d['zonasNatal']) >= {'1','2','3','4','69'}
           assert d['municipios']['NATAL']
-          print('OK:',len(d['municipios']),'municípios; zonas',sorted(d['zonasNatal']))
+          assert all('Presidente' in v.get('1',{}) and 'Presidente' in v.get('2',{}) for v in d['municipios'].values())
+          g=json.load(open('data/rn-municipios.geojson'))
+          m=json.load(open('data/mesorregioes.json'))
+          assert len(g['features'])==167
+          assert sum(map(len,m.values()))==167
+          print('OK:',len(d['municipios']),'municípios; Presidente 1T/2T; zonas',sorted(d['zonasNatal']))
           PY
       - name: Persistir base homologada no repositório
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/eleicoes-2022.json
+          git add data/eleicoes-2022.json data/rn-municipios.geojson data/mesorregioes.json
           if git diff --cached --quiet; then
             echo "Base já está atualizada."
           else
