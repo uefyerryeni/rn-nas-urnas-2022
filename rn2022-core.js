@@ -110,36 +110,102 @@ function fit(ctx,text,x,y,max,size=48,weight=700){let s=size;do{ctx.font=weight+
 function drawCanvas(s=currentSelection()){
   const c=$("#shareCanvas"),x=c.getContext("2d"),W=1080,H=1080;
   x.clearRect(0,0,W,H);
-  x.fillStyle="#F2EDE3";x.fillRect(0,0,W,H);
-  x.fillStyle="#F5C400";x.fillRect(0,0,W,30);
-  x.fillStyle="#17191C";x.fillRect(0,30,W,150);
-  x.fillStyle="#F5C400";x.font="800 24px Arial";x.fillText("RN NAS URNAS",70,88);
-  x.fillStyle="#FFFFFF";x.font="600 18px Arial";x.fillText("ARQUIVO ELEITORAL · ELEIÇÕES 2022",70,124);
-  x.fillStyle="#C9CDD1";x.font="500 15px Arial";x.fillText("Dados históricos consolidados",70,151);
-  const title=officeTitle(s),scope=scopeTitle(s),total=s.rows.reduce((a,v)=>a+Number(v.votos||0),0);
-  x.fillStyle="#17191C";fit(x,title,70,245,940,46,800);
-  x.fillStyle="#FFFFFF";x.fillRect(70,272,940,78);
-  x.fillStyle="#17191C";x.font="800 18px Arial";x.fillText("RECORTE",94,304);
-  fit(x,scope,215,322,760,25,700);
-  x.fillStyle="#626970";x.font="600 16px Arial";x.fillText(s.round+"º turno · Total computado: "+fmt(total)+" votos",94,378);
-  const rows=s.rows.slice(0,4);let y=420;
+
+  const total=s.rows.reduce((a,v)=>a+Number(v.votos||0),0);
+  const title=officeTitle(s);
+  const scope=scopeTitle(s);
+
+  x.fillStyle="#F2EDE3";
+  x.fillRect(0,0,W,H);
+
+  x.fillStyle="#F5C400";
+  x.fillRect(0,0,W,30);
+
+  x.fillStyle="#17191C";
+  x.fillRect(0,30,W,150);
+
+  x.fillStyle="#F5C400";
+  x.font="800 30px Arial";
+  x.fillText("RN NAS URNAS",70,94);
+
+  x.fillStyle="#FFFFFF";
+  x.font="600 22px Arial";
+  x.fillText("ARQUIVO ELEITORAL · ELEIÇÕES 2022",70,132);
+
+  x.fillStyle="#C9CDD1";
+  x.font="500 18px Arial";
+  x.fillText("Dados históricos consolidados",70,161);
+
+  x.fillStyle="#17191C";
+  fit(x,title,70,252,940,58,800);
+
+  x.fillStyle="#FFFFFF";
+  x.fillRect(70,282,940,96);
+
+  x.fillStyle="#17191C";
+  x.font="800 21px Arial";
+  x.fillText("RECORTE",94,318);
+
+  fit(x,scope,215,340,760,33,700);
+
+  x.fillStyle="#626970";
+  x.font="600 20px Arial";
+  x.fillText(s.round+"º turno · Total computado: "+fmt(total)+" votos",94,408);
+
+  const rows=s.rows.slice(0,3);
+  let y=446;
+
   rows.forEach((r,i)=>{
-    const name=s.office==="party"?r.partido:r.nome,p=total?r.votos/total*100:0,color=partyColor(r.partido);
-    x.fillStyle="#FFFFFF";x.fillRect(70,y,940,112);
-    x.fillStyle=color;x.fillRect(70,y,12,112);
-    x.fillStyle="#17191C";x.font="800 19px Arial";x.fillText(String(i+1).padStart(2,"0"),102,y+36);
-    fit(x,name,155,y+38,560,26,800);
-    x.fillStyle="#626970";x.font="600 16px Arial";x.fillText((r.partido||"")+" · "+fmt(r.votos)+" votos",155,y+70);
-    x.textAlign="right";x.fillStyle="#17191C";x.font="800 28px Arial";x.fillText(pct(p),965,y+47);x.textAlign="left";
-    x.fillStyle="#E8E5DE";x.fillRect(155,y+86,810,8);
-    x.fillStyle=color;x.fillRect(155,y+86,810*Math.min(100,p)/100,8);
-    y+=126;
+    const name=s.office==="party"?r.partido:r.nome;
+    const p=total?r.votos/total*100:0;
+    const color=partyColor(r.partido);
+
+    x.fillStyle="#FFFFFF";
+    x.fillRect(70,y,940,148);
+
+    x.fillStyle=color;
+    x.fillRect(70,y,14,148);
+
+    x.fillStyle="#17191C";
+    x.font="800 24px Arial";
+    x.fillText(String(i+1).padStart(2,"0"),104,y+44);
+
+    fit(x,name,160,y+47,560,34,800);
+
+    x.fillStyle="#525960";
+    x.font="600 21px Arial";
+    x.fillText((r.partido||"")+" · "+fmt(r.votos)+" votos",160,y+86);
+
+    x.textAlign="right";
+    x.fillStyle="#17191C";
+    x.font="800 40px Arial";
+    x.fillText(pct(p),965,y+55);
+    x.textAlign="left";
+
+    x.fillStyle="#E8E5DE";
+    x.fillRect(160,y+115,790,11);
+
+    x.fillStyle=color;
+    x.fillRect(160,y+115,790*Math.min(100,p)/100,11);
+
+    y+=162;
   });
-  x.fillStyle="#17191C";x.fillRect(0,940,1080,140);
-  x.fillStyle="#FFFFFF";x.font="700 19px Arial";x.fillText("Fonte: Tribunal Superior Eleitoral",70,988);
-  const note=methodNote(s);
-  x.fillStyle="#C9CDD1";x.font="500 14px Arial";fit(x,note||"Percentuais calculados sobre o total computado no recorte selecionado.",70,1024,930,14,500);
-  x.fillStyle="#F5C400";x.font="700 15px Arial";x.fillText("UEFY · RN NAS URNAS",70,1055);
+
+  x.fillStyle="#17191C";
+  x.fillRect(0,920,1080,160);
+
+  x.fillStyle="#FFFFFF";
+  x.font="700 23px Arial";
+  x.fillText("Fonte: Tribunal Superior Eleitoral",70,970);
+
+  const note=methodNote(s)||"Percentuais calculados sobre o total computado no recorte selecionado.";
+  x.fillStyle="#D6D9DC";
+  x.font="500 17px Arial";
+  fit(x,note,70,1012,930,17,500);
+
+  x.fillStyle="#F5C400";
+  x.font="700 17px Arial";
+  x.fillText("UEFY · RN NAS URNAS",70,1052);
 }
 function updatePublication(s=currentSelection()){const t=makeText(s);$("#postText").value=t;$("#charCount").textContent=t.length+" caracteres";drawCanvas(s)}
 async function canvasBlob(type="image/png"){return new Promise(ok=>$("#shareCanvas").toBlob(ok,type,.94))}
