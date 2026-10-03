@@ -500,7 +500,7 @@ $("#shareBundle").onclick=async()=>{const b=await canvasBlob("image/jpeg"),file=
 $("#shareBoth").onclick=shareCardAndMap;
 $("#extremeCandidate").onchange=()=>refreshExtremePublication(currentSelection());
 $("#copyExtremeText").onclick=async()=>{const t=$("#extremePostText").value;await navigator.clipboard.writeText(t);$("#copyExtremeText").textContent="Copiado";setTimeout(()=>$("#copyExtremeText").textContent="Copiar texto",1000)};
-$("#openExtremeX").onclick=()=>window.open("https://x.com/intent/post?text="+encodeURIComponent($("#extremePostText").value),"_blank","noopener");
+$("#openExtremeX").onclick=async()=>{try{const b=await extremeCanvasBlob("extremeDataCanvas");if(navigator.clipboard?.write&&window.ClipboardItem)await navigator.clipboard.write([new ClipboardItem({"image/png":b})])}catch{}window.open("https://x.com/intent/post?text="+encodeURIComponent($("#extremePostText").value),"_blank","noopener")};
 $("#shareExtremes").onclick=shareExtremePair;
 $("#copyMapImage").onclick=async()=>{try{await copyMapImage();$("#copyMapImage").textContent="Mapa copiado";setTimeout(()=>$("#copyMapImage").textContent="Copiar imagem",1200)}catch{alert("Este navegador não permite copiar o mapa diretamente.")}};
 $("#downloadMap").onclick=async()=>{const b=await mapCanvasBlob(),u=URL.createObjectURL(b),a=document.createElement("a");a.href=u;a.download="rn-nas-urnas-mapa-2022.png";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};
