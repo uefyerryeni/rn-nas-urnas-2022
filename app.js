@@ -273,23 +273,25 @@ function drawMapShareCanvas(s=currentSelection()){
   ctx.clearRect(0,0,W,H);
   ctx.fillStyle="#F4F0E7";ctx.fillRect(0,0,W,H);
 
-  ctx.fillStyle="#F5C400";ctx.fillRect(70,58,22,22);
-  ctx.fillStyle="#17191C";ctx.font="800 34px Arial";ctx.fillText("RN NAS URNAS",112,80);
-  ctx.fillStyle="#565D64";ctx.font="700 22px Arial";ctx.fillText("MAPA ELEITORAL · ELEIÇÕES 2022",70,121);
+  ctx.fillStyle="#F5C400";ctx.fillRect(70,56,22,22);
+  ctx.fillStyle="#17191C";ctx.font="800 34px Arial";ctx.fillText("RN NAS URNAS",112,79);
+  ctx.fillStyle="#565D64";ctx.font="700 21px Arial";ctx.fillText("MAPA ELEITORAL · ELEIÇÕES 2022",70,118);
 
   const title=officeTitle(s);
-  ctx.fillStyle="#17191C";fit(ctx,title,70,196,940,58,800);
-  ctx.fillStyle="#2B2F34";fit(ctx,scopeTitle(s),70,242,940,34,700);
-  ctx.fillStyle="#565D64";ctx.font="700 21px Arial";ctx.fillText(s.round+"º turno",70,278);
+  ctx.fillStyle="#17191C";fit(ctx,title,70,188,940,56,800);
+  ctx.fillStyle="#2B2F34";fit(ctx,scopeTitle(s),70,232,940,33,700);
+  ctx.fillStyle="#565D64";ctx.font="700 20px Arial";ctx.fillText(s.round+"º turno",70,268);
 
   ctx.fillStyle="#FFFFFF";
-  ctx.beginPath();ctx.roundRect(70,310,940,610,24);ctx.fill();
+  ctx.beginPath();ctx.roundRect(55,300,970,600,26);ctx.fill();
 
   if(!mapFC){
     ctx.fillStyle="#626970";ctx.font="700 28px Arial";ctx.fillText("Mapa indisponível",120,600);
   }else{
-    const p=projector(mapFC,700,510,10),ox=120,oy=345;
+    // Map occupies almost the full card width; legend moves below it.
+    const p=projector(mapFC,900,500,8),ox=90,oy=330;
     const partyCount=new Map();
+
     mapFC.features.forEach(f=>{
       const name=f.properties?.nome||"";
       const inScope=s.scope==="state"
@@ -298,52 +300,89 @@ function drawMapShareCanvas(s=currentSelection()){
       const rows=rowsForMunicipality(name,s.office,s.round);
       const lead=rows[0],party=lead?.partido||"";
       let fill="#E3DFD6";
-      if(inScope&&party){fill=partyColor(party);partyCount.set(party,(partyCount.get(party)||0)+1)}
+
+      if(inScope&&party){
+        fill=partyColor(party);
+        partyCount.set(party,(partyCount.get(party)||0)+1);
+      }
+
       drawCanvasMapGeometry(ctx,f.geometry,p,ox,oy);
       ctx.fillStyle=fill;
       try{ctx.fill("evenodd")}catch{ctx.fill()}
-      ctx.strokeStyle="#FFFFFF";ctx.lineWidth=.8;ctx.stroke();
+      ctx.strokeStyle="#FFFFFF";ctx.lineWidth=1.05;ctx.stroke();
     });
 
     if(s.scope==="municipality"){
       const f=mapFC.features.find(f=>norm(f.properties?.nome)===norm(s.label));
       if(f){
         drawCanvasMapGeometry(ctx,f.geometry,p,ox,oy);
-        ctx.strokeStyle="#17191C";ctx.lineWidth=4;ctx.stroke();
+        ctx.strokeStyle="#17191C";ctx.lineWidth=5;ctx.stroke();
       }
     }
 
     const entries=[...partyCount.entries()].sort((a,b)=>b[1]-a[1]);
     const shown=entries.slice(0,6);
-    let lx=835,ly=392;
+
     if(shown.length){
-      ctx.fillStyle="#17191C";ctx.font="800 17px Arial";ctx.fillText("LEGENDA",835,365);
-      shown.forEach(([party,count])=>{
-        ctx.fillStyle=partyColor(party);ctx.fillRect(lx,ly-12,16,16);
-        ctx.fillStyle="#34393E";ctx.font="700 15px Arial";ctx.fillText(party,lx+26,ly+1);
-        ctx.fillStyle="#7B8186";ctx.font="600 13px Arial";ctx.fillText(count+" mun.",lx+26,ly+20);
-        ly+=53;
+      ctx.fillStyle="#17191C";ctx.font="800 16px Arial";ctx.fillText("LEGENDA",82,842);
+      let lx=82,ly=875;
+      shown.forEach(([party,count],i)=>{
+        if(i===3){lx=565;ly=875}
+        ctx.fillStyle=partyColor(party);ctx.fillRect(lx,ly-14,17,17);
+        ctx.fillStyle="#34393E";ctx.font="700 15px Arial";ctx.fillText(party,lx+27,ly);
+        ctx.fillStyle="#7B8186";ctx.font="600 13px Arial";ctx.fillText(count+" mun.",lx+27,ly+20);
+        ly+=48;
       });
-      if(entries.length>shown.length){
-        ctx.fillStyle="#7B8186";ctx.font="600 13px Arial";ctx.fillText("+"+(entries.length-shown.length)+" partidos",lx,ly);
-      }
     }
   }
 
-  ctx.fillStyle="#17191C";ctx.font="800 20px Arial";ctx.fillText("Fonte: Tribunal Superior Eleitoral",70,965);
-  ctx.fillStyle="#5C6369";ctx.font="600 16px Arial";
+  ctx.fillStyle="#D7D1C6";ctx.fillRect(70,925,940,1);
+  ctx.fillStyle="#17191C";ctx.font="800 20px Arial";ctx.fillText("Fonte: Tribunal Superior Eleitoral",70,961);
+  ctx.fillStyle="#5C6369";ctx.font="600 15px Arial";
   const note=s.office==="party"
     ?"Cores = partido com maior votação em cada município."
     :"Cores = partido da candidatura com maior votação em cada município.";
-  ctx.fillText(note,70,998);
+  ctx.fillText(note,70,992);
+
   if(["depf","depe"].includes(s.office)){
     ctx.fillStyle="#6B7177";ctx.font="600 14px Arial";
-    ctx.fillText("Para deputados, a liderança municipal é descritiva e não determina eleição.",70,1024);
+    ctx.fillText("Para deputados, a liderança municipal é descritiva e não determina eleição.",70,1018);
   }
+
   ctx.fillStyle="#8A9096";ctx.font="800 17px Arial";ctx.fillText("UEFY · RN NAS URNAS",70,1052);
   ctx.textAlign="right";ctx.fillStyle="#8A7100";ctx.fillText("2022",1010,1052);ctx.textAlign="left";
 }
 async function mapCanvasBlob(){drawMapShareCanvas();return new Promise(ok=>$("#mapShareCanvas").toBlob(ok,"image/png"))}
+function downloadBlob(blob,name){
+  const u=URL.createObjectURL(blob),a=document.createElement("a");
+  a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(u),1200);
+}
+async function shareCardAndMap(){
+  const s=currentSelection();
+  if(!mapShareSupported(s)){
+    alert("Este recorte não possui um mapa territorial compatível para compartilhar junto com a arte.");
+    return;
+  }
+  const [cardBlob,mapBlob]=await Promise.all([canvasBlob("image/png"),mapCanvasBlob()]);
+  const files=[
+    new File([cardBlob],"rn-nas-urnas-dados-2022.png",{type:"image/png"}),
+    new File([mapBlob],"rn-nas-urnas-mapa-2022.png",{type:"image/png"})
+  ];
+  const text=$("#postText").value;
+
+  if(navigator.share&&navigator.canShare?.({files})){
+    try{
+      await navigator.share({title:"RN nas Urnas · Eleições 2022",text,files});
+      return;
+    }catch(e){if(e.name==="AbortError")return}
+  }
+
+  downloadBlob(cardBlob,"rn-nas-urnas-dados-2022.png");
+  setTimeout(()=>downloadBlob(mapBlob,"rn-nas-urnas-mapa-2022.png"),350);
+  try{await navigator.clipboard.writeText(text)}catch{}
+  alert("As duas artes foram baixadas e o texto foi preparado para copiar.");
+}
 async function copyMapImage(){
   const b=await mapCanvasBlob();
   if(!navigator.clipboard?.write||!window.ClipboardItem)throw Error("clipboard");
@@ -377,6 +416,7 @@ $("#copyImage").onclick=async()=>{try{await copyImage();$("#copyImage").textCont
 $("#downloadImage").onclick=async()=>{const b=await canvasBlob("image/jpeg"),u=URL.createObjectURL(b),a=document.createElement("a");a.href=u;a.download="rn-nas-urnas-2022.jpg";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};
 $("#openX").onclick=async()=>{try{await copyImage()}catch{}const text=makeXText();window.open("https://x.com/intent/post?text="+encodeURIComponent(text),"_blank","noopener")};
 $("#shareBundle").onclick=async()=>{const b=await canvasBlob("image/jpeg"),file=new File([b],"rn-nas-urnas-2022.jpg",{type:"image/jpeg"}),text=$("#postText").value;if(navigator.share&&navigator.canShare?.({files:[file]})){try{await navigator.share({text,files:[file]});return}catch(e){if(e.name==="AbortError")return}}try{await copyImage();alert("Imagem copiada. O texto permanece no campo acima para ser copiado separadamente.")}catch{}};
+$("#shareBoth").onclick=shareCardAndMap;
 $("#copyMapImage").onclick=async()=>{try{await copyMapImage();$("#copyMapImage").textContent="Mapa copiado";setTimeout(()=>$("#copyMapImage").textContent="Copiar imagem",1200)}catch{alert("Este navegador não permite copiar o mapa diretamente.")}};
 $("#downloadMap").onclick=async()=>{const b=await mapCanvasBlob(),u=URL.createObjectURL(b),a=document.createElement("a");a.href=u;a.download="rn-nas-urnas-mapa-2022.png";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};
 $("#shareMap").onclick=async()=>{const b=await mapCanvasBlob(),file=new File([b],"rn-nas-urnas-mapa-2022.png",{type:"image/png"}),text=mapShareCaption();if(navigator.share&&navigator.canShare?.({files:[file]})){try{await navigator.share({text,files:[file]});return}catch(e){if(e.name==="AbortError")return}}try{await copyMapImage();await navigator.clipboard.writeText(text);alert("Mapa e texto preparados para compartilhar.")}catch{alert("Use os botões Copiar imagem e Baixar mapa.")}};

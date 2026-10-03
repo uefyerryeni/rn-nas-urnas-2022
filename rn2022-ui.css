@@ -13,3 +13,6 @@
 .map-share-btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
 .map-share-btn:hover{transform:translateY(-1px)}
 @media(max-width:620px){.map-share-actions{grid-template-columns:1fr 1fr}.map-share-btn{font-size:10px;padding:11px 8px}}
+
+.dual-share{background:var(--ink);border-color:var(--ink);color:#fff;position:relative}
+.dual-share:before{content:"2 artes";display:inline-block;margin-right:7px;padding:2px 5px;border-radius:999px;background:var(--yellow);color:var(--ink);font-size:8px;font-weight:800}
