@@ -29,3 +29,12 @@
 @media(max-width:620px){.extreme-previews{grid-template-columns:1fr}.extreme-help{font-size:12px}.extreme-label{font-size:10px}}
 
 .extreme-previews.single{grid-template-columns:1fr}
+
+.extreme-quick-controls{display:grid;grid-template-columns:2fr 1fr;gap:8px;margin:10px 0 8px}
+#extremeTool{scroll-margin-top:78px}
+@media(max-width:620px){
+  .mobile-dock{grid-template-columns:repeat(4,1fr)}
+  .mobile-dock a{font-size:9px}
+  .extreme-quick-controls{position:sticky;top:8px;z-index:12;padding:8px;background:rgba(255,253,248,.96);border:1px solid var(--rule);border-radius:12px;box-shadow:0 8px 20px rgba(23,25,28,.08)}
+  #extremeTool{scroll-margin-top:8px}
+}
