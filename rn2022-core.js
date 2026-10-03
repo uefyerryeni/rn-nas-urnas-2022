@@ -273,23 +273,22 @@ function drawMapShareCanvas(s=currentSelection()){
   ctx.clearRect(0,0,W,H);
   ctx.fillStyle="#F4F0E7";ctx.fillRect(0,0,W,H);
 
-  ctx.fillStyle="#F5C400";ctx.fillRect(70,56,22,22);
-  ctx.fillStyle="#17191C";ctx.font="800 34px Arial";ctx.fillText("RN NAS URNAS",112,79);
-  ctx.fillStyle="#565D64";ctx.font="700 21px Arial";ctx.fillText("MAPA ELEITORAL · ELEIÇÕES 2022",70,118);
+  ctx.fillStyle="#F5C400";ctx.fillRect(70,54,22,22);
+  ctx.fillStyle="#17191C";ctx.font="800 38px Arial";ctx.fillText("RN NAS URNAS",112,80);
+  ctx.fillStyle="#565D64";ctx.font="700 23px Arial";ctx.fillText("MAPA ELEITORAL · ELEIÇÕES 2022",70,122);
 
   const title=officeTitle(s);
-  ctx.fillStyle="#17191C";fit(ctx,title,70,188,940,56,800);
-  ctx.fillStyle="#2B2F34";fit(ctx,scopeTitle(s),70,232,940,33,700);
-  ctx.fillStyle="#565D64";ctx.font="700 20px Arial";ctx.fillText(s.round+"º turno",70,268);
+  ctx.fillStyle="#17191C";fit(ctx,title,70,194,940,64,800);
+  ctx.fillStyle="#2B2F34";fit(ctx,scopeTitle(s),70,246,940,40,700);
+  ctx.fillStyle="#565D64";ctx.font="700 23px Arial";ctx.fillText(s.round+"º turno",70,286);
 
   ctx.fillStyle="#FFFFFF";
-  ctx.beginPath();ctx.roundRect(55,300,970,600,26);ctx.fill();
+  ctx.beginPath();ctx.roundRect(55,318,970,540,26);ctx.fill();
 
   if(!mapFC){
-    ctx.fillStyle="#626970";ctx.font="700 28px Arial";ctx.fillText("Mapa indisponível",120,600);
+    ctx.fillStyle="#626970";ctx.font="700 30px Arial";ctx.fillText("Mapa indisponível",120,590);
   }else{
-    // Map occupies almost the full card width; legend moves below it.
-    const p=projector(mapFC,900,500,8),ox=90,oy=330;
+    const p=projector(mapFC,900,445,8),ox=90,oy=350;
     const partyCount=new Map();
 
     mapFC.features.forEach(f=>{
@@ -300,7 +299,6 @@ function drawMapShareCanvas(s=currentSelection()){
       const rows=rowsForMunicipality(name,s.office,s.round);
       const lead=rows[0],party=lead?.partido||"";
       let fill="#E3DFD6";
-
       if(inScope&&party){
         fill=partyColor(party);
         partyCount.set(party,(partyCount.get(party)||0)+1);
@@ -309,7 +307,7 @@ function drawMapShareCanvas(s=currentSelection()){
       drawCanvasMapGeometry(ctx,f.geometry,p,ox,oy);
       ctx.fillStyle=fill;
       try{ctx.fill("evenodd")}catch{ctx.fill()}
-      ctx.strokeStyle="#FFFFFF";ctx.lineWidth=1.05;ctx.stroke();
+      ctx.strokeStyle="#FFFFFF";ctx.lineWidth=1.1;ctx.stroke();
     });
 
     if(s.scope==="municipality"){
@@ -321,36 +319,43 @@ function drawMapShareCanvas(s=currentSelection()){
     }
 
     const entries=[...partyCount.entries()].sort((a,b)=>b[1]-a[1]);
-    const shown=entries.slice(0,6);
+    const shown=entries.slice(0,5);
 
     if(shown.length){
-      ctx.fillStyle="#17191C";ctx.font="800 16px Arial";ctx.fillText("LEGENDA",82,842);
-      let lx=82,ly=875;
-      shown.forEach(([party,count],i)=>{
-        if(i===3){lx=565;ly=875}
-        ctx.fillStyle=partyColor(party);ctx.fillRect(lx,ly-14,17,17);
-        ctx.fillStyle="#34393E";ctx.font="700 15px Arial";ctx.fillText(party,lx+27,ly);
-        ctx.fillStyle="#7B8186";ctx.font="600 13px Arial";ctx.fillText(count+" mun.",lx+27,ly+20);
-        ly+=48;
+      ctx.fillStyle="#17191C";ctx.font="800 17px Arial";ctx.fillText("LEGENDA",82,888);
+
+      const startX=82, baseY=916, maxW=916;
+      let x=startX,y=baseY;
+
+      shown.forEach(([party,count])=>{
+        const label=party+" · "+count+" mun.";
+        ctx.font="700 16px Arial";
+        const itemW=Math.max(150,ctx.measureText(label).width+48);
+        if(x+itemW>startX+maxW){x=startX;y+=34;}
+
+        ctx.fillStyle=partyColor(party);ctx.fillRect(x,y-14,18,18);
+        ctx.fillStyle="#34393E";ctx.fillText(label,x+28,y);
+        x+=itemW+18;
       });
     }
   }
 
-  ctx.fillStyle="#D7D1C6";ctx.fillRect(70,925,940,1);
-  ctx.fillStyle="#17191C";ctx.font="800 20px Arial";ctx.fillText("Fonte: Tribunal Superior Eleitoral",70,961);
-  ctx.fillStyle="#5C6369";ctx.font="600 15px Arial";
+  ctx.fillStyle="#D7D1C6";ctx.fillRect(70,964,940,1);
+  ctx.fillStyle="#17191C";ctx.font="800 23px Arial";ctx.fillText("Fonte: Tribunal Superior Eleitoral",70,1001);
+
+  ctx.fillStyle="#5C6369";ctx.font="600 17px Arial";
   const note=s.office==="party"
     ?"Cores = partido com maior votação em cada município."
     :"Cores = partido da candidatura com maior votação em cada município.";
-  ctx.fillText(note,70,992);
+  ctx.fillText(note,70,1032);
 
   if(["depf","depe"].includes(s.office)){
-    ctx.fillStyle="#6B7177";ctx.font="600 14px Arial";
-    ctx.fillText("Para deputados, a liderança municipal é descritiva e não determina eleição.",70,1018);
+    ctx.fillStyle="#6B7177";ctx.font="600 15px Arial";
+    ctx.fillText("Para deputados, a liderança municipal é descritiva e não determina eleição.",70,1055);
+  }else{
+    ctx.fillStyle="#8A9096";ctx.font="800 17px Arial";ctx.fillText("UEFY · RN NAS URNAS",70,1056);
+    ctx.textAlign="right";ctx.fillStyle="#8A7100";ctx.fillText("2022",1010,1056);ctx.textAlign="left";
   }
-
-  ctx.fillStyle="#8A9096";ctx.font="800 17px Arial";ctx.fillText("UEFY · RN NAS URNAS",70,1052);
-  ctx.textAlign="right";ctx.fillStyle="#8A7100";ctx.fillText("2022",1010,1052);ctx.textAlign="left";
 }
 async function mapCanvasBlob(){drawMapShareCanvas();return new Promise(ok=>$("#mapShareCanvas").toBlob(ok,"image/png"))}
 function downloadBlob(blob,name){
