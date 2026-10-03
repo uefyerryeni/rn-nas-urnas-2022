@@ -1,14 +1,13 @@
-name: Deploy RN nas Urnas 2022
-on:\n  workflow_dispatch:
+name: Atualizar base oficial TSE 2022
+
+on:
+  workflow_dispatch:
+
 permissions:
   contents: write
-  pages: write
-  id-token: write
-concurrency:
-  group: rn-2022-build-v2
-  cancel-in-progress: true
+
 jobs:
-  build:
+  atualizar-base:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,7 +15,7 @@ jobs:
         run: python scripts/build_data.py
       - name: Verificar JavaScript
         run: node --check app.js
-      - name: Homologação real da base
+      - name: Homologar base
         run: |
           test -s data/eleicoes-2022.json
           test -s data/rn-municipios.geojson
@@ -24,40 +23,25 @@ jobs:
           python - <<'PY'
           import json
           d=json.load(open('data/eleicoes-2022.json'))
-          assert d['meta']['ano']==2022
-          assert len(d['municipios'])==167
-          assert 'NATAL' in d['municipios']
-          assert set(d['zonasNatal']) >= {'1','2','3','4','69'}
-          assert d['municipios']['NATAL']
-          assert all('Presidente' in v.get('1',{}) and 'Presidente' in v.get('2',{}) for v in d['municipios'].values())
           g=json.load(open('data/rn-municipios.geojson'))
           m=json.load(open('data/mesorregioes.json'))
+          assert d['meta']['ano']==2022
+          assert len(d['municipios'])==167
           assert len(g['features'])==167
           assert sum(map(len,m.values()))==167
-          print('OK:',len(d['municipios']),'municípios; Presidente 1T/2T; zonas',sorted(d['zonasNatal']))
+          assert 'NATAL' in d['municipios']
+          assert set(d['zonasNatal']) >= {'1','2','3','4','69'}
+          assert all('Presidente' in v.get('1',{}) and 'Presidente' in v.get('2',{}) for v in d['municipios'].values())
+          print('Base histórica homologada')
           PY
-      - name: Persistir base homologada no repositório
+      - name: Persistir base homologada
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/eleicoes-2022.json data/rn-municipios.geojson data/mesorregioes.json
+          git add data/eleicoes-2022.json
           if git diff --cached --quiet; then
             echo "Base já está atualizada."
           else
-            git commit -m "data: persiste base oficial TSE 2022 homologada"
+            git commit -m "data: atualiza base oficial TSE 2022"
             git push
           fi
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-  deploy:
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
