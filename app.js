@@ -3,7 +3,17 @@ const OFFICES={gov:"Governador",sen:"Senador",depf:"Deputado Federal",depe:"Depu
 let db=null,mapFC=null,mesos={},selectedMunicipality="",textMode="full",currentRows=[],currentLabel="Rio Grande do Norte";
 const PARTY_COLORS={"PT":"#d71920","PL":"#183b8f","UNIÃO":"#19a9a2","PP":"#243c8f","MDB":"#2f8b57","PSD":"#f07d22","PSDB":"#1687c9","REPUBLICANOS":"#1f4f9c","PSB":"#e85c25","PDT":"#d62828","PODE":"#2e70b8","SOLIDARIEDADE":"#e85d25","PSOL":"#f3b51b","NOVO":"#f58220","CIDADANIA":"#e35b29","AVANTE":"#186f8c","PSC":"#164a85","PATRIOTA":"#2d6c42","PROS":"#ef7d22","PC DO B":"#d71920","PV":"#3a9d3d","REDE":"#54a646","PMB":"#5c2f8f","PSTU":"#d71920","PMN":"#184d8c","PRTB":"#285b42","DC":"#345fb4","UP":"#6e1a1a"};
 function partyColor(p){return PARTY_COLORS[String(p||"").toUpperCase()]||"#727b83"}
-const norm=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toUpperCase();
+const RAW_ALIASES={"ACU":"ASSU","ARES":"AREZ","JANUARIO CICCO":"BOA SAUDE"};
+const norm=s=>{
+  const raw=String(s||"")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"")
+    .toUpperCase()
+    .replace(/[^A-Z0-9]+/g," ")
+    .trim()
+    .replace(/\s+/g," ");
+  return RAW_ALIASES[raw]||raw;
+};
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
 const fmt=n=>Number(n||0).toLocaleString("pt-BR"), pct=n=>Number(n||0).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2})+"%";
 function coords(g,o=[]){if(!g)return o;if(g.type==="Polygon")g.coordinates.forEach(r=>r.forEach(p=>o.push(p)));else if(g.type==="MultiPolygon")g.coordinates.forEach(p=>p.forEach(r=>r.forEach(x=>o.push(x))));return o}
@@ -34,7 +44,17 @@ function drawCanvas(s=currentSelection()){const c=$("#shareCanvas"),x=c.getConte
 function updatePublication(s=currentSelection()){const t=makeText(s);$("#postText").value=t;$("#charCount").textContent=t.length+" caracteres";drawCanvas(s)}
 async function canvasBlob(type="image/png"){return new Promise(ok=>$("#shareCanvas").toBlob(ok,type,.94))}
 async function copyImage(){const b=await canvasBlob();if(!navigator.clipboard?.write||!window.ClipboardItem)throw Error();await navigator.clipboard.write([new ClipboardItem({"image/png":b})])}
-async function init(){syncFilters();try{const r=await fetch("data/eleicoes-2022.json",{cache:"no-store"});if(!r.ok)throw Error("base");db=await r.json();const names=allNames().sort((a,b)=>a.localeCompare(b,"pt-BR"));$("#municipios").innerHTML=names.map(n=>'<option value="'+esc(n)+'"></option>').join("");const zones=Object.keys(db.zonasNatal||{}).sort((a,b)=>+a-+b);$("#zoneSelect").innerHTML=zones.map(z=>'<option value="'+z+'">'+z+'ª Zona</option>').join("");$("#statusTitle").textContent="Base oficial carregada";$("#statusText").textContent=names.length+" municípios disponíveis · Eleições 2022."}catch(e){$("#statusTitle").textContent="Base oficial indisponível";$("#statusText").textContent="A base eleitoral não pôde ser carregada.";$("#resultRows").innerHTML='<div class="empty">Dados não carregados. Nenhuma simulação foi usada como substituição.</div>';drawCanvas();return}try{await Promise.all([loadMesos(),loadMap()])}catch(e){$("#mapHint").textContent="O mapa territorial não pôde ser carregado, mas os resultados eleitorais continuam disponíveis."}applySelection()}
+async function init(){syncFilters();try{const r=await fetch("data/eleicoes-2022.json",{cache:"no-store"});if(!r.ok)throw Error("base");db=await r.json();const names=allNames().sort((a,b)=>a.localeCompare(b,"pt-BR"));$("#municipios").innerHTML=names.map(n=>'<option value="'+esc(n)+'"></option>').join("");const zones=Object.keys(db.zonasNatal||{}).sort((a,b)=>+a-+b);$("#zoneSelect").innerHTML=zones.map(z=>'<option value="'+z+'">'+z+'ª Zona</option>').join("");$("#statusTitle").textContent="Base oficial carregada";$("#statusText").textContent=names.length+" municípios disponíveis · Eleições 2022."}catch(e){$("#statusTitle").textContent="Base oficial indisponível";$("#statusText").textContent="A base eleitoral não pôde ser carregada.";$("#resultRows").innerHTML='<div class="empty">Dados não carregados. Nenhuma simulação foi usada como substituição.</div>';drawCanvas();return}try{
+  await Promise.all([loadMesos(),loadMap()]);
+  const mapNames=mapFC.features.map(f=>f.properties?.nome||"").filter(Boolean).sort((a,b)=>a.localeCompare(b,"pt-BR"));
+  $("#municipios").innerHTML=mapNames.map(n=>'<option value="'+esc(n)+'"></option>').join("");
+  const unresolved=mapNames.filter(n=>!keyForMunicipality(n));
+  if(unresolved.length)throw Error("Municípios sem correspondência TSE/IBGE: "+unresolved.join(", "));
+}catch(e){
+  console.error(e);
+  $("#mapHint").textContent="O mapa territorial não pôde ser associado integralmente à base eleitoral, mas os resultados continuam disponíveis.";
+}
+applySelection()}
 $("#scopeSelect").onchange=syncFilters;$("#officeSelect").onchange=()=>{syncFilters();applySelection()};$("#roundSelect").onchange=applySelection;$("#mesoSelect").onchange=()=>{syncTerritoryButtons();renderMap();applySelection()};$("#zoneSelect").onchange=applySelection;$("#partyOfficeSelect").onchange=()=>{syncFilters();applySelection()};$("#applyBtn").onclick=applySelection;$("#clearMap").onclick=()=>{$("#scopeSelect").value="state";selectedMunicipality="";syncFilters();applySelection()};
 $$(".territory-bar button").forEach(b=>b.onclick=()=>{if(b.dataset.meso){$("#scopeSelect").value="meso";$("#mesoSelect").value=b.dataset.meso}else $("#scopeSelect").value=b.dataset.scope;syncFilters();applySelection()});
 $$(".text-mode-switch button").forEach(b=>b.onclick=()=>{$$(".text-mode-switch button").forEach(x=>x.classList.remove("active"));b.classList.add("active");textMode=b.dataset.mode;updatePublication()});
