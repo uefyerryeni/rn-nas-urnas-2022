@@ -1,12 +1,5 @@
 name: Deploy RN nas Urnas 2022
-on:
-  push:
-    branches: [main]
-    paths-ignore:
-      - 'data/eleicoes-2022.json'
-      - 'data/rn-municipios.geojson'
-      - 'data/mesorregioes.json'
-  workflow_dispatch:
+on:\n  workflow_dispatch:
 permissions:
   contents: write
   pages: write
