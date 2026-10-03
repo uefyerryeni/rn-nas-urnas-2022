@@ -1,0 +1,40 @@
+name: Atualizar Achados 2026
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 20-23 4 10 *'
+    - cron: '*/5 0-5 5 10 *'
+permissions:
+  contents: write
+concurrency:
+  group: achados-2026
+  cancel-in-progress: true
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerar comparativos e achados
+        run: python scripts/build_achados_2026.py
+      - name: Homologar saída
+        run: |
+          python -m py_compile scripts/build_achados_2026.py
+          python - <<'PY'
+          import json
+          d=json.load(open('data/achados-2026.json',encoding='utf-8'))
+          assert d['status'] in {'waiting','live','final'}
+          assert isinstance(d['findings'],list)
+          assert isinstance(d['offices'],dict)
+          print('Achados homologados:',d['status'],d['progress'])
+          PY
+      - name: Persistir snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/achados-2026.json
+          if git diff --cached --quiet; then
+            echo "Snapshot sem alteração."
+          else
+            git commit -m "data: atualiza Achados 2026"
+            git push
+          fi
