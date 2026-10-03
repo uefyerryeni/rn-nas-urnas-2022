@@ -12,6 +12,10 @@ PART="https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/vot
 def s(v):
     return (v or "").strip()
 
+def clean(v):
+    x=s(v)
+    return "" if x in {"#NULO#","#NE#","NÃO DIVULGÁVEL"} else x
+
 def n(v):
     try:
         return int(s(v) or 0)
@@ -26,16 +30,22 @@ def download(url):
 def rows(url):
     z=zipfile.ZipFile(io.BytesIO(download(url)))
     csvs=[x for x in z.namelist() if x.lower().endswith(".csv")]
-    # RN traz os cargos estaduais; BR traz Presidente para todas as UFs.
-    names=[x for x in csvs if "_rn" in x.lower() or "_br" in x.lower()]
-    if not names:
-        names=csvs
-    for name in names:
+    chosen=[]
+    for name in csvs:
+        low=name.lower()
+        if low.endswith("_rn.csv"):
+            chosen.append(("RN",name))
+        elif low.endswith("_brasil.csv") or low.endswith("_br.csv"):
+            chosen.append(("BR",name))
+    if not chosen:
+        raise RuntimeError("Arquivos RN/BR não encontrados no ZIP do TSE")
+    for scope,name in chosen:
         with z.open(name) as f:
-            yield from csv.DictReader(
+            for row in csv.DictReader(
                 io.TextIOWrapper(f,encoding="latin-1",errors="replace"),
                 delimiter=";"
-            )
+            ):
+                yield scope,row
 
 d={
     "meta":{
@@ -57,6 +67,10 @@ for r in rows(CAND):
     z=s(r.get("NR_ZONA"))
     t=s(r.get("NR_TURNO"))
     cargo=s(r.get("DS_CARGO"))
+    if scope=="RN" and cargo=="Presidente":
+        continue
+    if scope=="BR" and cargo!="Presidente":
+        continue
     votos=n(r.get("QT_VOTOS_NOMINAIS_VALIDOS") or r.get("QT_VOTOS_NOMINAIS"))
     if not m or not cargo or votos<=0:
         continue
@@ -65,7 +79,7 @@ for r in rows(CAND):
         "nome":s(r.get("NM_URNA_CANDIDATO") or r.get("NM_CANDIDATO")),
         "partido":s(r.get("SG_PARTIDO")),
         "numero":s(r.get("NR_CANDIDATO")),
-        "federacao":s(
+        "federacao":clean(
             r.get("NM_FEDERACAO")
             or r.get("SG_FEDERACAO")
             or r.get("DS_COMPOSICAO_FEDERACAO")
@@ -98,7 +112,7 @@ for r in rows(PART):
     p=s(r.get("SG_PARTIDO"))
     legenda=n(r.get("QT_TOTAL_VOTOS_LEG_VALIDOS") or r.get("QT_VOTOS_LEGENDA_VALIDOS"))
     total=n(r.get("QT_VOTOS_NOMINAIS_VALIDOS"))+legenda
-    fed=s(
+    fed=clean(
         r.get("NM_FEDERACAO")
         or r.get("SG_FEDERACAO")
         or r.get("DS_COMPOSICAO_FEDERACAO")
