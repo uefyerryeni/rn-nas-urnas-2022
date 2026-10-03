@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Consolida dados oficiais TSE 2022 e recortes territoriais IBGE para o RN nas Urnas."""
-import csv,io,json,urllib.request,zipfile
+import csv,io,json,gzip,urllib.request,zipfile
 
 CAND="https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2022.zip"
 PART="https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_2022.zip"
