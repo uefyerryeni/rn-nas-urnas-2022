@@ -16,3 +16,14 @@
 
 .dual-share{background:var(--ink);border-color:var(--ink);color:#fff;position:relative}
 .dual-share:before{content:"2 artes";display:inline-block;margin-right:7px;padding:2px 5px;border-radius:999px;background:var(--yellow);color:var(--ink);font-size:8px;font-weight:800}
+
+.extreme-tool{margin-top:22px;padding-top:18px;border-top:1px solid var(--rule)}
+.extreme-tool[hidden]{display:none}
+.extreme-help{margin:7px 0 12px;color:var(--muted);font-size:11px;line-height:1.45}
+.extreme-label{display:grid;gap:6px;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.extreme-label select{width:100%;border:1px solid var(--rule);background:#fff;color:var(--ink);border-radius:9px;padding:11px 10px;font:700 11px inherit;text-transform:none;letter-spacing:0}
+.extreme-previews{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 12px}
+.extreme-previews>div{min-width:0}
+.extreme-previews small{display:block;margin-bottom:5px;color:var(--muted);font-size:9px;font-weight:800;text-transform:uppercase}
+.extreme-previews canvas{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:12px;background:#f4f0e7}
+@media(max-width:620px){.extreme-previews{grid-template-columns:1fr}.extreme-help{font-size:12px}.extreme-label{font-size:10px}}

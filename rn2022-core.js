@@ -46,7 +46,7 @@ function zoneRows(zone,office,round){if(office==="party"){const cargo=$("#partyO
 function syncTerritoryButtons(){const scope=$("#scopeSelect").value,meso=$("#mesoSelect").value;$$(".territory-bar button").forEach(b=>b.classList.toggle("active",b.dataset.scope===scope||(scope==="meso"&&b.dataset.meso===meso)))}
 function syncFilters(){const scope=$("#scopeSelect").value,office=$("#officeSelect").value;$("#mesoField").hidden=scope!=="meso";$("#munField").hidden=scope!=="municipality";$("#zoneField").hidden=scope!=="natalzone";$("#partyField").hidden=office!=="party";$("#subfilters").hidden=scope==="state"&&office!=="party";$("#roundSelect").disabled=office!=="pres";if(office!=="pres")$("#roundSelect").value="1";syncTerritoryButtons();renderMap()}
 function currentSelection(){const office=$("#officeSelect").value,round=$("#roundSelect").value,scope=$("#scopeSelect").value;let rows=[],label="Rio Grande do Norte";if(scope==="state"){rows=aggregate(allNames(),office,round)}else if(scope==="meso"){label=$("#mesoSelect").value;rows=aggregate(allNames().filter(n=>mesos[label]?.has(norm(n))),office,round)}else if(scope==="municipality"){label=$("#municipalityInput").value.trim()||selectedMunicipality||"Município";rows=rowsForMunicipality(label,office,round)}else{label="Natal · "+$("#zoneSelect").value+"ª Zona";rows=zoneRows($("#zoneSelect").value,office,round)}return{office,round,scope,rows,label}}
-function applySelection(){if(!db){$("#statusTitle").textContent="Base oficial ainda não carregada";return}const s=currentSelection();currentRows=s.rows;currentLabel=s.label;selectedMunicipality=s.scope==="municipality"?s.label:"";markMap();const title=s.office==="party"?"Partidos · "+partyOfficeLabel():OFFICES[s.office];$("#viewTitle").textContent=s.scope==="municipality"?"Município de "+s.label:s.label;$("#viewSubtitle").textContent=title+" · "+s.round+"º turno · Eleições 2022";$("#resultTitle").textContent=title;$("#resultMeta").textContent=(s.scope==="municipality"?s.label+" · Rio Grande do Norte":s.label)+" · 2022";$("#statusTitle").textContent=s.rows.length?"Resultado histórico carregado":"Sem resultado para este recorte";$("#statusText").textContent=s.rows.length?"Dados consolidados das Eleições 2022 · fonte TSE.":"A combinação selecionada não possui registros na base processada.";renderRows(s.rows,s.office);renderInsights(s);updatePublication(s);updateMapShareUI(s)}
+function applySelection(){if(!db){$("#statusTitle").textContent="Base oficial ainda não carregada";return}const s=currentSelection();currentRows=s.rows;currentLabel=s.label;selectedMunicipality=s.scope==="municipality"?s.label:"";markMap();const title=s.office==="party"?"Partidos · "+partyOfficeLabel():OFFICES[s.office];$("#viewTitle").textContent=s.scope==="municipality"?"Município de "+s.label:s.label;$("#viewSubtitle").textContent=title+" · "+s.round+"º turno · Eleições 2022";$("#resultTitle").textContent=title;$("#resultMeta").textContent=(s.scope==="municipality"?s.label+" · Rio Grande do Norte":s.label)+" · 2022";$("#statusTitle").textContent=s.rows.length?"Resultado histórico carregado":"Sem resultado para este recorte";$("#statusText").textContent=s.rows.length?"Dados consolidados das Eleições 2022 · fonte TSE.":"A combinação selecionada não possui registros na base processada.";renderRows(s.rows,s.office);renderInsights(s);updatePublication(s);updateMapShareUI(s);updateExtremeTool(s)}
 function renderRows(rows,office){const box=$("#resultRows");if(!rows.length){box.innerHTML='<div class="empty">Nenhum registro disponível neste recorte.</div>';return}const total=rows.reduce((a,x)=>a+Number(x.votos||0),0);box.innerHTML=rows.slice(0,12).map((x,i)=>{const p=total?x.votos/total*100:0,name=office==="party"?x.partido:x.nome,meta=office==="party"?(($("#partyOfficeSelect")?.value==="Senador")?"votos das candidaturas ao Senado":(x.federacao?x.federacao:"votos válidos do partido")):([x.partido,x.numero].filter(Boolean).join(" · ")),color=partyColor(x.partido);return '<div class="result-row"><div class="who"><b>'+(i+1)+'. '+esc(name)+'</b><small>'+esc(meta)+'</small></div><span class="bar"><i style="width:'+Math.min(100,p)+'%;background:'+color+'"></i></span><span class="pct">'+pct(p)+'</span></div>'}).join("")}
 function renderInsights(s){const box=$("#insights");if(!s.rows.length){box.innerHTML='<article class="card"><span>SEM DADOS</span><strong>—</strong><p>Não há leitura disponível para esta combinação.</p></article>';return}const total=s.rows.reduce((a,x)=>a+Number(x.votos||0),0),a=s.rows[0],b=s.rows[1],ap=total?a.votos/total*100:0,gap=b&&total?(a.votos-b.votos)/total*100:null,name=s.office==="party"?a.partido:a.nome;box.innerHTML='<article class="card"><span>MAIOR VOTAÇÃO NO RECORTE</span><strong>'+esc(name)+'</strong><p>'+fmt(a.votos)+' votos · '+pct(ap)+'</p></article><article class="card"><span>VOTOS COMPUTADOS NESTA LISTA</span><strong>'+fmt(total)+'</strong><p>'+esc(s.label)+' · '+s.round+'º turno</p></article>'+(gap!==null?'<article class="card"><span>DIFERENÇA ENTRE 1º E 2º</span><strong>'+pct(gap)+'</strong><p>Diferença descritiva dentro do recorte selecionado.</p></article>':'')}
 
@@ -412,6 +412,115 @@ function updateMapShareUI(s=currentSelection()){
   box.hidden=!mapShareSupported(s);
 }
 
+
+function candidateMunicipalityExtremes(s=currentSelection(),candidateName=""){
+  if(!db||s.office==="party")return null;
+  const stateRows=aggregate(allNames(),s.office,s.round);
+  const candidate=stateRows.find(r=>r.nome===candidateName)||stateRows[0];
+  if(!candidate)return null;
+  const points=allNames().map(name=>{
+    const row=rowsForMunicipality(name,s.office,s.round).find(r=>r.nome===candidate.nome&&r.partido===candidate.partido)
+      ||rowsForMunicipality(name,s.office,s.round).find(r=>r.nome===candidate.nome);
+    return{name,votos:Number(row?.votos||0)};
+  });
+  points.sort((x,y)=>y.votos-x.votos||x.name.localeCompare(y.name,"pt-BR"));
+  return{candidate,total:Number(candidate.votos||0),max:points[0],min:points[points.length-1]};
+}
+function drawExtremeDataCanvas(info,s=currentSelection()){
+  const c=$("#extremeDataCanvas"),x=c.getContext("2d"),W=1080,H=1080;
+  x.clearRect(0,0,W,H);x.fillStyle="#F4F0E7";x.fillRect(0,0,W,H);
+  x.fillStyle="#F5C400";x.fillRect(70,55,22,22);
+  x.fillStyle="#17191C";x.font="800 38px Arial";x.fillText("RN NAS URNAS",112,80);
+  x.fillStyle="#565D64";x.font="700 23px Arial";x.fillText("EXTREMOS MUNICIPAIS · ELEIÇÕES 2022",70,122);
+  x.fillStyle="#17191C";fit(x,info.candidate.nome,70,205,940,66,800);
+  x.fillStyle="#34393E";x.font="700 27px Arial";x.fillText((info.candidate.partido||"")+" · "+officeTitle(s)+" · "+s.round+"º turno",70,253);
+  x.fillStyle="#666D73";x.font="700 21px Arial";x.fillText("Comparação por número absoluto de votos nos 167 municípios do RN",70,292);
+
+  const card=(y,label,item,accent)=>{
+    x.fillStyle="#FFFFFF";x.beginPath();x.roundRect(70,y,940,250,26);x.fill();
+    x.fillStyle=accent;x.beginPath();x.roundRect(70,y,12,250,6);x.fill();
+    x.fillStyle="#686F75";x.font="800 22px Arial";x.fillText(label,112,y+52);
+    x.fillStyle="#17191C";fit(x,item.name,112,y+115,820,50,800);
+    x.fillStyle="#17191C";x.font="800 54px Arial";x.fillText(fmt(item.votos)+" votos",112,y+184);
+    const share=info.total?item.votos/info.total*100:0;
+    x.fillStyle="#666D73";x.font="600 20px Arial";x.fillText(pct(share)+" da votação estadual da candidatura",112,y+222);
+  };
+  const col=partyColor(info.candidate.partido);
+  card(350,"MAIOR VOTAÇÃO MUNICIPAL",info.max,col);
+  card(630,"MENOR VOTAÇÃO MUNICIPAL",info.min,"#9A9FA4");
+
+  x.fillStyle="#D4CEC3";x.fillRect(70,920,940,2);
+  x.fillStyle="#17191C";x.font="800 22px Arial";x.fillText("Fonte: Tribunal Superior Eleitoral",70,962);
+  x.fillStyle="#60676D";x.font="600 18px Arial";x.fillText("Leitura descritiva da votação nominal consolidada por município.",70,997);
+  x.fillStyle="#7D848A";x.font="800 18px Arial";x.fillText("UEFY · RN NAS URNAS",70,1045);
+  x.textAlign="right";x.fillStyle="#8A7100";x.fillText("2022",1010,1045);x.textAlign="left";
+}
+function drawExtremeMapCanvas(info,s=currentSelection()){
+  const c=$("#extremeMapCanvas"),x=c.getContext("2d"),W=1080,H=1080;
+  x.clearRect(0,0,W,H);x.fillStyle="#F4F0E7";x.fillRect(0,0,W,H);
+  x.fillStyle="#F5C400";x.fillRect(70,55,22,22);
+  x.fillStyle="#17191C";x.font="800 38px Arial";x.fillText("RN NAS URNAS",112,80);
+  x.fillStyle="#565D64";x.font="700 23px Arial";x.fillText("MAPA DOS EXTREMOS MUNICIPAIS · 2022",70,122);
+  x.fillStyle="#17191C";fit(x,info.candidate.nome,70,194,940,56,800);
+  x.fillStyle="#34393E";x.font="700 24px Arial";x.fillText("Maior e menor votação municipal · "+officeTitle(s),70,236);
+
+  const panels=[
+    {item:info.max,x0:55,label:"MAIOR VOTAÇÃO",accent:partyColor(info.candidate.partido)},
+    {item:info.min,x0:550,label:"MENOR VOTAÇÃO",accent:"#9A9FA4"}
+  ];
+  panels.forEach(pn=>{
+    x.fillStyle="#FFFFFF";x.beginPath();x.roundRect(pn.x0,285,475,650,26);x.fill();
+    x.fillStyle=pn.accent;x.beginPath();x.roundRect(pn.x0,285,475,10,5);x.fill();
+    x.fillStyle="#686F75";x.font="800 19px Arial";x.fillText(pn.label,pn.x0+30,337);
+    x.fillStyle="#17191C";fit(x,pn.item.name,pn.x0+30,385,415,38,800);
+    x.fillStyle="#4E555B";x.font="700 23px Arial";x.fillText(fmt(pn.item.votos)+" votos",pn.x0+30,425);
+    const f=mapFC?.features.find(f=>norm(f.properties?.nome)===norm(pn.item.name));
+    if(f){
+      const fc={type:"FeatureCollection",features:[f]};
+      const proj=projector(fc,385,405,18),ox=pn.x0+45,oy=470;
+      drawCanvasMapGeometry(x,f.geometry,proj,ox,oy);
+      x.fillStyle=pn.accent;try{x.fill("evenodd")}catch{x.fill()}
+      x.strokeStyle="#17191C";x.lineWidth=3;x.stroke();
+    }
+  });
+  x.fillStyle="#D4CEC3";x.fillRect(70,966,940,2);
+  x.fillStyle="#17191C";x.font="800 21px Arial";x.fillText("Fonte: Tribunal Superior Eleitoral",70,1005);
+  x.fillStyle="#666D73";x.font="600 17px Arial";x.fillText("Mapas ampliados dos dois municípios; formas territoriais IBGE.",70,1037);
+  x.fillStyle="#7D848A";x.font="800 17px Arial";x.fillText("UEFY · RN NAS URNAS",70,1064);
+  x.textAlign="right";x.fillStyle="#8A7100";x.fillText("2022",1010,1064);x.textAlign="left";
+}
+function extremeText(info,s=currentSelection()){
+  return "RN nas Urnas · Eleições 2022\n"+info.candidate.nome+" ("+(info.candidate.partido||"")+") · "+officeTitle(s)+"\n\nMaior votação municipal: "+info.max.name+" — "+fmt(info.max.votos)+" votos.\nMenor votação municipal: "+info.min.name+" — "+fmt(info.min.votos)+" votos.\n\nComparação por número absoluto de votos nos 167 municípios do RN.\nFonte: TSE.";
+}
+function updateExtremeTool(s=currentSelection()){
+  const box=$("#extremeTool");if(!box)return;
+  const eligible=s.scope==="state"&&s.office!=="party"&&s.rows.length;
+  box.hidden=!eligible;if(!eligible)return;
+  const sel=$("#extremeCandidate"),stateRows=aggregate(allNames(),s.office,s.round);
+  const old=sel.value;
+  sel.innerHTML=stateRows.map(r=>'<option value="'+esc(r.nome)+'">'+esc(r.nome)+(r.partido?" · "+esc(r.partido):"")+'</option>').join("");
+  if(stateRows.some(r=>r.nome===old))sel.value=old;
+  const info=candidateMunicipalityExtremes(s,sel.value);
+  if(info){drawExtremeDataCanvas(info,s);drawExtremeMapCanvas(info,s)}
+}
+async function extremeCanvasBlob(id){return new Promise(ok=>$("#"+id).toBlob(ok,"image/png"))}
+async function shareExtremePair(){
+  const s=currentSelection(),info=candidateMunicipalityExtremes(s,$("#extremeCandidate").value);
+  if(!info)return;
+  drawExtremeDataCanvas(info,s);drawExtremeMapCanvas(info,s);
+  const [dataBlob,mapBlob]=await Promise.all([extremeCanvasBlob("extremeDataCanvas"),extremeCanvasBlob("extremeMapCanvas")]);
+  const files=[
+    new File([dataBlob],"rn-nas-urnas-extremos-dados-2022.png",{type:"image/png"}),
+    new File([mapBlob],"rn-nas-urnas-extremos-mapas-2022.png",{type:"image/png"})
+  ],text=extremeText(info,s);
+  if(navigator.share&&navigator.canShare?.({files})){
+    try{await navigator.share({title:"RN nas Urnas · Extremos municipais 2022",text,files});return}catch(e){if(e.name==="AbortError")return}
+  }
+  downloadBlob(dataBlob,files[0].name);setTimeout(()=>downloadBlob(mapBlob,files[1].name),350);
+  try{await navigator.clipboard.writeText(text)}catch{}
+  alert("As duas artes foram baixadas e o texto foi copiado quando permitido.");
+}
+
 function updatePublication(s=currentSelection()){const t=makeText(s);$("#postText").value=t;$("#charCount").textContent=t.length+" caracteres";drawCanvas(s)}
 async function canvasBlob(type="image/png"){return new Promise(ok=>$("#shareCanvas").toBlob(ok,type,.94))}
 async function copyImage(){const b=await canvasBlob();if(!navigator.clipboard?.write||!window.ClipboardItem)throw Error();await navigator.clipboard.write([new ClipboardItem({"image/png":b})])}
@@ -435,6 +544,8 @@ $("#downloadImage").onclick=async()=>{const b=await canvasBlob("image/jpeg"),u=U
 $("#openX").onclick=async()=>{try{await copyImage()}catch{}const text=makeXText();window.open("https://x.com/intent/post?text="+encodeURIComponent(text),"_blank","noopener")};
 $("#shareBundle").onclick=async()=>{const b=await canvasBlob("image/jpeg"),file=new File([b],"rn-nas-urnas-2022.jpg",{type:"image/jpeg"}),text=$("#postText").value;if(navigator.share&&navigator.canShare?.({files:[file]})){try{await navigator.share({text,files:[file]});return}catch(e){if(e.name==="AbortError")return}}try{await copyImage();alert("Imagem copiada. O texto permanece no campo acima para ser copiado separadamente.")}catch{}};
 $("#shareBoth").onclick=shareCardAndMap;
+$("#extremeCandidate").onchange=()=>{const s=currentSelection(),info=candidateMunicipalityExtremes(s,$("#extremeCandidate").value);if(info){drawExtremeDataCanvas(info,s);drawExtremeMapCanvas(info,s)}};
+$("#shareExtremes").onclick=shareExtremePair;
 $("#copyMapImage").onclick=async()=>{try{await copyMapImage();$("#copyMapImage").textContent="Mapa copiado";setTimeout(()=>$("#copyMapImage").textContent="Copiar imagem",1200)}catch{alert("Este navegador não permite copiar o mapa diretamente.")}};
 $("#downloadMap").onclick=async()=>{const b=await mapCanvasBlob(),u=URL.createObjectURL(b),a=document.createElement("a");a.href=u;a.download="rn-nas-urnas-mapa-2022.png";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};
 $("#shareMap").onclick=async()=>{const b=await mapCanvasBlob(),file=new File([b],"rn-nas-urnas-mapa-2022.png",{type:"image/png"}),text=mapShareCaption();if(navigator.share&&navigator.canShare?.({files:[file]})){try{await navigator.share({text,files:[file]});return}catch(e){if(e.name==="AbortError")return}}try{await copyMapImage();await navigator.clipboard.writeText(text);alert("Mapa e texto preparados para compartilhar.")}catch{alert("Use os botões Copiar imagem e Baixar mapa.")}};
