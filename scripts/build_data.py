@@ -62,9 +62,8 @@ for r in rows(PART):
     if s(r.get("SG_UF"))!="RN":continue
     m=s(r.get("NM_MUNICIPIO")); z=s(r.get("NR_ZONA")); t=s(r.get("NR_TURNO")); cargo=s(r.get("DS_CARGO")); p=s(r.get("SG_PARTIDO"))
     # Para cargos proporcionais, total partidário = votos nominais válidos + votos válidos de legenda.
-    total=n(r.get("QT_TOTAL_VOTOS_LEG_VALIDOS"))
-    if total<=0:
-        total=n(r.get("QT_VOTOS_NOMINAIS_VALIDOS"))+n(r.get("QT_VOTOS_LEGENDA_VALIDOS"))
+    legenda=n(r.get("QT_TOTAL_VOTOS_LEG_VALIDOS") or r.get("QT_VOTOS_LEGENDA_VALIDOS"))
+    total=n(r.get("QT_VOTOS_NOMINAIS_VALIDOS"))+legenda
     fed=s(r.get("NM_FEDERACAO") or r.get("SG_FEDERACAO") or r.get("DS_COMPOSICAO_FEDERACAO"))
     def add_party(root,key):
         box=root.setdefault(key,{}).setdefault(t,{}).setdefault(cargo,{})
