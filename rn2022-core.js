@@ -153,99 +153,96 @@ function drawCanvas(s=currentSelection()){
   x.fillStyle="#F4F0E7";
   x.fillRect(0,0,W,H);
 
-  // assinatura editorial
+  // assinatura
   x.fillStyle="#F5C400";
-  rounded(70,58,18,18,5);x.fill();
+  rounded(70,55,22,22,6);x.fill();
   x.fillStyle="#17191C";
-  x.font="800 25px Arial";
-  x.fillText("RN NAS URNAS",105,76);
+  x.font="800 34px Arial";
+  x.fillText("RN NAS URNAS",112,78);
 
-  x.fillStyle="#6A7077";
-  x.font="600 16px Arial";
-  x.fillText("ARQUIVO ELEITORAL · ELEIÇÕES 2022",70,112);
+  x.fillStyle="#565D64";
+  x.font="700 22px Arial";
+  x.fillText("ARQUIVO ELEITORAL · ELEIÇÕES 2022",70,119);
 
-  // título do recorte
+  // título e recorte
   x.fillStyle="#17191C";
-  fit(x,title,70,190,940,62,800);
+  fit(x,title,70,198,940,70,800);
 
   x.fillStyle="#2B2F34";
-  fit(x,scope,70,238,940,31,700);
+  fit(x,scope,70,248,940,40,700);
 
-  x.fillStyle="#6A7077";
-  x.font="600 18px Arial";
-  x.fillText(s.round+"º turno",70,274);
-  x.fillText("·",165,274);
-  x.fillText("Total computado: "+fmt(total)+" votos",188,274);
+  x.fillStyle="#565D64";
+  x.font="700 24px Arial";
+  x.fillText(s.round+"º turno",70,290);
+  x.fillStyle="#9A9FA4";
+  x.fillText("·",180,290);
+  x.fillStyle="#565D64";
+  x.fillText("Total computado: "+fmt(total)+" votos",208,290);
 
-  x.fillStyle="#D8D2C7";
-  x.fillRect(70,306,940,1);
+  x.fillStyle="#D4CEC3";
+  x.fillRect(70,318,940,2);
 
   // resultados
-  let y=340;
+  let y=342;
   rows.forEach((r,i)=>{
     const name=s.office==="party"?r.partido:r.nome;
     const p=total?r.votos/total*100:0;
     const color=partyColor(r.partido);
 
     x.fillStyle="#FFFFFF";
-    rounded(70,y,940,170,22);x.fill();
+    rounded(70,y,940,176,24);x.fill();
 
-    // acento discreto de partido
     x.fillStyle=color;
-    rounded(70,y,8,170,4);x.fill();
+    rounded(70,y,10,176,5);x.fill();
 
-    x.fillStyle="#8A9096";
-    x.font="800 18px Arial";
-    x.fillText(String(i+1).padStart(2,"0"),105,y+42);
+    x.fillStyle="#7D848A";
+    x.font="800 24px Arial";
+    x.fillText(String(i+1).padStart(2,"0"),108,y+50);
 
     x.fillStyle="#17191C";
-    fit(x,name,158,y+49,585,34,800);
+    fit(x,name,160,y+55,575,39,800);
 
-    x.fillStyle="#5B6269";
-    x.font="600 19px Arial";
-    x.fillText((r.partido||"")+" · "+fmt(r.votos)+" votos",158,y+84);
+    x.fillStyle="#4F565D";
+    x.font="700 24px Arial";
+    x.fillText((r.partido||"")+" · "+fmt(r.votos)+" votos",160,y+96);
 
     x.textAlign="right";
     x.fillStyle="#17191C";
-    x.font="800 40px Arial";
-    x.fillText(pct(p),965,y+53);
+    x.font="800 48px Arial";
+    x.fillText(pct(p),965,y+60);
     x.textAlign="left";
 
-    x.fillStyle="#E9E5DE";
-    rounded(158,y+116,792,10,5);x.fill();
+    x.fillStyle="#E8E4DC";
+    rounded(160,y+127,790,13,6);x.fill();
 
     x.fillStyle=color;
-    const barW=792*Math.min(100,p)/100;
-    if(barW>0){rounded(158,y+116,Math.max(10,barW),10,5);x.fill();}
+    const barW=790*Math.min(100,p)/100;
+    if(barW>0){rounded(160,y+127,Math.max(13,barW),13,6);x.fill();}
 
-    x.fillStyle="#9BA1A6";
-    x.font="600 15px Arial";
-    x.fillText("participação no total computado",158,y+148);
-
-    y+=190;
+    y+=194;
   });
 
-  // rodapé leve
-  x.fillStyle="#D8D2C7";
-  x.fillRect(70,925,940,1);
+  // rodapé
+  x.fillStyle="#D4CEC3";
+  x.fillRect(70,928,940,2);
 
   x.fillStyle="#17191C";
-  x.font="700 18px Arial";
-  x.fillText("Fonte: Tribunal Superior Eleitoral",70,963);
+  x.font="800 23px Arial";
+  x.fillText("Fonte: Tribunal Superior Eleitoral",70,969);
 
   const note=methodNote(s)||"Percentuais calculados sobre o total computado no recorte selecionado.";
-  x.fillStyle="#666D74";
-  x.font="500 15px Arial";
-  writeWrapped(note,70,995,940,20,2);
+  x.fillStyle="#565D64";
+  x.font="600 18px Arial";
+  writeWrapped(note,70,1006,940,24,2);
 
-  x.fillStyle="#8A9096";
-  x.font="700 14px Arial";
-  x.fillText("UEFY · RN NAS URNAS",70,1040);
+  x.fillStyle="#7D848A";
+  x.font="800 18px Arial";
+  x.fillText("UEFY · RN NAS URNAS",70,1050);
 
   x.textAlign="right";
-  x.fillStyle="#B28D00";
-  x.font="800 14px Arial";
-  x.fillText("2022",1010,1040);
+  x.fillStyle="#8A7100";
+  x.font="800 18px Arial";
+  x.fillText("2022",1010,1050);
   x.textAlign="left";
 }
 function updatePublication(s=currentSelection()){const t=makeText(s);$("#postText").value=t;$("#charCount").textContent=t.length+" caracteres";drawCanvas(s)}
