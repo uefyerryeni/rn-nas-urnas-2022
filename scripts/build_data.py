@@ -30,15 +30,18 @@ def download(url):
 def rows(url,include_br=True):
     z=zipfile.ZipFile(io.BytesIO(download(url)))
     csvs=[x for x in z.namelist() if x.lower().endswith(".csv")]
+    rn=next((name for name in csvs if name.lower().endswith("_rn.csv")),None)
+    brasil=next((name for name in csvs if name.lower().endswith("_brasil.csv")),None)
+    br=next((name for name in csvs if name.lower().endswith("_br.csv")),None)
     chosen=[]
-    for name in csvs:
-        low=name.lower()
-        if low.endswith("_rn.csv"):
-            chosen.append(("RN",name))
-        elif include_br and (low.endswith("_brasil.csv") or low.endswith("_br.csv")):
-            chosen.append(("BR",name))
+    if rn:
+        chosen.append(("RN",rn))
+    if include_br:
+        national=brasil or br
+        if national:
+            chosen.append(("BR",national))
     if not chosen:
-        raise RuntimeError("Arquivos RN/BR não encontrados no ZIP do TSE")
+        raise RuntimeError("Arquivos RN/BRASIL não encontrados no ZIP do TSE")
     for scope,name in chosen:
         with z.open(name) as f:
             for row in csv.DictReader(
@@ -141,7 +144,22 @@ assert set(d["zonasNatal"]) >= {"1","2","3","4","69"}, sorted(d["zonasNatal"])
 assert all("Presidente" in v.get("1",{}) for v in d["municipios"].values()), "Presidente 1T ausente"
 assert all("Presidente" in v.get("2",{}) for v in d["municipios"].values()), "Presidente 2T ausente"
 assert d["partidos"], "Base partidária vazia"
+
 assert d["partidosZonasNatal"], "Base partidária por zona de Natal vazia"
+
+def total_candidato(cargo,turno,nome):
+    return sum(
+        x["votos"]
+        for v in d["municipios"].values()
+        for x in v.get(turno,{}).get(cargo,[])
+        if x["nome"]==nome
+    )
+
+# Travas de regressão com totais oficiais consolidados.
+assert total_candidato("Governador","1","FATIMA BEZERRA")==1066496, total_candidato("Governador","1","FATIMA BEZERRA")
+assert total_candidato("Senador","1","ROGÉRIO MARINHO")==708351, total_candidato("Senador","1","ROGÉRIO MARINHO")
+assert total_candidato("Presidente","2","LULA")==1326785, total_candidato("Presidente","2","LULA")
+assert total_candidato("Presidente","2","JAIR BOLSONARO")==711381, total_candidato("Presidente","2","JAIR BOLSONARO")
 
 with open("data/eleicoes-2022.json","w",encoding="utf-8") as f:
     json.dump(d,f,ensure_ascii=False,separators=(",",":"))
