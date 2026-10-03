@@ -1,6 +1,11 @@
 name: Atualizar Achados 2026
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_achados_2026.py'
+      - '.github/workflows/achados-2026.yml'
   schedule:
     - cron: '*/5 20-23 4 10 *'
     - cron: '*/5 0-5 5 10 *'
