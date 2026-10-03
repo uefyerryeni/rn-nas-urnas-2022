@@ -1,7 +1,7 @@
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const OFFICES={gov:"Governador",sen:"Senador",depf:"Deputado Federal",depe:"Deputado Estadual",pres:"Presidente"};
 let db=null,mapFC=null,mesos={},selectedMunicipality="",textMode="full",currentRows=[],currentLabel="Rio Grande do Norte";
-const PARTY_COLORS={"PT":"#d71920","PL":"#183b8f","UNIÃO":"#19a9a2","PP":"#243c8f","MDB":"#2f8b57","PSD":"#f07d22","PSDB":"#1687c9","REPUBLICANOS":"#1f4f9c","PSB":"#e85c25","PDT":"#d62828","PODE":"#2e70b8","SOLIDARIEDADE":"#e85d25","PSOL":"#f3b51b","NOVO":"#f58220","CIDADANIA":"#e35b29","AVANTE":"#186f8c","PSC":"#164a85","PATRIOTA":"#2d6c42","PROS":"#ef7d22","PC do B":"#d71920","PV":"#3a9d3d","REDE":"#54a646"};
+const PARTY_COLORS={"PT":"#d71920","PL":"#183b8f","UNIÃO":"#19a9a2","PP":"#243c8f","MDB":"#2f8b57","PSD":"#f07d22","PSDB":"#1687c9","REPUBLICANOS":"#1f4f9c","PSB":"#e85c25","PDT":"#d62828","PODE":"#2e70b8","SOLIDARIEDADE":"#e85d25","PSOL":"#f3b51b","NOVO":"#f58220","CIDADANIA":"#e35b29","AVANTE":"#186f8c","PSC":"#164a85","PATRIOTA":"#2d6c42","PROS":"#ef7d22","PC DO B":"#d71920","PV":"#3a9d3d","REDE":"#54a646"};
 function partyColor(p){return PARTY_COLORS[String(p||"").toUpperCase()]||"#727b83"}
 const norm=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toUpperCase();
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
