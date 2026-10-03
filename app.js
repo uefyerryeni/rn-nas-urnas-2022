@@ -490,7 +490,16 @@ function drawExtremeMapCanvas(info,s=currentSelection()){
   x.textAlign="right";x.fillStyle="#8A7100";x.fillText("2022",1010,1064);x.textAlign="left";
 }
 function extremeText(info,s=currentSelection()){
-  return "RN nas Urnas · Eleições 2022\n"+info.candidate.nome+" ("+(info.candidate.partido||"")+") · "+officeTitle(s)+"\n\nMaior votação municipal: "+info.max.name+" — "+fmt(info.max.votos)+" votos.\nMenor votação municipal: "+info.min.name+" — "+fmt(info.min.votos)+" votos.\n\nComparação por número absoluto de votos nos 167 municípios do RN.\nFonte: TSE.";
+  const party=info.candidate.partido?" ("+info.candidate.partido+")":"";
+  return "RN NAS URNAS | ELEIÇÕES 2022\n\nOnde "+info.candidate.nome+" teve mais e menos votos no RN?\n\nNa votação para "+officeTitle(s).toLowerCase()+", "+info.candidate.nome+party+" teve sua maior votação municipal em "+info.max.name+", com "+fmt(info.max.votos)+" votos. A menor votação foi registrada em "+info.min.name+", com "+fmt(info.min.votos)+" votos.\n\nA comparação considera o número absoluto de votos computados para a candidatura em cada um dos 167 municípios do Rio Grande do Norte.\n\nDados históricos consolidados das Eleições 2022.\nFonte: Tribunal Superior Eleitoral.";
+}
+function refreshExtremePublication(s=currentSelection()){
+  const info=candidateMunicipalityExtremes(s,$("#extremeCandidate")?.value);
+  if(!info)return;
+  drawExtremeDataCanvas(info,s);drawExtremeMapCanvas(info,s);
+  const t=extremeText(info,s),field=$("#extremePostText"),count=$("#extremeCharCount");
+  if(field)field.value=t;
+  if(count)count.textContent=t.length+" caracteres";
 }
 function updateExtremeTool(s=currentSelection()){
   const box=$("#extremeTool");if(!box)return;
@@ -501,7 +510,7 @@ function updateExtremeTool(s=currentSelection()){
   sel.innerHTML=stateRows.map(r=>'<option value="'+esc(r.nome)+'">'+esc(r.nome)+(r.partido?" · "+esc(r.partido):"")+'</option>').join("");
   if(stateRows.some(r=>r.nome===old))sel.value=old;
   const info=candidateMunicipalityExtremes(s,sel.value);
-  if(info){drawExtremeDataCanvas(info,s);drawExtremeMapCanvas(info,s)}
+  if(info){drawExtremeDataCanvas(info,s);drawExtremeMapCanvas(info,s);const t=extremeText(info,s);if($("#extremePostText"))$("#extremePostText").value=t;if($("#extremeCharCount"))$("#extremeCharCount").textContent=t.length+" caracteres"}
 }
 async function extremeCanvasBlob(id){return new Promise(ok=>$("#"+id).toBlob(ok,"image/png"))}
 async function shareExtremePair(){
@@ -512,7 +521,7 @@ async function shareExtremePair(){
   const files=[
     new File([dataBlob],"rn-nas-urnas-extremos-dados-2022.png",{type:"image/png"}),
     new File([mapBlob],"rn-nas-urnas-extremos-mapas-2022.png",{type:"image/png"})
-  ],text=extremeText(info,s);
+  ],text=$("#extremePostText")?.value||extremeText(info,s);
   if(navigator.share&&navigator.canShare?.({files})){
     try{await navigator.share({title:"RN nas Urnas · Extremos municipais 2022",text,files});return}catch(e){if(e.name==="AbortError")return}
   }
@@ -544,7 +553,9 @@ $("#downloadImage").onclick=async()=>{const b=await canvasBlob("image/jpeg"),u=U
 $("#openX").onclick=async()=>{try{await copyImage()}catch{}const text=makeXText();window.open("https://x.com/intent/post?text="+encodeURIComponent(text),"_blank","noopener")};
 $("#shareBundle").onclick=async()=>{const b=await canvasBlob("image/jpeg"),file=new File([b],"rn-nas-urnas-2022.jpg",{type:"image/jpeg"}),text=$("#postText").value;if(navigator.share&&navigator.canShare?.({files:[file]})){try{await navigator.share({text,files:[file]});return}catch(e){if(e.name==="AbortError")return}}try{await copyImage();alert("Imagem copiada. O texto permanece no campo acima para ser copiado separadamente.")}catch{}};
 $("#shareBoth").onclick=shareCardAndMap;
-$("#extremeCandidate").onchange=()=>{const s=currentSelection(),info=candidateMunicipalityExtremes(s,$("#extremeCandidate").value);if(info){drawExtremeDataCanvas(info,s);drawExtremeMapCanvas(info,s)}};
+$("#extremeCandidate").onchange=()=>refreshExtremePublication(currentSelection());
+$("#copyExtremeText").onclick=async()=>{const t=$("#extremePostText").value;await navigator.clipboard.writeText(t);$("#copyExtremeText").textContent="Copiado";setTimeout(()=>$("#copyExtremeText").textContent="Copiar texto",1000)};
+$("#openExtremeX").onclick=()=>window.open("https://x.com/intent/post?text="+encodeURIComponent($("#extremePostText").value),"_blank","noopener");
 $("#shareExtremes").onclick=shareExtremePair;
 $("#copyMapImage").onclick=async()=>{try{await copyMapImage();$("#copyMapImage").textContent="Mapa copiado";setTimeout(()=>$("#copyMapImage").textContent="Copiar imagem",1200)}catch{alert("Este navegador não permite copiar o mapa diretamente.")}};
 $("#downloadMap").onclick=async()=>{const b=await mapCanvasBlob(),u=URL.createObjectURL(b),a=document.createElement("a");a.href=u;a.download="rn-nas-urnas-mapa-2022.png";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};
