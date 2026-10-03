@@ -21,3 +21,17 @@ exploreBtn.onclick=()=>{
  const total=rows.reduce((s,x)=>s+x.votos,0);
  resultBox.innerHTML='<strong>'+m+' · '+(cargoLabels[c]||c)+' · Eleições 2022</strong><div class="official-list">'+rows.slice(0,8).map((x,i)=>'<p><b>'+(i+1)+'. '+x.nome+'</b> <span>'+x.partido+' · '+x.votos.toLocaleString("pt-BR")+' votos · '+(total?100*x.votos/total:0).toFixed(2).replace(".",",")+'%</span></p>').join("")+'</div><small>Dados históricos consolidados · Fonte: TSE</small>';
 };
+
+function cardCanvas(){
+ const el=document.createElement("canvas");el.width=1080;el.height=1080;const x=el.getContext("2d");
+ x.fillStyle="#f4efe4";x.fillRect(0,0,1080,1080);x.fillStyle="#f5c400";x.fillRect(0,0,1080,26);
+ x.fillStyle="#17191c";x.font="900 36px Arial";x.fillText("RN NAS URNAS",72,105);x.font="700 23px Arial";x.fillText("DADOS HISTÓRICOS · ELEIÇÕES 2022",72,148);
+ x.fillStyle="#fff";x.fillRect(72,210,936,650);x.fillStyle="#17191c";x.font="900 104px Arial";x.fillText(posterTitle.textContent.slice(0,18),118,425);
+ x.font="700 42px Arial";const words=posterSub.textContent.split(" ");let line="",y=525;for(const w of words){const t=line+w+" ";if(x.measureText(t).width>820){x.fillText(line,118,y);line=w+" ";y+=58}else line=t}x.fillText(line,118,y);
+ x.font="700 23px Arial";x.fillText("Fonte: Justiça Eleitoral · UEFY",118,808);x.fillStyle="#17191c";x.fillRect(0,930,1080,150);x.fillStyle="#fff";x.font="700 25px Arial";x.fillText("RN NAS URNAS · ARQUIVO ELEITORAL 2022",72,1015);return el;
+}
+const jpegBlob=()=>new Promise(ok=>cardCanvas().toBlob(ok,"image/jpeg",.94));
+async function copyCardImage(){if(!navigator.clipboard?.write||!window.ClipboardItem)throw Error("clipboard");const b=await new Promise(ok=>cardCanvas().toBlob(ok,"image/png"));await navigator.clipboard.write([new ClipboardItem({"image/png":b})])}
+document.querySelector("#copyImageBtn")?.addEventListener("click",async()=>{try{await copyCardImage();alert("Imagem copiada.")}catch(e){alert("Seu navegador não permitiu copiar a imagem. Use Baixar imagem.")}});
+document.querySelector("#downloadImageBtn")?.addEventListener("click",async()=>{const b=await jpegBlob(),u=URL.createObjectURL(b),a=document.createElement("a");a.href=u;a.download="rn-nas-urnas-2022.jpg";a.click();setTimeout(()=>URL.revokeObjectURL(u),1200)});
+document.querySelector("#shareXBtn")?.addEventListener("click",async()=>{const text=(copy.value||"RN nas Urnas · Eleições 2022").slice(0,280),b=await jpegBlob(),file=new File([b],"rn-nas-urnas-2022.jpg",{type:"image/jpeg"});if(navigator.share&&navigator.canShare?.({files:[file]})){try{await navigator.share({text,files:[file]});return}catch(e){if(e.name==="AbortError")return}}try{await copyCardImage()}catch(e){}window.open("https://x.com/intent/post?text="+encodeURIComponent(text),"_blank","noopener")});
