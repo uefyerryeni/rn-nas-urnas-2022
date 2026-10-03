@@ -1,0 +1,40 @@
+name: Validar RN nas Urnas 2022
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar sintaxe JavaScript
+        run: node --check app.js
+      - name: Verificar associação TSE/IBGE
+        run: |
+          python - <<'PY'
+          import json,re,unicodedata
+          d=json.load(open("data/eleicoes-2022.json",encoding="utf-8"))
+          g=json.load(open("data/rn-municipios.geojson",encoding="utf-8"))
+          m=json.load(open("data/mesorregioes.json",encoding="utf-8"))
+          aliases={"ACU":"ASSU","ARES":"AREZ","JANUARIO CICCO":"BOA SAUDE"}
+          def norm(s):
+              raw="".join(c for c in unicodedata.normalize("NFD",s or "") if unicodedata.category(c)!="Mn").upper()
+              raw=re.sub(r"[^A-Z0-9]+"," ",raw).strip()
+              raw=re.sub(r"\s+"," ",raw)
+              return aliases.get(raw,raw)
+          assert len(d["municipios"])==167
+          assert len(g["features"])==167
+          keys={norm(k):k for k in d["municipios"]}
+          missing=[f["properties"]["nome"] for f in g["features"] if norm(f["properties"]["nome"]) not in keys]
+          assert not missing, missing
+          mesos={k:{norm(x) for x in v} for k,v in m.items()}
+          issues=[k for k in d["municipios"] if sum(norm(k) in s for s in mesos.values())!=1]
+          assert not issues, issues
+          assert keys[norm("Açu")]=="ASSÚ"
+          print("OK: 167 municípios associados entre mapa, TSE e mesorregiões")
+          PY
