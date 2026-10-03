@@ -1,23 +1,53 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Diagnóstico RN nas Urnas</title><style>body{font:16px system-ui;margin:24px;background:#f6f2e9;color:#17191c}.box{max-width:760px;margin:auto;background:#fff;padding:22px;border:1px solid #ddd5c8;border-radius:14px}h1{margin-top:0}.row{padding:10px 0;border-bottom:1px solid #eee}.ok{color:#147a3f}.bad{color:#b42318}code{font-size:13px;word-break:break-all}.copy{margin-top:16px;padding:10px 14px;border:0;border-radius:10px;background:#f5c400;font-weight:700}</style></head><body><div class="box"><h1>Diagnóstico RN nas Urnas</h1><p>Esta página testa os arquivos publicados sem depender do app principal.</p><div id="out">Testando…</div><button class="copy" id="copy">Copiar diagnóstico</button></div><script>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Diagnóstico RN nas Urnas</title><style>body{font:16px system-ui;margin:24px;background:#f6f2e9;color:#17191c}.box{max-width:820px;margin:auto;background:#fff;padding:22px;border:1px solid #ddd5c8;border-radius:14px}h1{margin-top:0}.row{padding:10px 0;border-bottom:1px solid #eee}.ok{color:#147a3f}.bad{color:#b42318}.wait{color:#6b7280}code{font-size:13px;word-break:break-all}.copy{margin-top:16px;padding:10px 14px;border:0;border-radius:10px;background:#f5c400;font-weight:700}iframe{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}</style></head><body><div class="box"><h1>Diagnóstico RN nas Urnas</h1><p>Testa arquivos publicados e a execução real da página principal neste navegador.</p><div id="out">Testando…</div><button class="copy" id="copy">Copiar diagnóstico</button><iframe id="probe"></iframe></div><script>
 (async()=>{
  const out=document.getElementById('out'),lines=[];
+ const render=()=>out.innerHTML=lines.map(x=>'<div class="row '+(x.startsWith('OK')?'ok':x.startsWith('ERRO')?'bad':'wait')+'"><code>'+x.replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</code></div>').join('');
  const test=async(name,url,parse)=>{
   try{
-   const r=await fetch(url+'?diag='+Date.now(),{cache:'no-store'});
+   const r=await fetch(url+(url.includes('?')?'&':'?')+'diag='+Date.now(),{cache:'no-store'});
    const txt=await r.text();
    let extra='HTTP '+r.status+' · '+txt.length+' bytes';
    if(!r.ok) throw new Error(extra);
    if(parse==='json'){const j=JSON.parse(txt);extra+=' · JSON ok';if(url.includes('eleicoes-2022'))extra+=' · municípios '+Object.keys(j.municipios||{}).length;if(url.includes('rn-municipios'))extra+=' · geometrias '+(j.features||[]).length}
-   if(parse==='js'){new Function(txt);extra+=' · sintaxe JS ok';extra+=' · correção legenda '+(txt.includes('$$("#rnMap .rn-mun").map')?'ok':'ausente');}
+   if(parse==='js'){new Function(txt);extra+=' · sintaxe JS ok';extra+=' · seletores de lista '+(txt.includes('$$("#rnMap .rn-mun").map')&&txt.includes('$$(".territory-bar button").forEach')?'ok':'ERRO')}
    lines.push('OK | '+name+' | '+extra);
   }catch(e){lines.push('ERRO | '+name+' | '+e.message)}
+  render();
  };
  await test('index.html','index.html');
  await test('app.js','app.js','js');
  await test('base eleitoral','data/eleicoes-2022.json','json');
  await test('mapa RN','data/rn-municipios.geojson','json');
  await test('mesorregiões','data/mesorregioes.json','json');
- out.innerHTML=lines.map(x=>'<div class="row '+(x.startsWith('OK')?'ok':'bad')+'"><code>'+x.replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</code></div>').join('');
- document.getElementById('copy').onclick=()=>navigator.clipboard.writeText(lines.join('\n'));
+
+ lines.push('AGUARDE | execução real | abrindo página principal com cache novo');
+ render();
+ const probe=document.getElementById('probe');
+ const token=Date.now();
+ let finished=false;
+ const finish=()=>{
+   if(finished)return;finished=true;
+   try{
+     const d=probe.contentDocument,w=probe.contentWindow;
+     const status=d?.querySelector('#statusTitle')?.textContent?.trim()||'(sem status)';
+     const statusText=d?.querySelector('#statusText')?.textContent?.trim()||'(sem texto)';
+     const map=d?.querySelectorAll('#rnMap .rn-mun')?.length||0;
+     const rows=d?.querySelectorAll('#resultRows .result-row')?.length||0;
+     const chars=d?.querySelector('#charCount')?.textContent?.trim()||'(sem contador)';
+     const canvas=d?.querySelector('#shareCanvas');
+     const canvasOk=!!(canvas&&canvas.width===1080&&canvas.height===1080);
+     const ok=status==='Resultado histórico carregado'&&map===167&&rows>0&&canvasOk;
+     lines.push((ok?'OK':'ERRO')+' | execução real | status='+status+' | '+statusText+' | mapa='+map+' | resultados='+rows+' | publicação='+chars+' | canvas='+(canvasOk?'ok':'erro'));
+     if(w?.db) lines.push('OK | variável db | carregada');
+   }catch(e){
+     lines.push('ERRO | execução real | '+e.message);
+   }
+   render();
+ };
+ probe.onload=()=>setTimeout(finish,3500);
+ probe.src='./?runtime_diag='+token;
+ setTimeout(finish,8000);
+
+ document.getElementById('copy').onclick=()=>navigator.clipboard.writeText(lines.filter(x=>!x.startsWith('AGUARDE')).join('\n'));
 })();
 </script></body></html>
