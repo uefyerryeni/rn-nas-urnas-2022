@@ -12,7 +12,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: rn-2022-build
+  group: rn-2022-build-v2
   cancel-in-progress: true
 jobs:
   build:
