@@ -46,11 +46,12 @@ function zoneRows(zone,office,round){if(office==="party"){const cargo=$("#partyO
 function syncTerritoryButtons(){const scope=$("#scopeSelect").value,meso=$("#mesoSelect").value;$$(".territory-bar button").forEach(b=>b.classList.toggle("active",b.dataset.scope===scope||(scope==="meso"&&b.dataset.meso===meso)))}
 function syncFilters(){const scope=$("#scopeSelect").value,office=$("#officeSelect").value;$("#mesoField").hidden=scope!=="meso";$("#munField").hidden=scope!=="municipality";$("#zoneField").hidden=scope!=="natalzone";$("#partyField").hidden=office!=="party";$("#subfilters").hidden=scope==="state"&&office!=="party";$("#roundSelect").disabled=office!=="pres";if(office!=="pres")$("#roundSelect").value="1";syncTerritoryButtons();renderMap()}
 function currentSelection(){const office=$("#officeSelect").value,round=$("#roundSelect").value,scope=$("#scopeSelect").value;let rows=[],label="Rio Grande do Norte";if(scope==="state"){rows=aggregate(allNames(),office,round)}else if(scope==="meso"){label=$("#mesoSelect").value;rows=aggregate(allNames().filter(n=>mesos[label]?.has(norm(n))),office,round)}else if(scope==="municipality"){label=$("#municipalityInput").value.trim()||selectedMunicipality||"Município";rows=rowsForMunicipality(label,office,round)}else{label="Natal · "+$("#zoneSelect").value+"ª Zona";rows=zoneRows($("#zoneSelect").value,office,round)}return{office,round,scope,rows,label}}
-function applySelection(){if(!db){$("#statusTitle").textContent="Base oficial ainda não carregada";return}const s=currentSelection();currentRows=s.rows;currentLabel=s.label;selectedMunicipality=s.scope==="municipality"?s.label:"";markMap();const title=s.office==="party"?"Partidos · "+($("#partyOfficeSelect")?.value||"Deputado Federal"):OFFICES[s.office];$("#viewTitle").textContent=s.label;$("#viewSubtitle").textContent=title+" · "+s.round+"º turno · Eleições 2022";$("#resultTitle").textContent=title;$("#resultMeta").textContent=s.label+" · 2022";$("#statusTitle").textContent=s.rows.length?"Resultado histórico carregado":"Sem resultado para este recorte";$("#statusText").textContent=s.rows.length?"Dados consolidados das Eleições 2022 · fonte TSE.":"A combinação selecionada não possui registros na base processada.";renderRows(s.rows,s.office);renderInsights(s);updatePublication(s);updateMapShareUI(s)}
-function renderRows(rows,office){const box=$("#resultRows");if(!rows.length){box.innerHTML='<div class="empty">Nenhum registro disponível neste recorte.</div>';return}const total=rows.reduce((a,x)=>a+Number(x.votos||0),0);box.innerHTML=rows.slice(0,12).map((x,i)=>{const p=total?x.votos/total*100:0,name=office==="party"?x.partido:x.nome,meta=office==="party"?(x.federacao?x.federacao:"votos válidos do partido"):([x.partido,x.numero].filter(Boolean).join(" · ")),color=partyColor(x.partido);return '<div class="result-row"><div class="who"><b>'+(i+1)+'. '+esc(name)+'</b><small>'+esc(meta)+'</small></div><span class="bar"><i style="width:'+Math.min(100,p)+'%;background:'+color+'"></i></span><span class="pct">'+pct(p)+'</span></div>'}).join("")}
+function applySelection(){if(!db){$("#statusTitle").textContent="Base oficial ainda não carregada";return}const s=currentSelection();currentRows=s.rows;currentLabel=s.label;selectedMunicipality=s.scope==="municipality"?s.label:"";markMap();const title=s.office==="party"?"Partidos · "+partyOfficeLabel():OFFICES[s.office];$("#viewTitle").textContent=s.label;$("#viewSubtitle").textContent=title+" · "+s.round+"º turno · Eleições 2022";$("#resultTitle").textContent=title;$("#resultMeta").textContent=s.label+" · 2022";$("#statusTitle").textContent=s.rows.length?"Resultado histórico carregado":"Sem resultado para este recorte";$("#statusText").textContent=s.rows.length?"Dados consolidados das Eleições 2022 · fonte TSE.":"A combinação selecionada não possui registros na base processada.";renderRows(s.rows,s.office);renderInsights(s);updatePublication(s);updateMapShareUI(s)}
+function renderRows(rows,office){const box=$("#resultRows");if(!rows.length){box.innerHTML='<div class="empty">Nenhum registro disponível neste recorte.</div>';return}const total=rows.reduce((a,x)=>a+Number(x.votos||0),0);box.innerHTML=rows.slice(0,12).map((x,i)=>{const p=total?x.votos/total*100:0,name=office==="party"?x.partido:x.nome,meta=office==="party"?(($("#partyOfficeSelect")?.value==="Senador")?"votos das candidaturas ao Senado":(x.federacao?x.federacao:"votos válidos do partido")):([x.partido,x.numero].filter(Boolean).join(" · ")),color=partyColor(x.partido);return '<div class="result-row"><div class="who"><b>'+(i+1)+'. '+esc(name)+'</b><small>'+esc(meta)+'</small></div><span class="bar"><i style="width:'+Math.min(100,p)+'%;background:'+color+'"></i></span><span class="pct">'+pct(p)+'</span></div>'}).join("")}
 function renderInsights(s){const box=$("#insights");if(!s.rows.length){box.innerHTML='<article class="card"><span>SEM DADOS</span><strong>—</strong><p>Não há leitura disponível para esta combinação.</p></article>';return}const total=s.rows.reduce((a,x)=>a+Number(x.votos||0),0),a=s.rows[0],b=s.rows[1],ap=total?a.votos/total*100:0,gap=b&&total?(a.votos-b.votos)/total*100:null,name=s.office==="party"?a.partido:a.nome;box.innerHTML='<article class="card"><span>MAIOR VOTAÇÃO NO RECORTE</span><strong>'+esc(name)+'</strong><p>'+fmt(a.votos)+' votos · '+pct(ap)+'</p></article><article class="card"><span>VOTOS COMPUTADOS NESTA LISTA</span><strong>'+fmt(total)+'</strong><p>'+esc(s.label)+' · '+s.round+'º turno</p></article>'+(gap!==null?'<article class="card"><span>DIFERENÇA ENTRE 1º E 2º</span><strong>'+pct(gap)+'</strong><p>Diferença descritiva dentro do recorte selecionado.</p></article>':'')}
 
-function officeTitle(s){return s.office==="party"?"Partidos · "+($("#partyOfficeSelect")?.value||"Deputado Federal"):OFFICES[s.office]}
+function partyOfficeLabel(){const cargo=$("#partyOfficeSelect")?.value||"Deputado Federal";return cargo==="Senador"?"Senado":cargo}
+function officeTitle(s){return s.office==="party"?"Partidos · "+partyOfficeLabel():OFFICES[s.office]}
 function scopeTitle(s){
   if(s.scope==="meso")return "Mesorregião histórica · "+s.label;
   if(s.scope==="municipality")return "Município · "+s.label;
@@ -64,7 +65,7 @@ function scopeIntro(s){
   return "No Rio Grande do Norte";
 }
 function totalDescriptor(s){
-  if(s.office==="party")return "votos válidos atribuídos aos partidos (nominais + legenda)";
+  if(s.office==="party"){const cargo=$("#partyOfficeSelect")?.value||"Deputado Federal";return cargo==="Senador"?"votos válidos das candidaturas ao Senado agrupados por partido":"votos válidos atribuídos aos partidos (nominais + legenda)"}
   if(["depf","depe"].includes(s.office))return "votos nominais computados para as candidaturas";
   return "votos válidos computados para as candidaturas";
 }
@@ -72,7 +73,7 @@ function methodNote(s){
   const notes=[];
   if(s.scope==="meso")notes.push("Mesorregião é um recorte histórico do IBGE e não corresponde à divisão regional vigente.");
   if(["depf","depe"].includes(s.office))notes.push("A liderança no recorte não determina eleição: deputados são eleitos pelo sistema proporcional.");
-  if(s.office==="party")notes.push("Na leitura por partidos, a totalização combina votos nominais válidos e votos válidos de legenda.");
+  if(s.office==="party"){const cargo=$("#partyOfficeSelect")?.value||"Deputado Federal";notes.push(cargo==="Senador"?"Na leitura Partidos · Senado, os votos válidos das candidaturas ao Senado são agrupados pelo partido da candidatura.":"Na leitura por partidos, a totalização combina votos nominais válidos e votos válidos de legenda.");}
   return notes.join(" ");
 }
 
@@ -251,7 +252,7 @@ function mapShareCaption(s=currentSelection()){
   const title=officeTitle(s);
   const scope=scopeTitle(s);
   let desc=s.office==="party"
-    ?"A cor de cada município representa o partido com maior votação no recorte municipal."
+    ?($("#partyOfficeSelect")?.value==="Senador"?"A cor de cada município representa o partido cuja candidatura ao Senado teve maior votação no município.":"A cor de cada município representa o partido com maior votação no recorte municipal.")
     :"A cor de cada município representa o partido da candidatura com maior votação no município.";
   if(["depf","depe"].includes(s.office))desc+=" A liderança municipal é descritiva e não determina eleição.";
   return "RN nas Urnas · Mapa Eleitoral 2022\n"+title+" · "+scope+" · "+s.round+"º turno\n\n"+desc+"\n\nFonte: TSE.";
@@ -345,7 +346,7 @@ function drawMapShareCanvas(s=currentSelection()){
 
   ctx.fillStyle="#5C6369";ctx.font="600 17px Arial";
   const note=s.office==="party"
-    ?"Cores = partido com maior votação em cada município."
+    ?($("#partyOfficeSelect")?.value==="Senador"?"Cores = partido da candidatura ao Senado mais votada em cada município.":"Cores = partido com maior votação em cada município.")
     :"Cores = partido da candidatura com maior votação em cada município.";
   ctx.fillText(note,70,1032);
 

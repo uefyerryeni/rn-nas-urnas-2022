@@ -36,6 +36,8 @@ jobs:
           issues=[k for k in d["municipios"] if sum(norm(k) in s for s in mesos.values())!=1]
           assert not issues, issues
           assert keys[norm("Açu")]=="ASSÚ"
+          senate_party_missing=[k for k,v in d["partidos"].items() if "Senador" not in v.get("1",{})]
+          assert not senate_party_missing, ("Partidos · Senado ausente", senate_party_missing[:10])
           assert open("rn2022-core.js",encoding="utf-8").read().startswith("window.__rn2022Booted=true;")
           assert json.load(open("rn2022-results.json",encoding="utf-8"))["meta"]["ano"]==2022
           assert len(json.load(open("rn2022-map.json",encoding="utf-8"))["features"])==167
