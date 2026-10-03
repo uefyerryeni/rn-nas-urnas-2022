@@ -459,7 +459,7 @@ function refreshExtremePublication(s=currentSelection()){
 function updateExtremeTool(s=currentSelection()){
   const box=$("#extremeTool");if(!box)return;
   const eligible=s.scope==="state"&&s.office!=="party"&&s.rows.length;
-  box.hidden=!eligible;const quick=$("#mobileExtremeLink");if(quick)quick.hidden=!eligible;if(!eligible)return;
+  box.hidden=!eligible;if(!eligible)return;
   const sel=$("#extremeCandidate"),stateRows=aggregate(allNames(),s.office,s.round);if($("#extremeOffice"))$("#extremeOffice").value=s.office;if($("#extremeRound"))$("#extremeRound").value=String(s.round);
   const old=sel.value;
   sel.innerHTML=stateRows.map(r=>'<option value="'+esc(r.nome)+'">'+esc(r.nome)+(r.partido?" · "+esc(r.partido):"")+'</option>').join("");
