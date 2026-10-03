@@ -27,3 +27,5 @@
 .extreme-previews small{display:block;margin-bottom:5px;color:var(--muted);font-size:9px;font-weight:800;text-transform:uppercase}
 .extreme-previews canvas{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:12px;background:#f4f0e7}
 @media(max-width:620px){.extreme-previews{grid-template-columns:1fr}.extreme-help{font-size:12px}.extreme-label{font-size:10px}}
+
+.extreme-previews.single{grid-template-columns:1fr}
