@@ -7,3 +7,9 @@
 .publisher{border-color:#cbc4b7}.canvas-box{background:#ebe5da;padding:10px}.canvas-box canvas{box-shadow:0 8px 24px rgba(23,25,28,.10)}
 .publisher .block-title{margin-top:2px}.publisher textarea{background:#fffefb}
 @media(max-width:520px){.publisher h2{font-size:22px}.canvas-box{padding:6px}}
+
+.map-share-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:10px;padding-top:10px;border-top:1px solid #efede8}
+.map-share-btn{border:1px solid var(--rule);background:#fff;border-radius:9px;padding:9px 8px;font-size:9px;font-weight:700}
+.map-share-btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+.map-share-btn:hover{transform:translateY(-1px)}
+@media(max-width:620px){.map-share-actions{grid-template-columns:1fr 1fr}.map-share-btn{font-size:10px;padding:11px 8px}}
