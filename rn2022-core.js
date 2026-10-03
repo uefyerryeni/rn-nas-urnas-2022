@@ -459,8 +459,8 @@ function refreshExtremePublication(s=currentSelection()){
 function updateExtremeTool(s=currentSelection()){
   const box=$("#extremeTool");if(!box)return;
   const eligible=s.scope==="state"&&s.office!=="party"&&s.rows.length;
-  box.hidden=!eligible;if(!eligible)return;
-  const sel=$("#extremeCandidate"),stateRows=aggregate(allNames(),s.office,s.round);
+  box.hidden=!eligible;const quick=$("#mobileExtremeLink");if(quick)quick.hidden=!eligible;if(!eligible)return;
+  const sel=$("#extremeCandidate"),stateRows=aggregate(allNames(),s.office,s.round);if($("#extremeOffice"))$("#extremeOffice").value=s.office;if($("#extremeRound"))$("#extremeRound").value=String(s.round);
   const old=sel.value;
   sel.innerHTML=stateRows.map(r=>'<option value="'+esc(r.nome)+'">'+esc(r.nome)+(r.partido?" · "+esc(r.partido):"")+'</option>').join("");
   if(stateRows.some(r=>r.nome===old))sel.value=old;
@@ -499,6 +499,9 @@ $("#openX").onclick=async()=>{try{await copyImage()}catch{}const text=makeXText(
 $("#shareBundle").onclick=async()=>{const b=await canvasBlob("image/jpeg"),file=new File([b],"rn-nas-urnas-2022.jpg",{type:"image/jpeg"}),text=$("#postText").value;if(navigator.share&&navigator.canShare?.({files:[file]})){try{await navigator.share({text,files:[file]});return}catch(e){if(e.name==="AbortError")return}}try{await copyImage();alert("Imagem copiada. O texto permanece no campo acima para ser copiado separadamente.")}catch{}};
 $("#shareBoth").onclick=shareCardAndMap;
 $("#extremeCandidate").onchange=()=>refreshExtremePublication(currentSelection());
+$("#extremeOffice").onchange=()=>{$("#officeSelect").value=$("#extremeOffice").value;$("#scopeSelect").value="state";syncFilters();applySelection();requestAnimationFrame(()=>$("#extremeTool").scrollIntoView({behavior:"smooth",block:"start"}))};
+$("#extremeRound").onchange=()=>{$("#roundSelect").value=$("#extremeRound").value;$("#scopeSelect").value="state";syncFilters();applySelection();requestAnimationFrame(()=>$("#extremeTool").scrollIntoView({behavior:"smooth",block:"start"}))};
+$("#mobileExtremeLink").onclick=e=>{if($("#extremeTool").hidden){e.preventDefault();$("#scopeSelect").value="state";if($("#officeSelect").value==="party")$("#officeSelect").value="gov";syncFilters();applySelection();requestAnimationFrame(()=>$("#extremeTool").scrollIntoView({behavior:"smooth",block:"start"}))}};
 $("#copyExtremeText").onclick=async()=>{const t=$("#extremePostText").value;await navigator.clipboard.writeText(t);$("#copyExtremeText").textContent="Copiado";setTimeout(()=>$("#copyExtremeText").textContent="Copiar texto",1000)};
 $("#openExtremeX").onclick=async()=>{try{const b=await extremeCanvasBlob("extremeDataCanvas");if(navigator.clipboard?.write&&window.ClipboardItem)await navigator.clipboard.write([new ClipboardItem({"image/png":b})])}catch{}window.open("https://x.com/intent/post?text="+encodeURIComponent($("#extremePostText").value),"_blank","noopener")};
 $("#shareExtremes").onclick=shareExtremePair;
