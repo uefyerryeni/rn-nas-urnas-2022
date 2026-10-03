@@ -27,7 +27,7 @@ def download(url):
     with urllib.request.urlopen(req,timeout=240) as r:
         return r.read()
 
-def rows(url):
+def rows(url,include_br=True):
     z=zipfile.ZipFile(io.BytesIO(download(url)))
     csvs=[x for x in z.namelist() if x.lower().endswith(".csv")]
     chosen=[]
@@ -35,7 +35,7 @@ def rows(url):
         low=name.lower()
         if low.endswith("_rn.csv"):
             chosen.append(("RN",name))
-        elif low.endswith("_brasil.csv") or low.endswith("_br.csv"):
+        elif include_br and (low.endswith("_brasil.csv") or low.endswith("_br.csv")):
             chosen.append(("BR",name))
     if not chosen:
         raise RuntimeError("Arquivos RN/BR não encontrados no ZIP do TSE")
@@ -102,7 +102,7 @@ for rootname in ("municipios","zonasNatal"):
             for cargo,items in list(cargos.items()):
                 cargos[cargo]=sorted(items.values(),key=lambda x:x["votos"],reverse=True)
 
-for scope,r in rows(PART):
+for scope,r in rows(PART,include_br=False):
     if scope!="RN" or s(r.get("SG_UF"))!="RN":
         continue
     m=s(r.get("NM_MUNICIPIO"))
