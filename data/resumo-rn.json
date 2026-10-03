@@ -1,0 +1,8 @@
+{
+  "meta":{"ano":2022,"uf":"RN","status":"consolidado","fonte":"Justiça Eleitoral"},
+  "primeiro_turno":{"comparecimento":2086722,"comparecimento_pct":81.82,"abstencoes":463659,
+    "governador":{"validos":1828974,"candidatos":[{"nome":"Fátima Bezerra","pct":58.31},{"nome":"Fábio Dantas","pct":22.22},{"nome":"Styvenson Valentim","pct":16.80}]},
+    "senador":{"validos":1692509,"candidatos":[{"nome":"Rogério Marinho","pct":41.85},{"nome":"Carlos Eduardo","pct":33.40},{"nome":"Rafael Motta","pct":22.76}]}
+  },
+  "segundo_turno":{"presidente":{"validos":2038166,"candidatos":[{"nome":"Lula","votos":1326785,"pct":65.10},{"nome":"Jair Bolsonaro","votos":711381,"pct":34.90}]},"comparecimento":2108799,"comparecimento_pct":82.56,"abstencoes":445527}
+}
