@@ -60,7 +60,7 @@ d={
     "partidosZonasNatal":{}
 }
 
-for r in rows(CAND):
+for scope,r in rows(CAND):
     if s(r.get("SG_UF"))!="RN":
         continue
     m=s(r.get("NM_MUNICIPIO"))
@@ -102,8 +102,8 @@ for rootname in ("municipios","zonasNatal"):
             for cargo,items in list(cargos.items()):
                 cargos[cargo]=sorted(items.values(),key=lambda x:x["votos"],reverse=True)
 
-for r in rows(PART):
-    if s(r.get("SG_UF"))!="RN":
+for scope,r in rows(PART):
+    if scope!="RN" or s(r.get("SG_UF"))!="RN":
         continue
     m=s(r.get("NM_MUNICIPIO"))
     z=s(r.get("NR_ZONA"))
