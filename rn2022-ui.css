@@ -38,3 +38,8 @@
   .extreme-quick-controls{position:sticky;top:8px;z-index:12;padding:8px;background:rgba(255,253,248,.96);border:1px solid var(--rule);border-radius:12px;box-shadow:0 8px 20px rgba(23,25,28,.08)}
   #extremeTool{scroll-margin-top:8px}
 }
+
+/* Navegação Arquivo 2022 → Achados 2026 */
+.archive-strip .wrap{justify-content:space-between}.archive-strip .wrap>div{display:flex;align-items:center;gap:12px}.back-achados{color:#17191c;background:var(--yellow);text-decoration:none;font-size:9px;font-weight:800;padding:6px 9px;border-radius:7px;white-space:nowrap}.back-achados:hover{filter:brightness(.96)}
+@media(max-width:760px){.mobile-dock{grid-template-columns:1.25fr repeat(3,1fr)}.mobile-dock .dock-home{background:var(--yellow);color:var(--ink);font-weight:800;border-radius:10px}.archive-strip .wrap{justify-content:space-between}.archive-strip .wrap>div{min-width:0}.back-achados{font-size:9px;padding:7px 8px}}
+@media(max-width:520px){.archive-strip .wrap>div span{display:none}.back-achados{display:block}.mobile-dock a{padding:9px 5px}}
