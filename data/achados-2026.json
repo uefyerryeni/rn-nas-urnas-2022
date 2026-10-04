@@ -1,8 +1,8 @@
 {
   "status": "live",
-  "generated_at": "2026-10-04T19:34:38-03:00",
+  "generated_at": "2026-10-04T19:46:56-03:00",
   "source_generated_at": "04/10/2026 · 19:32:09",
-  "progress": 83.47,
+  "progress": 83.56,
   "message": "Resultados oficiais de 2026 carregados para comparação.",
   "source": "Tribunal Superior Eleitoral · EA20",
   "offices": {
@@ -199,17 +199,17 @@
       ]
     },
     "gov": {
-      "progress": 83.39,
+      "progress": 83.56,
       "final": false,
-      "generated_at": "04/10/2026 · 19:31:38",
+      "generated_at": "04/10/2026 · 19:32:07",
       "candidates": [
         {
           "id": "200002534001",
           "number": "13",
           "name": "CADU DE LULA",
           "party": "PT",
-          "votes": 595083,
-          "pct": 36.41,
+          "votes": 595948,
+          "pct": 36.38,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -219,8 +219,8 @@
           "number": "44",
           "name": "ALLYSON",
           "party": "UNIÃO",
-          "votes": 593463,
-          "pct": 36.31,
+          "votes": 594947,
+          "pct": 36.32,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -230,8 +230,8 @@
           "number": "22",
           "name": "ÁLVARO DIAS",
           "party": "PL",
-          "votes": 442546,
-          "pct": 27.08,
+          "votes": 443924,
+          "pct": 27.1,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -241,7 +241,7 @@
           "number": "80",
           "name": "ARINALDA DO MLB",
           "party": "UP",
-          "votes": 1230,
+          "votes": 1233,
           "pct": 0.08,
           "elected": false,
           "status": "",
@@ -298,19 +298,19 @@
       "parties": [
         {
           "party": "PT",
-          "votes": 595083
+          "votes": 595948
         },
         {
           "party": "UNIÃO",
-          "votes": 593463
+          "votes": 594947
         },
         {
           "party": "PL",
-          "votes": 442546
+          "votes": 443924
         },
         {
           "party": "UP",
-          "votes": 1230
+          "votes": 1233
         },
         {
           "party": "PSTU",
@@ -331,17 +331,17 @@
       ]
     },
     "sen": {
-      "progress": 83.39,
+      "progress": 83.56,
       "final": false,
-      "generated_at": "04/10/2026 · 19:31:38",
+      "generated_at": "04/10/2026 · 19:32:08",
       "candidates": [
         {
           "id": "200002534448",
           "number": "200",
           "name": "STYVENSON VALENTIM",
           "party": "PODE",
-          "votes": 870443,
-          "pct": 29.28,
+          "votes": 872704,
+          "pct": 29.29,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -351,8 +351,8 @@
           "number": "131",
           "name": "SAMANDA DE LULA",
           "party": "PT",
-          "votes": 528148,
-          "pct": 17.77,
+          "votes": 528991,
+          "pct": 17.76,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -362,7 +362,7 @@
           "number": "555",
           "name": "ZENAIDE MAIA",
           "party": "PSD",
-          "votes": 512837,
+          "votes": 513786,
           "pct": 17.25,
           "elected": false,
           "status": "",
@@ -373,8 +373,8 @@
           "number": "222",
           "name": "CORONEL HÉLIO",
           "party": "PL",
-          "votes": 509917,
-          "pct": 17.15,
+          "votes": 511580,
+          "pct": 17.17,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -384,8 +384,8 @@
           "number": "123",
           "name": "RAFAEL MOTTA",
           "party": "PDT",
-          "votes": 425190,
-          "pct": 14.3,
+          "votes": 425858,
+          "pct": 14.29,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -395,7 +395,7 @@
           "number": "444",
           "name": "TÉRCIO TINÔCO",
           "party": "UNIÃO",
-          "votes": 83265,
+          "votes": 83445,
           "pct": 2.8,
           "elected": false,
           "status": "",
@@ -406,7 +406,7 @@
           "number": "500",
           "name": "SANDRO PIMENTEL",
           "party": "PSOL",
-          "votes": 18367,
+          "votes": 18390,
           "pct": 0.62,
           "elected": false,
           "status": "",
@@ -417,7 +417,7 @@
           "number": "501",
           "name": "SONIA GODEIRO",
           "party": "PSOL",
-          "votes": 11817,
+          "votes": 11831,
           "pct": 0.4,
           "elected": false,
           "status": "",
@@ -428,7 +428,7 @@
           "number": "800",
           "name": "PROFESSOR GUILHERME",
           "party": "UP",
-          "votes": 4614,
+          "votes": 4624,
           "pct": 0.16,
           "elected": false,
           "status": "",
@@ -439,7 +439,7 @@
           "number": "166",
           "name": "ROSÁLIA FERNANDES",
           "party": "PSTU",
-          "votes": 3156,
+          "votes": 3160,
           "pct": 0.11,
           "elected": false,
           "status": "",
@@ -450,7 +450,7 @@
           "number": "161",
           "name": "LUCIANA MANDU",
           "party": "PSTU",
-          "votes": 2092,
+          "votes": 2093,
           "pct": 0.07,
           "elected": false,
           "status": "",
@@ -461,7 +461,7 @@
           "number": "369",
           "name": "CLÓVIS COSTA DO COLETIVO NÓS",
           "party": "AGIR",
-          "votes": 1450,
+          "votes": 1454,
           "pct": 0.05,
           "elected": false,
           "status": "",
@@ -472,7 +472,7 @@
           "number": "360",
           "name": "GARI WENDELL BATISTA",
           "party": "AGIR",
-          "votes": 1356,
+          "votes": 1359,
           "pct": 0.05,
           "elected": false,
           "status": "",
@@ -485,43 +485,43 @@
       "parties": [
         {
           "party": "PODE",
-          "votes": 870443
+          "votes": 872704
         },
         {
           "party": "PT",
-          "votes": 528148
+          "votes": 528991
         },
         {
           "party": "PSD",
-          "votes": 512837
+          "votes": 513786
         },
         {
           "party": "PL",
-          "votes": 509917
+          "votes": 511580
         },
         {
           "party": "PDT",
-          "votes": 425190
+          "votes": 425858
         },
         {
           "party": "UNIÃO",
-          "votes": 83265
+          "votes": 83445
         },
         {
           "party": "PSOL",
-          "votes": 30184
+          "votes": 30221
         },
         {
           "party": "PSTU",
-          "votes": 5248
+          "votes": 5253
         },
         {
           "party": "UP",
-          "votes": 4614
+          "votes": 4624
         },
         {
           "party": "AGIR",
-          "votes": 2806
+          "votes": 2813
         }
       ]
     },
@@ -3510,17 +3510,17 @@
     },
     "AFONSO BEZERRA": {
       "code": "16055",
-      "progress": 27.27,
+      "progress": 42.42,
       "final": false,
-      "generated_at": "04/10/2026 · 19:16:13",
+      "generated_at": "04/10/2026 · 19:30:37",
       "candidates": [
         {
           "id": "280002542548",
           "number": "13",
           "name": "LULA",
           "party": "PT",
-          "votes": 1429,
-          "pct": 63.4,
+          "votes": 2263,
+          "pct": 68.43,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -3530,8 +3530,8 @@
           "number": "22",
           "name": "FLAVIO BOLSONARO",
           "party": "PL",
-          "votes": 700,
-          "pct": 31.06,
+          "votes": 887,
+          "pct": 26.82,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -3541,8 +3541,8 @@
           "number": "70",
           "name": "ESCRITOR AUGUSTO CURY",
           "party": "AVANTE",
-          "votes": 65,
-          "pct": 2.88,
+          "votes": 87,
+          "pct": 2.63,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -3552,8 +3552,8 @@
           "number": "14",
           "name": "RENAN SANTOS",
           "party": "MISSÃO",
-          "votes": 39,
-          "pct": 1.73,
+          "votes": 47,
+          "pct": 1.42,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -3563,8 +3563,8 @@
           "number": "55",
           "name": "RONALDO CAIADO",
           "party": "PSD",
-          "votes": 19,
-          "pct": 0.84,
+          "votes": 21,
+          "pct": 0.64,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -3575,7 +3575,7 @@
           "name": "ZEMA",
           "party": "NOVO",
           "votes": 2,
-          "pct": 0.09,
+          "pct": 0.06,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -10710,17 +10710,17 @@
     },
     "MACAÍBA": {
       "code": "17418",
-      "progress": 49.42,
+      "progress": 60.47,
       "final": false,
-      "generated_at": "04/10/2026 · 19:24:41",
+      "generated_at": "04/10/2026 · 19:29:38",
       "candidates": [
         {
           "id": "280002542548",
           "number": "13",
           "name": "LULA",
           "party": "PT",
-          "votes": 11761,
-          "pct": 55.92,
+          "votes": 14929,
+          "pct": 56.99,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -10730,8 +10730,8 @@
           "number": "22",
           "name": "FLAVIO BOLSONARO",
           "party": "PL",
-          "votes": 8078,
-          "pct": 38.41,
+          "votes": 9810,
+          "pct": 37.45,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -10741,8 +10741,8 @@
           "number": "70",
           "name": "ESCRITOR AUGUSTO CURY",
           "party": "AVANTE",
-          "votes": 647,
-          "pct": 3.08,
+          "votes": 789,
+          "pct": 3.01,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -10752,8 +10752,8 @@
           "number": "14",
           "name": "RENAN SANTOS",
           "party": "MISSÃO",
-          "votes": 323,
-          "pct": 1.54,
+          "votes": 389,
+          "pct": 1.48,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -10763,8 +10763,8 @@
           "number": "55",
           "name": "RONALDO CAIADO",
           "party": "PSD",
-          "votes": 191,
-          "pct": 0.91,
+          "votes": 236,
+          "pct": 0.9,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -10774,8 +10774,8 @@
           "number": "27",
           "name": "CLARIANA BARAO",
           "party": "DC",
-          "votes": 8,
-          "pct": 0.04,
+          "votes": 13,
+          "pct": 0.05,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -10785,7 +10785,7 @@
           "number": "80",
           "name": "SAMARA",
           "party": "UP",
-          "votes": 8,
+          "votes": 11,
           "pct": 0.04,
           "elected": false,
           "status": "",
@@ -10796,8 +10796,8 @@
           "number": "30",
           "name": "ZEMA",
           "party": "NOVO",
-          "votes": 7,
-          "pct": 0.03,
+          "votes": 11,
+          "pct": 0.04,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -11576,7 +11576,7 @@
       "code": "17590",
       "progress": 84.4,
       "final": false,
-      "generated_at": "04/10/2026 · 19:28:53",
+      "generated_at": "04/10/2026 · 19:29:58",
       "candidates": [
         {
           "id": "280002542548",
@@ -11670,17 +11670,17 @@
     },
     "NATAL": {
       "code": "17612",
-      "progress": 77.32,
+      "progress": 80.3,
       "final": false,
-      "generated_at": "04/10/2026 · 19:28:53",
+      "generated_at": "04/10/2026 · 19:31:52",
       "candidates": [
         {
           "id": "280002542548",
           "number": "13",
           "name": "LULA",
           "party": "PT",
-          "votes": 161077,
-          "pct": 48.34,
+          "votes": 168007,
+          "pct": 48.45,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -11690,8 +11690,8 @@
           "number": "22",
           "name": "FLAVIO BOLSONARO",
           "party": "PL",
-          "votes": 148970,
-          "pct": 44.71,
+          "votes": 154736,
+          "pct": 44.62,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -11701,7 +11701,7 @@
           "number": "70",
           "name": "ESCRITOR AUGUSTO CURY",
           "party": "AVANTE",
-          "votes": 10162,
+          "votes": 10583,
           "pct": 3.05,
           "elected": false,
           "status": "",
@@ -11712,8 +11712,8 @@
           "number": "14",
           "name": "RENAN SANTOS",
           "party": "MISSÃO",
-          "votes": 7338,
-          "pct": 2.2,
+          "votes": 7611,
+          "pct": 2.19,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -11723,8 +11723,8 @@
           "number": "55",
           "name": "RONALDO CAIADO",
           "party": "PSD",
-          "votes": 4250,
-          "pct": 1.28,
+          "votes": 4388,
+          "pct": 1.27,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -11734,8 +11734,8 @@
           "number": "30",
           "name": "ZEMA",
           "party": "NOVO",
-          "votes": 560,
-          "pct": 0.17,
+          "votes": 571,
+          "pct": 0.16,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -11745,7 +11745,7 @@
           "number": "80",
           "name": "SAMARA",
           "party": "UP",
-          "votes": 398,
+          "votes": 411,
           "pct": 0.12,
           "elected": false,
           "status": "",
@@ -11756,7 +11756,7 @@
           "number": "16",
           "name": "HERTZ DIAS",
           "party": "PSTU",
-          "votes": 170,
+          "votes": 182,
           "pct": 0.05,
           "elected": false,
           "status": "",
@@ -13302,17 +13302,17 @@
     },
     "PEDRO VELHO": {
       "code": "17957",
-      "progress": 90.7,
-      "final": false,
-      "generated_at": "04/10/2026 · 19:16:13",
+      "progress": 100.0,
+      "final": true,
+      "generated_at": "04/10/2026 · 19:29:38",
       "candidates": [
         {
           "id": "280002542548",
           "number": "13",
           "name": "LULA",
           "party": "PT",
-          "votes": 5592,
-          "pct": 67.82,
+          "votes": 6346,
+          "pct": 68.61,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -13322,8 +13322,8 @@
           "number": "22",
           "name": "FLAVIO BOLSONARO",
           "party": "PL",
-          "votes": 2335,
-          "pct": 28.32,
+          "votes": 2551,
+          "pct": 27.58,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -13333,8 +13333,8 @@
           "number": "70",
           "name": "ESCRITOR AUGUSTO CURY",
           "party": "AVANTE",
-          "votes": 165,
-          "pct": 2.0,
+          "votes": 183,
+          "pct": 1.98,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -13344,8 +13344,8 @@
           "number": "14",
           "name": "RENAN SANTOS",
           "party": "MISSÃO",
-          "votes": 94,
-          "pct": 1.14,
+          "votes": 104,
+          "pct": 1.12,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -13355,7 +13355,7 @@
           "number": "55",
           "name": "RONALDO CAIADO",
           "party": "PSD",
-          "votes": 49,
+          "votes": 55,
           "pct": 0.59,
           "elected": false,
           "status": "",
@@ -13367,7 +13367,7 @@
           "name": "ZEMA",
           "party": "NOVO",
           "votes": 4,
-          "pct": 0.05,
+          "pct": 0.04,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -13686,17 +13686,17 @@
     },
     "PORTO DO MANGUE": {
       "code": "16284",
-      "progress": 81.25,
+      "progress": 87.5,
       "final": false,
-      "generated_at": "04/10/2026 · 19:23:34",
+      "generated_at": "04/10/2026 · 19:29:38",
       "candidates": [
         {
           "id": "280002542548",
           "number": "13",
           "name": "LULA",
           "party": "PT",
-          "votes": 2352,
-          "pct": 74.48,
+          "votes": 2533,
+          "pct": 74.94,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -13706,8 +13706,8 @@
           "number": "22",
           "name": "FLAVIO BOLSONARO",
           "party": "PL",
-          "votes": 638,
-          "pct": 20.2,
+          "votes": 670,
+          "pct": 19.82,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -13717,8 +13717,8 @@
           "number": "70",
           "name": "ESCRITOR AUGUSTO CURY",
           "party": "AVANTE",
-          "votes": 96,
-          "pct": 3.04,
+          "votes": 103,
+          "pct": 3.05,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -13728,8 +13728,8 @@
           "number": "14",
           "name": "RENAN SANTOS",
           "party": "MISSÃO",
-          "votes": 63,
-          "pct": 1.99,
+          "votes": 65,
+          "pct": 1.92,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -13740,7 +13740,7 @@
           "name": "RONALDO CAIADO",
           "party": "PSD",
           "votes": 7,
-          "pct": 0.22,
+          "pct": 0.21,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -15798,16 +15798,16 @@
     },
     "SERRINHA": {
       "code": "18678",
-      "progress": 90.48,
-      "final": false,
-      "generated_at": "04/10/2026 · 19:04:12",
+      "progress": 100.0,
+      "final": true,
+      "generated_at": "04/10/2026 · 19:29:37",
       "candidates": [
         {
           "id": "280002542548",
           "number": "13",
           "name": "LULA",
           "party": "PT",
-          "votes": 3227,
+          "votes": 3563,
           "pct": 65.48,
           "elected": false,
           "status": "",
@@ -15818,8 +15818,8 @@
           "number": "22",
           "name": "FLAVIO BOLSONARO",
           "party": "PL",
-          "votes": 1468,
-          "pct": 29.79,
+          "votes": 1625,
+          "pct": 29.87,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -15829,19 +15829,8 @@
           "number": "70",
           "name": "ESCRITOR AUGUSTO CURY",
           "party": "AVANTE",
-          "votes": 150,
-          "pct": 3.04,
-          "elected": false,
-          "status": "",
-          "vote_destination": "Válido"
-        },
-        {
-          "id": "280002551932",
-          "number": "55",
-          "name": "RONALDO CAIADO",
-          "party": "PSD",
-          "votes": 41,
-          "pct": 0.83,
+          "votes": 158,
+          "pct": 2.9,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -15851,8 +15840,19 @@
           "number": "14",
           "name": "RENAN SANTOS",
           "party": "MISSÃO",
-          "votes": 38,
-          "pct": 0.77,
+          "votes": 46,
+          "pct": 0.85,
+          "elected": false,
+          "status": "",
+          "vote_destination": "Válido"
+        },
+        {
+          "id": "280002551932",
+          "number": "55",
+          "name": "RONALDO CAIADO",
+          "party": "PSD",
+          "votes": 45,
+          "pct": 0.83,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -16950,17 +16950,17 @@
     },
     "SÃO MIGUEL": {
       "code": "18473",
-      "progress": 79.69,
+      "progress": 84.38,
       "final": false,
-      "generated_at": "04/10/2026 · 19:20:56",
+      "generated_at": "04/10/2026 · 19:29:38",
       "candidates": [
         {
           "id": "280002542548",
           "number": "13",
           "name": "LULA",
           "party": "PT",
-          "votes": 7814,
-          "pct": 72.39,
+          "votes": 8365,
+          "pct": 72.27,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -16970,8 +16970,8 @@
           "number": "22",
           "name": "FLAVIO BOLSONARO",
           "party": "PL",
-          "votes": 2468,
-          "pct": 22.86,
+          "votes": 2665,
+          "pct": 23.02,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -16981,8 +16981,8 @@
           "number": "70",
           "name": "ESCRITOR AUGUSTO CURY",
           "party": "AVANTE",
-          "votes": 248,
-          "pct": 2.3,
+          "votes": 263,
+          "pct": 2.27,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -16992,8 +16992,8 @@
           "number": "14",
           "name": "RENAN SANTOS",
           "party": "MISSÃO",
-          "votes": 178,
-          "pct": 1.65,
+          "votes": 190,
+          "pct": 1.64,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -17003,7 +17003,7 @@
           "number": "55",
           "name": "RONALDO CAIADO",
           "party": "PSD",
-          "votes": 69,
+          "votes": 74,
           "pct": 0.64,
           "elected": false,
           "status": "",
@@ -17015,7 +17015,7 @@
           "name": "ZEMA",
           "party": "NOVO",
           "votes": 6,
-          "pct": 0.06,
+          "pct": 0.05,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -17026,7 +17026,7 @@
           "name": "SAMARA",
           "party": "UP",
           "votes": 5,
-          "pct": 0.05,
+          "pct": 0.04,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -19668,6 +19668,17 @@
       "confirmed": true
     },
     {
+      "id": "change-gov-CAMPO GRANDE",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "CAMPO GRANDE mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 38.95%.",
+      "display_value": "FATIMA BEZERRA → ALLYSON",
+      "progress": 100.0,
+      "confirmed": true
+    },
+    {
       "id": "change-gov-CAMPO REDONDO",
       "type": "change",
       "type_label": "Mudou desde 2022",
@@ -19690,6 +19701,17 @@
       "confirmed": true
     },
     {
+      "id": "change-gov-CARNAUBA DOS DANTAS",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "CARNAÚBA DOS DANTAS mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 43.69%.",
+      "display_value": "FATIMA BEZERRA → ALLYSON",
+      "progress": 100.0,
+      "confirmed": true
+    },
+    {
       "id": "change-gov-CERRO CORA",
       "type": "change",
       "type_label": "Mudou desde 2022",
@@ -19708,6 +19730,17 @@
       "headline": "CORONEL EZEQUIEL mudou de liderança",
       "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ÁLVARO DIAS aparece em 1º com 44.79%.",
       "display_value": "FATIMA BEZERRA → ÁLVARO DIAS",
+      "progress": 100.0,
+      "confirmed": true
+    },
+    {
+      "id": "change-gov-CORONEL JOAO PESSOA",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "CORONEL JOÃO PESSOA mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 65.56%.",
+      "display_value": "FATIMA BEZERRA → CADU DE LULA",
       "progress": 100.0,
       "confirmed": true
     },
@@ -19905,6 +19938,17 @@
       "office": "gov",
       "headline": "JUCURUTU mudou de liderança",
       "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 45.37%.",
+      "display_value": "FATIMA BEZERRA → CADU DE LULA",
+      "progress": 100.0,
+      "confirmed": true
+    },
+    {
+      "id": "change-gov-LAGOA D ANTA",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "LAGOA D'ANTA mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 53.58%.",
       "display_value": "FATIMA BEZERRA → CADU DE LULA",
       "progress": 100.0,
       "confirmed": true
@@ -20269,6 +20313,17 @@
       "headline": "SERRA DE SÃO BENTO mudou de liderança",
       "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ÁLVARO DIAS aparece em 1º com 36.14%.",
       "display_value": "FATIMA BEZERRA → ÁLVARO DIAS",
+      "progress": 100.0,
+      "confirmed": true
+    },
+    {
+      "id": "change-gov-SERRINHA",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "SERRINHA mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 61.49%.",
+      "display_value": "FATIMA BEZERRA → ALLYSON",
       "progress": 100.0,
       "confirmed": true
     },
@@ -20724,17 +20779,6 @@
       "confirmed": false
     },
     {
-      "id": "change-gov-CARNAUBA DOS DANTAS",
-      "type": "change",
-      "type_label": "Mudou desde 2022",
-      "office": "gov",
-      "headline": "CARNAÚBA DOS DANTAS mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 43.83%.",
-      "display_value": "FATIMA BEZERRA → ALLYSON",
-      "progress": 94.12,
-      "confirmed": false
-    },
-    {
       "id": "change-gov-TENENTE LAURENTINO CRUZ",
       "type": "change",
       "type_label": "Mudou desde 2022",
@@ -20743,17 +20787,6 @@
       "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 43.44%.",
       "display_value": "FATIMA BEZERRA → ALLYSON",
       "progress": 93.75,
-      "confirmed": false
-    },
-    {
-      "id": "change-gov-CORONEL JOAO PESSOA",
-      "type": "change",
-      "type_label": "Mudou desde 2022",
-      "office": "gov",
-      "headline": "CORONEL JOÃO PESSOA mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 64.38%.",
-      "display_value": "FATIMA BEZERRA → CADU DE LULA",
-      "progress": 93.33,
       "confirmed": false
     },
     {
@@ -20823,6 +20856,28 @@
       "confirmed": false
     },
     {
+      "id": "change-gov-SANTANA DO MATOS",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "SANTANA DO MATOS mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 53.65%.",
+      "display_value": "FATIMA BEZERRA → CADU DE LULA",
+      "progress": 92.11,
+      "confirmed": false
+    },
+    {
+      "id": "change-gov-AREIA BRANCA",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "AREIA BRANCA mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 49.21%.",
+      "display_value": "FATIMA BEZERRA → ALLYSON",
+      "progress": 92.0,
+      "confirmed": false
+    },
+    {
       "id": "change-gov-SERRA CAIADA",
       "type": "change",
       "type_label": "Mudou desde 2022",
@@ -20842,17 +20897,6 @@
       "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 73.35%.",
       "display_value": "FATIMA BEZERRA → CADU DE LULA",
       "progress": 91.67,
-      "confirmed": false
-    },
-    {
-      "id": "change-gov-SERRINHA",
-      "type": "change",
-      "type_label": "Mudou desde 2022",
-      "office": "gov",
-      "headline": "SERRINHA mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 62.09%.",
-      "display_value": "FATIMA BEZERRA → ALLYSON",
-      "progress": 90.48,
       "confirmed": false
     },
     {
@@ -20889,14 +20933,14 @@
       "confirmed": false
     },
     {
-      "id": "change-gov-CAMPO GRANDE",
+      "id": "change-gov-ESPIRITO SANTO",
       "type": "change",
       "type_label": "Mudou desde 2022",
       "office": "gov",
-      "headline": "CAMPO GRANDE mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 37.45%.",
-      "display_value": "FATIMA BEZERRA → ALLYSON",
-      "progress": 87.5,
+      "headline": "ESPÍRITO SANTO mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ÁLVARO DIAS aparece em 1º com 41.20%.",
+      "display_value": "FATIMA BEZERRA → ÁLVARO DIAS",
+      "progress": 88.0,
       "confirmed": false
     },
     {
@@ -20908,6 +20952,17 @@
       "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 48.84%.",
       "display_value": "FATIMA BEZERRA → CADU DE LULA",
       "progress": 87.5,
+      "confirmed": false
+    },
+    {
+      "id": "change-gov-GOIANINHA",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "GOIANINHA mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 41.45%.",
+      "display_value": "FATIMA BEZERRA → ALLYSON",
+      "progress": 85.71,
       "confirmed": false
     },
     {
@@ -20988,17 +21043,6 @@
       "confirmed": false
     },
     {
-      "id": "change-gov-LAGOA D ANTA",
-      "type": "change",
-      "type_label": "Mudou desde 2022",
-      "office": "gov",
-      "headline": "LAGOA D'ANTA mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 53.36%.",
-      "display_value": "FATIMA BEZERRA → CADU DE LULA",
-      "progress": 84.21,
-      "confirmed": false
-    },
-    {
       "id": "change-gov-GROSSOS",
       "type": "change",
       "type_label": "Mudou desde 2022",
@@ -21029,17 +21073,6 @@
       "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 49.28%.",
       "display_value": "FATIMA BEZERRA → CADU DE LULA",
       "progress": 81.94,
-      "confirmed": false
-    },
-    {
-      "id": "change-gov-SANTANA DO MATOS",
-      "type": "change",
-      "type_label": "Mudou desde 2022",
-      "office": "gov",
-      "headline": "SANTANA DO MATOS mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 53.82%.",
-      "display_value": "FATIMA BEZERRA → CADU DE LULA",
-      "progress": 81.58,
       "confirmed": false
     },
     {
@@ -21120,17 +21153,6 @@
       "confirmed": false
     },
     {
-      "id": "change-gov-ESPIRITO SANTO",
-      "type": "change",
-      "type_label": "Mudou desde 2022",
-      "office": "gov",
-      "headline": "ESPÍRITO SANTO mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ÁLVARO DIAS aparece em 1º com 41.68%.",
-      "display_value": "FATIMA BEZERRA → ÁLVARO DIAS",
-      "progress": 80.0,
-      "confirmed": false
-    },
-    {
       "id": "change-gov-GALINHOS",
       "type": "change",
       "type_label": "Mudou desde 2022",
@@ -21138,17 +21160,6 @@
       "headline": "GALINHOS mudou de liderança",
       "summary": "Em 2022, FABIO DANTAS liderou o município no 1º turno. Em 2026, ÁLVARO DIAS aparece em 1º com 59.13%.",
       "display_value": "FABIO DANTAS → ÁLVARO DIAS",
-      "progress": 80.0,
-      "confirmed": false
-    },
-    {
-      "id": "change-gov-GOIANINHA",
-      "type": "change",
-      "type_label": "Mudou desde 2022",
-      "office": "gov",
-      "headline": "GOIANINHA mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 41.46%.",
-      "display_value": "FATIMA BEZERRA → ALLYSON",
       "progress": 80.0,
       "confirmed": false
     },
@@ -21318,17 +21329,6 @@
       "confirmed": false
     },
     {
-      "id": "change-gov-AREIA BRANCA",
-      "type": "change",
-      "type_label": "Mudou desde 2022",
-      "office": "gov",
-      "headline": "AREIA BRANCA mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 48.64%.",
-      "display_value": "FATIMA BEZERRA → ALLYSON",
-      "progress": 65.33,
-      "confirmed": false
-    },
-    {
       "id": "change-gov-IELMO MARINHO",
       "type": "change",
       "type_label": "Mudou desde 2022",
@@ -21359,6 +21359,17 @@
       "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 44.55%.",
       "display_value": "FATIMA BEZERRA → ALLYSON",
       "progress": 54.84,
+      "confirmed": false
+    },
+    {
+      "id": "change-gov-VERA CRUZ",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "VERA CRUZ mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 41.32%.",
+      "display_value": "FATIMA BEZERRA → ALLYSON",
+      "progress": 51.52,
       "confirmed": false
     },
     {
