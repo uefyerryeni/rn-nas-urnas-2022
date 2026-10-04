@@ -144,3 +144,5 @@ def main():
       else:
        data={'status':'waiting','generated_at':now,'source_generated_at':'','progress':0,'message':'Aguardando a disponibilização oficial dos resultados de 2026 pelo TSE.','source':'Tribunal Superior Eleitoral · EA20','offices':{},'municipal_pres':{},'parnamirim':None,'municipal_coverage':{},'findings':[],'methodology_version':'1.0'};OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8');print('WAITING',e)
 if __name__=='__main__':main()
+
+# map-pres-rn-v1
