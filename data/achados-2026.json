@@ -1,7 +1,7 @@
 {
   "status": "final",
-  "generated_at": "2026-10-05T00:23:59-03:00",
-  "source_generated_at": "05/10/2026 · 00:11:37",
+  "generated_at": "2026-10-05T00:41:50-03:00",
+  "source_generated_at": "05/10/2026 · 00:40:06",
   "progress": 100.0,
   "message": "Resultados oficiais de 2026 carregados para comparação.",
   "source": "Tribunal Superior Eleitoral · EA20",
@@ -9,7 +9,7 @@
     "pres": {
       "progress": 100.0,
       "final": true,
-      "generated_at": "05/10/2026 · 00:11:37",
+      "generated_at": "05/10/2026 · 00:40:06",
       "candidates": [
         {
           "id": "280002542548",
