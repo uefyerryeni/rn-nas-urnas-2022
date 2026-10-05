@@ -1,7 +1,7 @@
 {
-  "status": "live",
-  "generated_at": "2026-10-04T22:54:33-03:00",
-  "source_generated_at": "04/10/2026 · 22:53:55",
+  "status": "final",
+  "generated_at": "2026-10-04T23:05:06-03:00",
+  "source_generated_at": "04/10/2026 · 23:03:25",
   "progress": 100.0,
   "message": "Resultados oficiais de 2026 carregados para comparação.",
   "source": "Tribunal Superior Eleitoral · EA20",
@@ -9,7 +9,7 @@
     "pres": {
       "progress": 100.0,
       "final": true,
-      "generated_at": "04/10/2026 · 22:53:55",
+      "generated_at": "04/10/2026 · 23:03:25",
       "candidates": [
         {
           "id": "280002542548",
@@ -200,8 +200,8 @@
     },
     "gov": {
       "progress": 100.0,
-      "final": false,
-      "generated_at": "04/10/2026 · 22:51:10",
+      "final": true,
+      "generated_at": "04/10/2026 · 23:02:10",
       "candidates": [
         {
           "id": "200002535255",
@@ -210,8 +210,8 @@
           "party": "UNIÃO",
           "votes": 733809,
           "pct": 36.94,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "2º turno",
           "vote_destination": "Válido"
         },
         {
@@ -221,8 +221,8 @@
           "party": "PT",
           "votes": 718300,
           "pct": 36.16,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "2º turno",
           "vote_destination": "Válido"
         },
         {
@@ -233,7 +233,7 @@
           "votes": 530580,
           "pct": 26.71,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -244,7 +244,7 @@
           "votes": 1466,
           "pct": 0.07,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -255,7 +255,7 @@
           "votes": 1388,
           "pct": 0.07,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -266,7 +266,7 @@
           "votes": 464,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -277,7 +277,7 @@
           "votes": 434,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -288,13 +288,22 @@
           "votes": 227,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Anulado sub judice"
         }
       ],
       "candidates_with_votes": 8,
-      "elected": 0,
-      "elected_by_party": [],
+      "elected": 2,
+      "elected_by_party": [
+        {
+          "party": "UNIÃO",
+          "count": 1
+        },
+        {
+          "party": "PT",
+          "count": 1
+        }
+      ],
       "parties": [
         {
           "party": "UNIÃO",
@@ -332,8 +341,8 @@
     },
     "sen": {
       "progress": 100.0,
-      "final": false,
-      "generated_at": "04/10/2026 · 22:51:10",
+      "final": true,
+      "generated_at": "04/10/2026 · 23:02:10",
       "candidates": [
         {
           "id": "200002534448",
@@ -342,8 +351,8 @@
           "party": "PODE",
           "votes": 1055000,
           "pct": 29.25,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito",
           "vote_destination": "Válido"
         },
         {
@@ -353,8 +362,8 @@
           "party": "PT",
           "votes": 635924,
           "pct": 17.63,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito",
           "vote_destination": "Válido"
         },
         {
@@ -365,7 +374,7 @@
           "votes": 630159,
           "pct": 17.47,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -376,7 +385,7 @@
           "votes": 620354,
           "pct": 17.2,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -387,7 +396,7 @@
           "votes": 510674,
           "pct": 14.16,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -398,7 +407,7 @@
           "votes": 102834,
           "pct": 2.85,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -409,7 +418,7 @@
           "votes": 22237,
           "pct": 0.62,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -420,7 +429,7 @@
           "votes": 14338,
           "pct": 0.4,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -431,7 +440,7 @@
           "votes": 5511,
           "pct": 0.15,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -442,7 +451,7 @@
           "votes": 3795,
           "pct": 0.11,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -453,7 +462,7 @@
           "votes": 2486,
           "pct": 0.07,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -464,7 +473,7 @@
           "votes": 1796,
           "pct": 0.05,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -475,13 +484,22 @@
           "votes": 1698,
           "pct": 0.05,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         }
       ],
       "candidates_with_votes": 13,
-      "elected": 0,
-      "elected_by_party": [],
+      "elected": 2,
+      "elected_by_party": [
+        {
+          "party": "PODE",
+          "count": 1
+        },
+        {
+          "party": "PT",
+          "count": 1
+        }
+      ],
       "parties": [
         {
           "party": "PODE",
@@ -527,8 +545,8 @@
     },
     "depf": {
       "progress": 100.0,
-      "final": false,
-      "generated_at": "04/10/2026 · 22:51:11",
+      "final": true,
+      "generated_at": "04/10/2026 · 23:02:12",
       "candidates": [
         {
           "id": "200002533872",
@@ -537,8 +555,8 @@
           "party": "PT",
           "votes": 215509,
           "pct": 10.95,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -548,8 +566,8 @@
           "party": "PL",
           "votes": 185248,
           "pct": 9.41,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -559,8 +577,8 @@
           "party": "UNIÃO",
           "votes": 171396,
           "pct": 8.71,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -570,8 +588,8 @@
           "party": "PL",
           "votes": 154073,
           "pct": 7.83,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -581,8 +599,8 @@
           "party": "PL",
           "votes": 133258,
           "pct": 6.77,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -592,8 +610,8 @@
           "party": "PV",
           "votes": 130835,
           "pct": 6.65,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -603,8 +621,8 @@
           "party": "PP",
           "votes": 123040,
           "pct": 6.25,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por média",
           "vote_destination": "Válido"
         },
         {
@@ -615,7 +633,7 @@
           "votes": 123008,
           "pct": 6.25,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -626,7 +644,7 @@
           "votes": 100795,
           "pct": 5.12,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -636,8 +654,8 @@
           "party": "PV",
           "votes": 92743,
           "pct": 4.71,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por média",
           "vote_destination": "Válido"
         },
         {
@@ -648,7 +666,7 @@
           "votes": 84156,
           "pct": 4.28,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -659,7 +677,7 @@
           "votes": 75091,
           "pct": 3.82,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -670,7 +688,7 @@
           "votes": 67632,
           "pct": 3.44,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -681,7 +699,7 @@
           "votes": 51402,
           "pct": 2.61,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -692,7 +710,7 @@
           "votes": 40922,
           "pct": 2.08,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -703,7 +721,7 @@
           "votes": 27676,
           "pct": 1.41,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -714,7 +732,7 @@
           "votes": 19500,
           "pct": 0.99,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -725,7 +743,7 @@
           "votes": 12117,
           "pct": 0.62,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -736,7 +754,7 @@
           "votes": 11928,
           "pct": 0.61,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -747,7 +765,7 @@
           "votes": 8097,
           "pct": 0.41,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -758,7 +776,7 @@
           "votes": 7144,
           "pct": 0.36,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -769,7 +787,7 @@
           "votes": 5764,
           "pct": 0.29,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -780,7 +798,7 @@
           "votes": 5735,
           "pct": 0.29,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -791,7 +809,7 @@
           "votes": 4567,
           "pct": 0.23,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -802,7 +820,7 @@
           "votes": 4275,
           "pct": 0.22,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -813,7 +831,7 @@
           "votes": 3766,
           "pct": 0.19,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -824,7 +842,7 @@
           "votes": 3316,
           "pct": 0.17,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -835,7 +853,7 @@
           "votes": 2618,
           "pct": 0.13,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -846,7 +864,7 @@
           "votes": 2200,
           "pct": 0.11,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -857,7 +875,7 @@
           "votes": 2130,
           "pct": 0.11,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -868,7 +886,7 @@
           "votes": 2101,
           "pct": 0.11,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -879,7 +897,7 @@
           "votes": 2055,
           "pct": 0.1,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -890,7 +908,7 @@
           "votes": 2040,
           "pct": 0.1,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -901,7 +919,7 @@
           "votes": 1951,
           "pct": 0.1,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -912,7 +930,7 @@
           "votes": 1839,
           "pct": 0.09,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -923,7 +941,7 @@
           "votes": 1419,
           "pct": 0.07,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -934,7 +952,7 @@
           "votes": 1417,
           "pct": 0.07,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -945,7 +963,7 @@
           "votes": 1309,
           "pct": 0.07,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -956,7 +974,7 @@
           "votes": 1296,
           "pct": 0.07,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -967,7 +985,7 @@
           "votes": 1083,
           "pct": 0.06,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -978,7 +996,7 @@
           "votes": 1033,
           "pct": 0.05,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -989,7 +1007,7 @@
           "votes": 1002,
           "pct": 0.05,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1000,7 +1018,7 @@
           "votes": 943,
           "pct": 0.05,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1011,7 +1029,7 @@
           "votes": 923,
           "pct": 0.05,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1022,7 +1040,7 @@
           "votes": 868,
           "pct": 0.04,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1033,7 +1051,7 @@
           "votes": 810,
           "pct": 0.04,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1044,7 +1062,7 @@
           "votes": 800,
           "pct": 0.04,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1055,7 +1073,7 @@
           "votes": 713,
           "pct": 0.04,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1066,7 +1084,7 @@
           "votes": 616,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1077,7 +1095,7 @@
           "votes": 614,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1088,7 +1106,7 @@
           "votes": 590,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1099,7 +1117,7 @@
           "votes": 556,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1110,7 +1128,7 @@
           "votes": 540,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1121,7 +1139,7 @@
           "votes": 519,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1132,7 +1150,7 @@
           "votes": 504,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1143,7 +1161,7 @@
           "votes": 494,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1154,7 +1172,7 @@
           "votes": 480,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1165,7 +1183,7 @@
           "votes": 452,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1176,7 +1194,7 @@
           "votes": 429,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1187,7 +1205,7 @@
           "votes": 409,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1198,7 +1216,7 @@
           "votes": 400,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1209,7 +1227,7 @@
           "votes": 390,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1220,7 +1238,7 @@
           "votes": 362,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1231,7 +1249,7 @@
           "votes": 346,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1242,7 +1260,7 @@
           "votes": 331,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1253,7 +1271,7 @@
           "votes": 319,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1264,7 +1282,7 @@
           "votes": 305,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1275,7 +1293,7 @@
           "votes": 297,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1286,7 +1304,7 @@
           "votes": 287,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1297,7 +1315,7 @@
           "votes": 255,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1308,7 +1326,7 @@
           "votes": 252,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1319,7 +1337,7 @@
           "votes": 242,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -1330,7 +1348,7 @@
           "votes": 235,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1341,7 +1359,7 @@
           "votes": 229,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1352,7 +1370,7 @@
           "votes": 220,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1363,7 +1381,7 @@
           "votes": 200,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1374,7 +1392,7 @@
           "votes": 197,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1385,7 +1403,7 @@
           "votes": 196,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1396,7 +1414,7 @@
           "votes": 190,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1407,7 +1425,7 @@
           "votes": 189,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1418,7 +1436,7 @@
           "votes": 179,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1429,7 +1447,7 @@
           "votes": 161,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1440,7 +1458,7 @@
           "votes": 134,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1451,7 +1469,7 @@
           "votes": 128,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1462,7 +1480,7 @@
           "votes": 115,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1473,7 +1491,7 @@
           "votes": 113,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1484,7 +1502,7 @@
           "votes": 112,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1495,7 +1513,7 @@
           "votes": 103,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1506,7 +1524,7 @@
           "votes": 95,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1517,7 +1535,7 @@
           "votes": 95,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1528,7 +1546,7 @@
           "votes": 87,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1539,7 +1557,7 @@
           "votes": 70,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1550,7 +1568,7 @@
           "votes": 70,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1561,7 +1579,7 @@
           "votes": 66,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1572,7 +1590,7 @@
           "votes": 44,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1583,7 +1601,7 @@
           "votes": 33,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1594,7 +1612,7 @@
           "votes": 31,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1605,7 +1623,7 @@
           "votes": 29,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -1616,13 +1634,34 @@
           "votes": 25,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         }
       ],
       "candidates_with_votes": 99,
-      "elected": 0,
-      "elected_by_party": [],
+      "elected": 8,
+      "elected_by_party": [
+        {
+          "party": "PL",
+          "count": 3
+        },
+        {
+          "party": "PV",
+          "count": 2
+        },
+        {
+          "party": "PT",
+          "count": 1
+        },
+        {
+          "party": "UNIÃO",
+          "count": 1
+        },
+        {
+          "party": "PP",
+          "count": 1
+        }
+      ],
       "parties": [
         {
           "party": "PL",
@@ -1708,8 +1747,8 @@
     },
     "depe": {
       "progress": 100.0,
-      "final": false,
-      "generated_at": "04/10/2026 · 22:51:11",
+      "final": true,
+      "generated_at": "04/10/2026 · 23:02:13",
       "candidates": [
         {
           "id": "200002533888",
@@ -1718,8 +1757,8 @@
           "party": "PL",
           "votes": 105403,
           "pct": 5.43,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1729,8 +1768,8 @@
           "party": "PSDB",
           "votes": 73217,
           "pct": 3.77,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1740,8 +1779,8 @@
           "party": "UNIÃO",
           "votes": 69542,
           "pct": 3.58,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1751,8 +1790,8 @@
           "party": "PP",
           "votes": 66750,
           "pct": 3.44,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1762,8 +1801,8 @@
           "party": "PP",
           "votes": 66172,
           "pct": 3.41,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1773,8 +1812,8 @@
           "party": "PT",
           "votes": 62660,
           "pct": 3.23,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1784,8 +1823,8 @@
           "party": "PV",
           "votes": 61905,
           "pct": 3.19,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1795,8 +1834,8 @@
           "party": "UNIÃO",
           "votes": 61586,
           "pct": 3.17,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1806,8 +1845,8 @@
           "party": "PT",
           "votes": 60239,
           "pct": 3.1,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1817,8 +1856,8 @@
           "party": "PT",
           "votes": 59680,
           "pct": 3.07,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1828,8 +1867,8 @@
           "party": "PP",
           "votes": 57715,
           "pct": 2.97,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1839,8 +1878,8 @@
           "party": "PL",
           "votes": 54165,
           "pct": 2.79,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1850,8 +1889,8 @@
           "party": "PSDB",
           "votes": 53701,
           "pct": 2.76,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1861,8 +1900,8 @@
           "party": "PP",
           "votes": 52387,
           "pct": 2.7,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por média",
           "vote_destination": "Válido"
         },
         {
@@ -1872,8 +1911,8 @@
           "party": "PT",
           "votes": 52099,
           "pct": 2.68,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1883,8 +1922,8 @@
           "party": "PL",
           "votes": 50350,
           "pct": 2.59,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1894,8 +1933,8 @@
           "party": "PSDB",
           "votes": 49589,
           "pct": 2.55,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1905,8 +1944,8 @@
           "party": "PL",
           "votes": 49531,
           "pct": 2.55,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1916,8 +1955,8 @@
           "party": "MDB",
           "votes": 49038,
           "pct": 2.52,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1927,8 +1966,8 @@
           "party": "PV",
           "votes": 48489,
           "pct": 2.5,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -1938,8 +1977,8 @@
           "party": "PV",
           "votes": 47831,
           "pct": 2.46,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por média",
           "vote_destination": "Válido"
         },
         {
@@ -1950,7 +1989,7 @@
           "votes": 46129,
           "pct": 2.38,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -1961,7 +2000,7 @@
           "votes": 45883,
           "pct": 2.36,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -1972,7 +2011,7 @@
           "votes": 44748,
           "pct": 2.3,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -1983,7 +2022,7 @@
           "votes": 44217,
           "pct": 2.28,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -1993,8 +2032,8 @@
           "party": "PL",
           "votes": 39918,
           "pct": 2.06,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -2004,8 +2043,8 @@
           "party": "PL",
           "votes": 37874,
           "pct": 1.95,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por QP",
           "vote_destination": "Válido"
         },
         {
@@ -2015,8 +2054,8 @@
           "party": "PL",
           "votes": 31438,
           "pct": 1.62,
-          "elected": false,
-          "status": "",
+          "elected": true,
+          "status": "Eleito por média",
           "vote_destination": "Válido"
         },
         {
@@ -2027,7 +2066,7 @@
           "votes": 24199,
           "pct": 1.25,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2038,7 +2077,7 @@
           "votes": 23893,
           "pct": 1.23,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2049,7 +2088,7 @@
           "votes": 21626,
           "pct": 1.11,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2060,7 +2099,7 @@
           "votes": 20714,
           "pct": 1.07,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2071,7 +2110,7 @@
           "votes": 16848,
           "pct": 0.87,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2082,7 +2121,7 @@
           "votes": 15047,
           "pct": 0.77,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2093,7 +2132,7 @@
           "votes": 14702,
           "pct": 0.76,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2104,7 +2143,7 @@
           "votes": 14678,
           "pct": 0.76,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2115,7 +2154,7 @@
           "votes": 14272,
           "pct": 0.73,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -2126,7 +2165,7 @@
           "votes": 12567,
           "pct": 0.65,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2137,7 +2176,7 @@
           "votes": 9403,
           "pct": 0.48,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2148,7 +2187,7 @@
           "votes": 8735,
           "pct": 0.45,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2159,7 +2198,7 @@
           "votes": 6572,
           "pct": 0.34,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2170,7 +2209,7 @@
           "votes": 6209,
           "pct": 0.32,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2181,7 +2220,7 @@
           "votes": 5955,
           "pct": 0.31,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -2192,7 +2231,7 @@
           "votes": 5168,
           "pct": 0.27,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2203,7 +2242,7 @@
           "votes": 4176,
           "pct": 0.22,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2214,7 +2253,7 @@
           "votes": 3922,
           "pct": 0.2,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Anulado sub judice"
         },
         {
@@ -2225,7 +2264,7 @@
           "votes": 3712,
           "pct": 0.19,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2236,7 +2275,7 @@
           "votes": 3533,
           "pct": 0.18,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2247,7 +2286,7 @@
           "votes": 3437,
           "pct": 0.18,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2258,7 +2297,7 @@
           "votes": 2785,
           "pct": 0.14,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2269,7 +2308,7 @@
           "votes": 2776,
           "pct": 0.14,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2280,7 +2319,7 @@
           "votes": 2728,
           "pct": 0.14,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2291,7 +2330,7 @@
           "votes": 2619,
           "pct": 0.13,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2302,7 +2341,7 @@
           "votes": 2561,
           "pct": 0.13,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2313,7 +2352,7 @@
           "votes": 2426,
           "pct": 0.12,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2324,7 +2363,7 @@
           "votes": 2174,
           "pct": 0.11,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2335,7 +2374,7 @@
           "votes": 2032,
           "pct": 0.1,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2346,7 +2385,7 @@
           "votes": 1954,
           "pct": 0.1,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2357,7 +2396,7 @@
           "votes": 1891,
           "pct": 0.1,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2368,7 +2407,7 @@
           "votes": 1845,
           "pct": 0.09,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2379,7 +2418,7 @@
           "votes": 1823,
           "pct": 0.09,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -2390,7 +2429,7 @@
           "votes": 1780,
           "pct": 0.09,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -2401,7 +2440,7 @@
           "votes": 1722,
           "pct": 0.09,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2412,7 +2451,7 @@
           "votes": 1468,
           "pct": 0.08,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2423,7 +2462,7 @@
           "votes": 1453,
           "pct": 0.07,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2434,7 +2473,7 @@
           "votes": 1434,
           "pct": 0.07,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2445,7 +2484,7 @@
           "votes": 1391,
           "pct": 0.07,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2456,7 +2495,7 @@
           "votes": 1338,
           "pct": 0.07,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2467,7 +2506,7 @@
           "votes": 1271,
           "pct": 0.07,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2478,7 +2517,7 @@
           "votes": 1183,
           "pct": 0.06,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2489,7 +2528,7 @@
           "votes": 1115,
           "pct": 0.06,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2500,7 +2539,7 @@
           "votes": 1097,
           "pct": 0.06,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2511,7 +2550,7 @@
           "votes": 1077,
           "pct": 0.06,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2522,7 +2561,7 @@
           "votes": 1065,
           "pct": 0.05,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2533,7 +2572,7 @@
           "votes": 1009,
           "pct": 0.05,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2544,7 +2583,7 @@
           "votes": 974,
           "pct": 0.05,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2555,7 +2594,7 @@
           "votes": 964,
           "pct": 0.05,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2566,7 +2605,7 @@
           "votes": 885,
           "pct": 0.05,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2577,7 +2616,7 @@
           "votes": 847,
           "pct": 0.04,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2588,7 +2627,7 @@
           "votes": 845,
           "pct": 0.04,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2599,7 +2638,7 @@
           "votes": 811,
           "pct": 0.04,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2610,7 +2649,7 @@
           "votes": 806,
           "pct": 0.04,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2621,7 +2660,7 @@
           "votes": 770,
           "pct": 0.04,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2632,7 +2671,7 @@
           "votes": 767,
           "pct": 0.04,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2643,7 +2682,7 @@
           "votes": 720,
           "pct": 0.04,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -2654,7 +2693,7 @@
           "votes": 667,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2665,7 +2704,7 @@
           "votes": 657,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2676,7 +2715,7 @@
           "votes": 651,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2687,7 +2726,7 @@
           "votes": 616,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2698,7 +2737,7 @@
           "votes": 537,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2709,7 +2748,7 @@
           "votes": 532,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2720,7 +2759,7 @@
           "votes": 525,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -2731,7 +2770,7 @@
           "votes": 503,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2742,7 +2781,7 @@
           "votes": 493,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2753,7 +2792,7 @@
           "votes": 490,
           "pct": 0.03,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2764,7 +2803,7 @@
           "votes": 456,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -2775,7 +2814,7 @@
           "votes": 443,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2786,7 +2825,7 @@
           "votes": 423,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -2797,7 +2836,7 @@
           "votes": 411,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2808,7 +2847,7 @@
           "votes": 409,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -2819,7 +2858,7 @@
           "votes": 402,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2830,7 +2869,7 @@
           "votes": 397,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2841,7 +2880,7 @@
           "votes": 392,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -2852,7 +2891,7 @@
           "votes": 388,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -2863,7 +2902,7 @@
           "votes": 381,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2874,7 +2913,7 @@
           "votes": 373,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -2885,7 +2924,7 @@
           "votes": 357,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2896,7 +2935,7 @@
           "votes": 351,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2907,7 +2946,7 @@
           "votes": 334,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2918,7 +2957,7 @@
           "votes": 328,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2929,7 +2968,7 @@
           "votes": 325,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -2940,7 +2979,7 @@
           "votes": 315,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2951,7 +2990,7 @@
           "votes": 299,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2962,7 +3001,7 @@
           "votes": 296,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2973,7 +3012,7 @@
           "votes": 292,
           "pct": 0.02,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2984,7 +3023,7 @@
           "votes": 273,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -2995,7 +3034,7 @@
           "votes": 269,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -3006,7 +3045,7 @@
           "votes": 264,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3017,7 +3056,7 @@
           "votes": 255,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3028,7 +3067,7 @@
           "votes": 247,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -3039,7 +3078,7 @@
           "votes": 244,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3050,7 +3089,7 @@
           "votes": 225,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -3061,7 +3100,7 @@
           "votes": 218,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3072,7 +3111,7 @@
           "votes": 190,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3083,7 +3122,7 @@
           "votes": 185,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3094,7 +3133,7 @@
           "votes": 179,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3105,7 +3144,7 @@
           "votes": 165,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -3116,7 +3155,7 @@
           "votes": 152,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3127,7 +3166,7 @@
           "votes": 151,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3138,7 +3177,7 @@
           "votes": 144,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3149,7 +3188,7 @@
           "votes": 137,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3160,7 +3199,7 @@
           "votes": 136,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3171,7 +3210,7 @@
           "votes": 122,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3182,7 +3221,7 @@
           "votes": 122,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -3193,7 +3232,7 @@
           "votes": 102,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3204,7 +3243,7 @@
           "votes": 101,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3215,7 +3254,7 @@
           "votes": 99,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -3226,7 +3265,7 @@
           "votes": 95,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -3237,7 +3276,7 @@
           "votes": 88,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3248,7 +3287,7 @@
           "votes": 82,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Suplente",
           "vote_destination": "Válido"
         },
         {
@@ -3259,7 +3298,7 @@
           "votes": 77,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3270,7 +3309,7 @@
           "votes": 71,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3281,7 +3320,7 @@
           "votes": 66,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3292,7 +3331,7 @@
           "votes": 65,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3303,7 +3342,7 @@
           "votes": 46,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3314,7 +3353,7 @@
           "votes": 42,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3325,7 +3364,7 @@
           "votes": 16,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         },
         {
@@ -3336,13 +3375,42 @@
           "votes": 8,
           "pct": 0.01,
           "elected": false,
-          "status": "",
+          "status": "Não eleito",
           "vote_destination": "Válido"
         }
       ],
       "candidates_with_votes": 148,
-      "elected": 0,
-      "elected_by_party": [],
+      "elected": 24,
+      "elected_by_party": [
+        {
+          "party": "PL",
+          "count": 7
+        },
+        {
+          "party": "PP",
+          "count": 4
+        },
+        {
+          "party": "PT",
+          "count": 4
+        },
+        {
+          "party": "PSDB",
+          "count": 3
+        },
+        {
+          "party": "PV",
+          "count": 3
+        },
+        {
+          "party": "UNIÃO",
+          "count": 2
+        },
+        {
+          "party": "MDB",
+          "count": 1
+        }
+      ],
       "parties": [
         {
           "party": "PL",
