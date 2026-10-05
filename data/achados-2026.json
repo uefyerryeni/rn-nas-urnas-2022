@@ -1,23 +1,23 @@
 {
   "status": "live",
-  "generated_at": "2026-10-04T21:56:30-03:00",
-  "source_generated_at": "04/10/2026 · 21:55:03",
-  "progress": 99.75,
+  "generated_at": "2026-10-04T22:10:20-03:00",
+  "source_generated_at": "04/10/2026 · 22:09:43",
+  "progress": 99.99,
   "message": "Resultados oficiais de 2026 carregados para comparação.",
   "source": "Tribunal Superior Eleitoral · EA20",
   "offices": {
     "pres": {
-      "progress": 99.75,
+      "progress": 99.99,
       "final": false,
-      "generated_at": "04/10/2026 · 21:55:03",
+      "generated_at": "04/10/2026 · 22:09:43",
       "candidates": [
         {
           "id": "280002542548",
           "number": "13",
           "name": "LULA",
           "party": "PT",
-          "votes": 1234398,
-          "pct": 59.74,
+          "votes": 1237802,
+          "pct": 59.75,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -27,8 +27,8 @@
           "number": "22",
           "name": "FLAVIO BOLSONARO",
           "party": "PL",
-          "votes": 718714,
-          "pct": 34.78,
+          "votes": 720383,
+          "pct": 34.77,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -38,7 +38,7 @@
           "number": "70",
           "name": "ESCRITOR AUGUSTO CURY",
           "party": "AVANTE",
-          "votes": 57231,
+          "votes": 57360,
           "pct": 2.77,
           "elected": false,
           "status": "",
@@ -49,7 +49,7 @@
           "number": "14",
           "name": "RENAN SANTOS",
           "party": "MISSÃO",
-          "votes": 35215,
+          "votes": 35257,
           "pct": 1.7,
           "elected": false,
           "status": "",
@@ -60,7 +60,7 @@
           "number": "55",
           "name": "RONALDO CAIADO",
           "party": "PSD",
-          "votes": 16376,
+          "votes": 16405,
           "pct": 0.79,
           "elected": false,
           "status": "",
@@ -71,7 +71,7 @@
           "number": "30",
           "name": "ZEMA",
           "party": "NOVO",
-          "votes": 1522,
+          "votes": 1525,
           "pct": 0.07,
           "elected": false,
           "status": "",
@@ -82,7 +82,7 @@
           "number": "80",
           "name": "SAMARA",
           "party": "UP",
-          "votes": 1226,
+          "votes": 1228,
           "pct": 0.06,
           "elected": false,
           "status": "",
@@ -93,7 +93,7 @@
           "number": "16",
           "name": "HERTZ DIAS",
           "party": "PSTU",
-          "votes": 570,
+          "votes": 572,
           "pct": 0.03,
           "elected": false,
           "status": "",
@@ -150,35 +150,35 @@
       "parties": [
         {
           "party": "PT",
-          "votes": 1234398
+          "votes": 1237802
         },
         {
           "party": "PL",
-          "votes": 718714
+          "votes": 720383
         },
         {
           "party": "AVANTE",
-          "votes": 57231
+          "votes": 57360
         },
         {
           "party": "MISSÃO",
-          "votes": 35215
+          "votes": 35257
         },
         {
           "party": "PSD",
-          "votes": 16376
+          "votes": 16405
         },
         {
           "party": "NOVO",
-          "votes": 1522
+          "votes": 1525
         },
         {
           "party": "UP",
-          "votes": 1226
+          "votes": 1228
         },
         {
           "party": "PSTU",
-          "votes": 570
+          "votes": 572
         },
         {
           "party": "DC",
@@ -199,17 +199,17 @@
       ]
     },
     "gov": {
-      "progress": 99.75,
+      "progress": 99.99,
       "final": false,
-      "generated_at": "04/10/2026 · 21:51:09",
+      "generated_at": "04/10/2026 · 22:07:29",
       "candidates": [
         {
           "id": "200002535255",
           "number": "44",
           "name": "ALLYSON",
           "party": "UNIÃO",
-          "votes": 731387,
-          "pct": 36.92,
+          "votes": 733738,
+          "pct": 36.94,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -219,7 +219,7 @@
           "number": "13",
           "name": "CADU DE LULA",
           "party": "PT",
-          "votes": 716397,
+          "votes": 718206,
           "pct": 36.16,
           "elected": false,
           "status": "",
@@ -230,8 +230,8 @@
           "number": "22",
           "name": "ÁLVARO DIAS",
           "party": "PL",
-          "votes": 529495,
-          "pct": 26.73,
+          "votes": 530484,
+          "pct": 26.71,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -241,7 +241,7 @@
           "number": "80",
           "name": "ARINALDA DO MLB",
           "party": "UP",
-          "votes": 1464,
+          "votes": 1466,
           "pct": 0.07,
           "elected": false,
           "status": "",
@@ -252,7 +252,7 @@
           "number": "16",
           "name": "DÁRIO BARBOSA",
           "party": "PSTU",
-          "votes": 1387,
+          "votes": 1388,
           "pct": 0.07,
           "elected": false,
           "status": "",
@@ -263,7 +263,7 @@
           "number": "27",
           "name": "GODEIRO LINHARESS",
           "party": "DC",
-          "votes": 463,
+          "votes": 464,
           "pct": 0.02,
           "elected": false,
           "status": "",
@@ -274,7 +274,7 @@
           "number": "36",
           "name": "RODRIGO DE BOLSONARO",
           "party": "AGIR",
-          "votes": 431,
+          "votes": 434,
           "pct": 0.02,
           "elected": false,
           "status": "",
@@ -298,31 +298,31 @@
       "parties": [
         {
           "party": "UNIÃO",
-          "votes": 731387
+          "votes": 733738
         },
         {
           "party": "PT",
-          "votes": 716397
+          "votes": 718206
         },
         {
           "party": "PL",
-          "votes": 529495
+          "votes": 530484
         },
         {
           "party": "UP",
-          "votes": 1464
+          "votes": 1466
         },
         {
           "party": "PSTU",
-          "votes": 1387
+          "votes": 1388
         },
         {
           "party": "DC",
-          "votes": 463
+          "votes": 464
         },
         {
           "party": "AGIR",
-          "votes": 431
+          "votes": 434
         },
         {
           "party": "PCO",
@@ -331,17 +331,17 @@
       ]
     },
     "sen": {
-      "progress": 99.75,
+      "progress": 99.99,
       "final": false,
-      "generated_at": "04/10/2026 · 21:51:09",
+      "generated_at": "04/10/2026 · 22:07:30",
       "candidates": [
         {
           "id": "200002534448",
           "number": "200",
           "name": "STYVENSON VALENTIM",
           "party": "PODE",
-          "votes": 1051749,
-          "pct": 29.24,
+          "votes": 1054851,
+          "pct": 29.25,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -351,8 +351,8 @@
           "number": "131",
           "name": "SAMANDA DE LULA",
           "party": "PT",
-          "votes": 634572,
-          "pct": 17.64,
+          "votes": 635854,
+          "pct": 17.63,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -362,8 +362,8 @@
           "number": "555",
           "name": "ZENAIDE MAIA",
           "party": "PSD",
-          "votes": 627377,
-          "pct": 17.44,
+          "votes": 630071,
+          "pct": 17.47,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -373,8 +373,8 @@
           "number": "222",
           "name": "CORONEL HÉLIO",
           "party": "PL",
-          "votes": 619047,
-          "pct": 17.21,
+          "votes": 620278,
+          "pct": 17.2,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -384,8 +384,8 @@
           "number": "123",
           "name": "RAFAEL MOTTA",
           "party": "PDT",
-          "votes": 509822,
-          "pct": 14.17,
+          "votes": 510616,
+          "pct": 14.16,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -395,7 +395,7 @@
           "number": "444",
           "name": "TÉRCIO TINÔCO",
           "party": "UNIÃO",
-          "votes": 102584,
+          "votes": 102806,
           "pct": 2.85,
           "elected": false,
           "status": "",
@@ -406,7 +406,7 @@
           "number": "500",
           "name": "SANDRO PIMENTEL",
           "party": "PSOL",
-          "votes": 22181,
+          "votes": 22233,
           "pct": 0.62,
           "elected": false,
           "status": "",
@@ -417,7 +417,7 @@
           "number": "501",
           "name": "SONIA GODEIRO",
           "party": "PSOL",
-          "votes": 14318,
+          "votes": 14334,
           "pct": 0.4,
           "elected": false,
           "status": "",
@@ -428,7 +428,7 @@
           "number": "800",
           "name": "PROFESSOR GUILHERME",
           "party": "UP",
-          "votes": 5506,
+          "votes": 5510,
           "pct": 0.15,
           "elected": false,
           "status": "",
@@ -439,7 +439,7 @@
           "number": "166",
           "name": "ROSÁLIA FERNANDES",
           "party": "PSTU",
-          "votes": 3790,
+          "votes": 3794,
           "pct": 0.11,
           "elected": false,
           "status": "",
@@ -450,7 +450,7 @@
           "number": "161",
           "name": "LUCIANA MANDU",
           "party": "PSTU",
-          "votes": 2483,
+          "votes": 2485,
           "pct": 0.07,
           "elected": false,
           "status": "",
@@ -461,7 +461,7 @@
           "number": "369",
           "name": "CLÓVIS COSTA DO COLETIVO NÓS",
           "party": "AGIR",
-          "votes": 1795,
+          "votes": 1796,
           "pct": 0.05,
           "elected": false,
           "status": "",
@@ -472,7 +472,7 @@
           "number": "360",
           "name": "GARI WENDELL BATISTA",
           "party": "AGIR",
-          "votes": 1694,
+          "votes": 1698,
           "pct": 0.05,
           "elected": false,
           "status": "",
@@ -485,57 +485,57 @@
       "parties": [
         {
           "party": "PODE",
-          "votes": 1051749
+          "votes": 1054851
         },
         {
           "party": "PT",
-          "votes": 634572
+          "votes": 635854
         },
         {
           "party": "PSD",
-          "votes": 627377
+          "votes": 630071
         },
         {
           "party": "PL",
-          "votes": 619047
+          "votes": 620278
         },
         {
           "party": "PDT",
-          "votes": 509822
+          "votes": 510616
         },
         {
           "party": "UNIÃO",
-          "votes": 102584
+          "votes": 102806
         },
         {
           "party": "PSOL",
-          "votes": 36499
+          "votes": 36567
         },
         {
           "party": "PSTU",
-          "votes": 6273
+          "votes": 6279
         },
         {
           "party": "UP",
-          "votes": 5506
+          "votes": 5510
         },
         {
           "party": "AGIR",
-          "votes": 3489
+          "votes": 3494
         }
       ]
     },
     "depf": {
-      "progress": 99.75,
+      "progress": 99.99,
       "final": false,
-      "generated_at": "04/10/2026 · 21:51:10",
+      "generated_at": "04/10/2026 · 22:07:30",
       "candidates": [
         {
           "id": "200002533872",
           "number": "1311",
           "name": "NATÁLIA BONAVIDES",
           "party": "PT",
-          "votes": 214927,
+          "votes": 215483,
           "pct": 10.95,
           "elected": false,
           "status": "",
@@ -546,8 +546,8 @@
           "number": "2233",
           "name": "NINA",
           "party": "PL",
-          "votes": 184824,
-          "pct": 9.42,
+          "votes": 185231,
+          "pct": 9.41,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -557,8 +557,8 @@
           "number": "4444",
           "name": "BENES LEOCÁDIO",
           "party": "UNIÃO",
-          "votes": 171021,
-          "pct": 8.72,
+          "votes": 171328,
+          "pct": 8.71,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -568,7 +568,7 @@
           "number": "2222",
           "name": "SARGENTO GONÇALVES",
           "party": "PL",
-          "votes": 153721,
+          "votes": 154055,
           "pct": 7.83,
           "elected": false,
           "status": "",
@@ -579,8 +579,8 @@
           "number": "2210",
           "name": "GENERAL GIRÃO",
           "party": "PL",
-          "votes": 133026,
-          "pct": 6.78,
+          "votes": 133234,
+          "pct": 6.77,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -590,8 +590,8 @@
           "number": "4300",
           "name": "DR. BERNARDO",
           "party": "PV",
-          "votes": 130623,
-          "pct": 6.66,
+          "votes": 130828,
+          "pct": 6.65,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -601,8 +601,8 @@
           "number": "1111",
           "name": "JOÃO MAIA",
           "party": "PP",
-          "votes": 122792,
-          "pct": 6.26,
+          "votes": 123040,
+          "pct": 6.25,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -612,8 +612,8 @@
           "number": "1155",
           "name": "ROBINSON FARIA",
           "party": "PP",
-          "votes": 122054,
-          "pct": 6.22,
+          "votes": 123005,
+          "pct": 6.25,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -623,8 +623,8 @@
           "number": "2288",
           "name": "CABO DEYVISON",
           "party": "PL",
-          "votes": 100698,
-          "pct": 5.13,
+          "votes": 100795,
+          "pct": 5.12,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -634,8 +634,8 @@
           "number": "4343",
           "name": "THABATTA PIMENTA",
           "party": "PV",
-          "votes": 92592,
-          "pct": 4.72,
+          "votes": 92735,
+          "pct": 4.71,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -645,8 +645,8 @@
           "number": "2200",
           "name": "JUNINHO SAIA RODADA",
           "party": "PL",
-          "votes": 83234,
-          "pct": 4.24,
+          "votes": 84127,
+          "pct": 4.28,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -656,7 +656,7 @@
           "number": "1333",
           "name": "MINEIRO",
           "party": "PT",
-          "votes": 74965,
+          "votes": 75087,
           "pct": 3.82,
           "elected": false,
           "status": "",
@@ -667,7 +667,7 @@
           "number": "2211",
           "name": "CARLA DICKSON",
           "party": "PL",
-          "votes": 67446,
+          "votes": 67629,
           "pct": 3.44,
           "elected": false,
           "status": "",
@@ -678,8 +678,8 @@
           "number": "1345",
           "name": "ODON JUNIOR",
           "party": "PT",
-          "votes": 51333,
-          "pct": 2.62,
+          "votes": 51402,
+          "pct": 2.61,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -689,7 +689,7 @@
           "number": "4455",
           "name": "FAUSTINO",
           "party": "UNIÃO",
-          "votes": 40837,
+          "votes": 40913,
           "pct": 2.08,
           "elected": false,
           "status": "",
@@ -700,7 +700,7 @@
           "number": "1313",
           "name": "BRISA",
           "party": "PT",
-          "votes": 27611,
+          "votes": 27652,
           "pct": 1.41,
           "elected": false,
           "status": "",
@@ -711,7 +711,7 @@
           "number": "2255",
           "name": "PEDRO FILHO",
           "party": "PL",
-          "votes": 19439,
+          "votes": 19499,
           "pct": 0.99,
           "elected": false,
           "status": "",
@@ -722,7 +722,7 @@
           "number": "2244",
           "name": "CORONEL BRILHANTE",
           "party": "PL",
-          "votes": 12104,
+          "votes": 12116,
           "pct": 0.62,
           "elected": false,
           "status": "",
@@ -733,7 +733,7 @@
           "number": "1300",
           "name": "MARLEIDE CUNHA",
           "party": "PT",
-          "votes": 11927,
+          "votes": 11928,
           "pct": 0.61,
           "elected": false,
           "status": "",
@@ -744,7 +744,7 @@
           "number": "6513",
           "name": "RAPOSINHA",
           "party": "PCDOB",
-          "votes": 8088,
+          "votes": 8097,
           "pct": 0.41,
           "elected": false,
           "status": "",
@@ -755,7 +755,7 @@
           "number": "1144",
           "name": "LEILA MAIA",
           "party": "PP",
-          "votes": 7143,
+          "votes": 7144,
           "pct": 0.36,
           "elected": false,
           "status": "",
@@ -766,7 +766,7 @@
           "number": "1212",
           "name": "CINTIA MAIA",
           "party": "PDT",
-          "votes": 5755,
+          "votes": 5764,
           "pct": 0.29,
           "elected": false,
           "status": "",
@@ -777,7 +777,7 @@
           "number": "4400",
           "name": "DANI RIBEIRO",
           "party": "UNIÃO",
-          "votes": 5734,
+          "votes": 5735,
           "pct": 0.29,
           "elected": false,
           "status": "",
@@ -788,7 +788,7 @@
           "number": "7722",
           "name": "JOHN KENNETH",
           "party": "SOLIDARIEDADE",
-          "votes": 4561,
+          "votes": 4567,
           "pct": 0.23,
           "elected": false,
           "status": "",
@@ -799,7 +799,7 @@
           "number": "4555",
           "name": "NEGA DE NENEM BORGES",
           "party": "PSDB",
-          "votes": 4272,
+          "votes": 4274,
           "pct": 0.22,
           "elected": false,
           "status": "",
@@ -810,7 +810,7 @@
           "number": "2277",
           "name": "GABI TRAJANO",
           "party": "PL",
-          "votes": 3759,
+          "votes": 3766,
           "pct": 0.19,
           "elected": false,
           "status": "",
@@ -821,7 +821,7 @@
           "number": "1122",
           "name": "PAULINHA GALDINO",
           "party": "PP",
-          "votes": 3295,
+          "votes": 3316,
           "pct": 0.17,
           "elected": false,
           "status": "",
@@ -843,7 +843,7 @@
           "number": "1233",
           "name": "DR. ESTÁCIO",
           "party": "PDT",
-          "votes": 2197,
+          "votes": 2199,
           "pct": 0.11,
           "elected": false,
           "status": "",
@@ -854,7 +854,7 @@
           "number": "4477",
           "name": "NAGILA DINIZ",
           "party": "UNIÃO",
-          "votes": 2128,
+          "votes": 2130,
           "pct": 0.11,
           "elected": false,
           "status": "",
@@ -876,7 +876,7 @@
           "number": "7022",
           "name": "VITOR MARQUES",
           "party": "AVANTE",
-          "votes": 2054,
+          "votes": 2055,
           "pct": 0.1,
           "elected": false,
           "status": "",
@@ -887,7 +887,7 @@
           "number": "1414",
           "name": "VIVIANE AVELINO",
           "party": "MISSÃO",
-          "votes": 2037,
+          "votes": 2040,
           "pct": 0.1,
           "elected": false,
           "status": "",
@@ -898,7 +898,7 @@
           "number": "1234",
           "name": "SUSAPE AUGUSTO",
           "party": "PDT",
-          "votes": 1946,
+          "votes": 1949,
           "pct": 0.1,
           "elected": false,
           "status": "",
@@ -909,7 +909,7 @@
           "number": "4512",
           "name": "FLAVIO LUIZ",
           "party": "PSDB",
-          "votes": 1833,
+          "votes": 1838,
           "pct": 0.09,
           "elected": false,
           "status": "",
@@ -920,7 +920,7 @@
           "number": "1444",
           "name": "ANA CLARA GURGEL",
           "party": "MISSÃO",
-          "votes": 1418,
+          "votes": 1419,
           "pct": 0.07,
           "elected": false,
           "status": "",
@@ -931,7 +931,7 @@
           "number": "4040",
           "name": "ERMINIO FELIX",
           "party": "PSB",
-          "votes": 1416,
+          "votes": 1417,
           "pct": 0.07,
           "elected": false,
           "status": "",
@@ -942,7 +942,7 @@
           "number": "1400",
           "name": "ABIMAEL COSTA",
           "party": "MISSÃO",
-          "votes": 1307,
+          "votes": 1309,
           "pct": 0.07,
           "elected": false,
           "status": "",
@@ -953,7 +953,7 @@
           "number": "3030",
           "name": "ABEL FARIAS",
           "party": "NOVO",
-          "votes": 1292,
+          "votes": 1296,
           "pct": 0.07,
           "elected": false,
           "status": "",
@@ -975,7 +975,7 @@
           "number": "1213",
           "name": "NAXSON PALHARES",
           "party": "PDT",
-          "votes": 1032,
+          "votes": 1033,
           "pct": 0.05,
           "elected": false,
           "status": "",
@@ -986,7 +986,7 @@
           "number": "3000",
           "name": "RAPHAEL FERREIRA",
           "party": "NOVO",
-          "votes": 1001,
+          "votes": 1002,
           "pct": 0.05,
           "elected": false,
           "status": "",
@@ -997,7 +997,7 @@
           "number": "7011",
           "name": "PALHAÇO  FUXIQUINHO",
           "party": "AVANTE",
-          "votes": 942,
+          "votes": 943,
           "pct": 0.05,
           "elected": false,
           "status": "",
@@ -1008,7 +1008,7 @@
           "number": "3033",
           "name": "DRA. DALILA VETERINÁRIA",
           "party": "NOVO",
-          "votes": 921,
+          "votes": 923,
           "pct": 0.05,
           "elected": false,
           "status": "",
@@ -1030,7 +1030,7 @@
           "number": "1255",
           "name": "PATRÍCIA CASTRO",
           "party": "PDT",
-          "votes": 808,
+          "votes": 810,
           "pct": 0.04,
           "elected": false,
           "status": "",
@@ -1041,7 +1041,7 @@
           "number": "2500",
           "name": "CARLOS ENFERMEIRO",
           "party": "PRD",
-          "votes": 798,
+          "votes": 800,
           "pct": 0.04,
           "elected": false,
           "status": "",
@@ -1052,7 +1052,7 @@
           "number": "2570",
           "name": "GARIBALDE LEITE",
           "party": "PRD",
-          "votes": 708,
+          "votes": 712,
           "pct": 0.04,
           "elected": false,
           "status": "",
@@ -1074,7 +1074,7 @@
           "number": "1230",
           "name": "PROFESSORA SÂMELA",
           "party": "PDT",
-          "votes": 613,
+          "votes": 614,
           "pct": 0.03,
           "elected": false,
           "status": "",
@@ -1162,7 +1162,7 @@
           "number": "1455",
           "name": "IGOR RAYAN",
           "party": "MISSÃO",
-          "votes": 451,
+          "votes": 452,
           "pct": 0.02,
           "elected": false,
           "status": "",
@@ -1173,7 +1173,7 @@
           "number": "7077",
           "name": "ADRIANA ALBUQUERQUE",
           "party": "AVANTE",
-          "votes": 428,
+          "votes": 429,
           "pct": 0.02,
           "elected": false,
           "status": "",
@@ -1206,7 +1206,7 @@
           "number": "4508",
           "name": "ALEX KROOS",
           "party": "PSDB",
-          "votes": 388,
+          "votes": 390,
           "pct": 0.02,
           "elected": false,
           "status": "",
@@ -1228,7 +1228,7 @@
           "number": "5044",
           "name": "PHILIPE DO VAT",
           "party": "PSOL",
-          "votes": 345,
+          "votes": 346,
           "pct": 0.02,
           "elected": false,
           "status": "",
@@ -1283,7 +1283,7 @@
           "number": "2323",
           "name": "ANNE BEZERRA",
           "party": "CIDADANIA",
-          "votes": 286,
+          "votes": 287,
           "pct": 0.01,
           "elected": false,
           "status": "",
@@ -1415,7 +1415,7 @@
           "number": "4011",
           "name": "HELIA LIMA",
           "party": "PSB",
-          "votes": 178,
+          "votes": 179,
           "pct": 0.01,
           "elected": false,
           "status": "",
@@ -1499,10 +1499,10 @@
           "vote_destination": "Válido"
         },
         {
-          "id": "200002552149",
-          "number": "2722",
-          "name": "SARGENTO MELQUISEDEC",
-          "party": "DC",
+          "id": "200002546798",
+          "number": "5055",
+          "name": "PASTORA VERONICA",
+          "party": "PSOL",
           "votes": 95,
           "pct": 0.01,
           "elected": false,
@@ -1510,11 +1510,11 @@
           "vote_destination": "Válido"
         },
         {
-          "id": "200002546798",
-          "number": "5055",
-          "name": "PASTORA VERONICA",
-          "party": "PSOL",
-          "votes": 93,
+          "id": "200002552149",
+          "number": "2722",
+          "name": "SARGENTO MELQUISEDEC",
+          "party": "DC",
+          "votes": 95,
           "pct": 0.01,
           "elected": false,
           "status": "",
@@ -1580,7 +1580,7 @@
           "number": "5098",
           "name": "IGOR ROCHA",
           "party": "PSOL",
-          "votes": 32,
+          "votes": 33,
           "pct": 0.01,
           "elected": false,
           "status": "",
@@ -1626,63 +1626,63 @@
       "parties": [
         {
           "party": "PL",
-          "votes": 770052
+          "votes": 772285
         },
         {
           "party": "PT",
-          "votes": 397853
+          "votes": 398674
         },
         {
           "party": "PP",
-          "votes": 262170
+          "votes": 263427
         },
         {
           "party": "PV",
-          "votes": 228115
+          "votes": 228482
         },
         {
           "party": "UNIÃO",
-          "votes": 223987
+          "votes": 224379
         },
         {
           "party": "PDT",
-          "votes": 22565
+          "votes": 22603
         },
         {
           "party": "PSDB",
-          "votes": 9928
+          "votes": 9941
         },
         {
           "party": "PCDOB",
-          "votes": 8549
+          "votes": 8558
         },
         {
           "party": "MISSÃO",
-          "votes": 8006
+          "votes": 8014
         },
         {
           "party": "AVANTE",
-          "votes": 7794
+          "votes": 7797
         },
         {
           "party": "NOVO",
-          "votes": 5551
+          "votes": 5558
         },
         {
           "party": "SOLIDARIEDADE",
-          "votes": 5471
+          "votes": 5480
         },
         {
           "party": "PSB",
-          "votes": 3114
+          "votes": 3118
         },
         {
           "party": "PRD",
-          "votes": 2793
+          "votes": 2800
         },
         {
           "party": "CIDADANIA",
-          "votes": 1804
+          "votes": 1809
         },
         {
           "party": "MOBILIZA",
@@ -1690,7 +1690,7 @@
         },
         {
           "party": "PSOL",
-          "votes": 1254
+          "votes": 1258
         },
         {
           "party": "UP",
@@ -1707,16 +1707,16 @@
       ]
     },
     "depe": {
-      "progress": 99.75,
+      "progress": 99.99,
       "final": false,
-      "generated_at": "04/10/2026 · 21:51:11",
+      "generated_at": "04/10/2026 · 22:07:31",
       "candidates": [
         {
           "id": "200002533888",
           "number": "22222",
           "name": "CORONEL AZEVEDO",
           "party": "PL",
-          "votes": 105213,
+          "votes": 105379,
           "pct": 5.43,
           "elected": false,
           "status": "",
@@ -1727,7 +1727,7 @@
           "number": "45678",
           "name": "EZEQUIEL",
           "party": "PSDB",
-          "votes": 72929,
+          "votes": 73217,
           "pct": 3.77,
           "elected": false,
           "status": "",
@@ -1738,8 +1738,8 @@
           "number": "44555",
           "name": "ROBSON CARVALHO",
           "party": "UNIÃO",
-          "votes": 69472,
-          "pct": 3.59,
+          "votes": 69537,
+          "pct": 3.58,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1749,8 +1749,8 @@
           "number": "11555",
           "name": "JULIO CESAR",
           "party": "PP",
-          "votes": 66368,
-          "pct": 3.43,
+          "votes": 66748,
+          "pct": 3.44,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1760,7 +1760,7 @@
           "number": "11999",
           "name": "KLEBER RODRIGUES",
           "party": "PP",
-          "votes": 66026,
+          "votes": 66166,
           "pct": 3.41,
           "elected": false,
           "status": "",
@@ -1771,7 +1771,7 @@
           "number": "13222",
           "name": "FRANCISCO DO PT",
           "party": "PT",
-          "votes": 62629,
+          "votes": 62655,
           "pct": 3.23,
           "elected": false,
           "status": "",
@@ -1782,8 +1782,8 @@
           "number": "43000",
           "name": "KALINE DE DR. BERNARDO",
           "party": "PV",
-          "votes": 61890,
-          "pct": 3.2,
+          "votes": 61905,
+          "pct": 3.19,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1793,8 +1793,8 @@
           "number": "44444",
           "name": "CINTHIA DE ALLYSON",
           "party": "UNIÃO",
-          "votes": 61542,
-          "pct": 3.18,
+          "votes": 61584,
+          "pct": 3.17,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1804,7 +1804,7 @@
           "number": "13123",
           "name": "ISOLDA DANTAS",
           "party": "PT",
-          "votes": 60029,
+          "votes": 60226,
           "pct": 3.1,
           "elected": false,
           "status": "",
@@ -1815,8 +1815,8 @@
           "number": "13613",
           "name": "DIVANEIDE BASÍLIO",
           "party": "PT",
-          "votes": 59594,
-          "pct": 3.08,
+          "votes": 59664,
+          "pct": 3.07,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1826,8 +1826,8 @@
           "number": "11111",
           "name": "NEILTON DIÓGENES",
           "party": "PP",
-          "votes": 57633,
-          "pct": 2.98,
+          "votes": 57715,
+          "pct": 2.97,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1837,8 +1837,8 @@
           "number": "22100",
           "name": "DR. KERGINALDO",
           "party": "PL",
-          "votes": 53635,
-          "pct": 2.77,
+          "votes": 54134,
+          "pct": 2.79,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1848,19 +1848,8 @@
           "number": "45123",
           "name": "DR GUSTAVO SOARES",
           "party": "PSDB",
-          "votes": 53404,
+          "votes": 53653,
           "pct": 2.76,
-          "elected": false,
-          "status": "",
-          "vote_destination": "Válido"
-        },
-        {
-          "id": "200002533849",
-          "number": "13111",
-          "name": "DANIEL VALENÇA",
-          "party": "PT",
-          "votes": 52028,
-          "pct": 2.69,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1870,8 +1859,19 @@
           "number": "11222",
           "name": "NELTER QUEIROZ",
           "party": "PP",
-          "votes": 51779,
-          "pct": 2.67,
+          "votes": 52387,
+          "pct": 2.7,
+          "elected": false,
+          "status": "",
+          "vote_destination": "Válido"
+        },
+        {
+          "id": "200002533849",
+          "number": "13111",
+          "name": "DANIEL VALENÇA",
+          "party": "PT",
+          "votes": 52092,
+          "pct": 2.68,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1881,8 +1881,8 @@
           "number": "22333",
           "name": "TOMBA FARIAS",
           "party": "PL",
-          "votes": 50305,
-          "pct": 2.6,
+          "votes": 50307,
+          "pct": 2.59,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1892,8 +1892,8 @@
           "number": "45555",
           "name": "CRISTIANE DANTAS",
           "party": "PSDB",
-          "votes": 49574,
-          "pct": 2.56,
+          "votes": 49586,
+          "pct": 2.55,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1903,8 +1903,8 @@
           "number": "22888",
           "name": "GUSTAVO CARVALHO",
           "party": "PL",
-          "votes": 49522,
-          "pct": 2.56,
+          "votes": 49528,
+          "pct": 2.55,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1914,7 +1914,7 @@
           "number": "15555",
           "name": "BIBIANO",
           "party": "MDB",
-          "votes": 49022,
+          "votes": 49038,
           "pct": 2.53,
           "elected": false,
           "status": "",
@@ -1925,8 +1925,8 @@
           "number": "43666",
           "name": "EUDIANE MACEDO",
           "party": "PV",
-          "votes": 47932,
-          "pct": 2.47,
+          "votes": 48487,
+          "pct": 2.5,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1936,7 +1936,7 @@
           "number": "43333",
           "name": "IVANILSON OLIVEIRA",
           "party": "PV",
-          "votes": 47735,
+          "votes": 47830,
           "pct": 2.46,
           "elected": false,
           "status": "",
@@ -1947,7 +1947,7 @@
           "number": "44544",
           "name": "GALENO TORQUATO",
           "party": "UNIÃO",
-          "votes": 46110,
+          "votes": 46129,
           "pct": 2.38,
           "elected": false,
           "status": "",
@@ -1958,8 +1958,8 @@
           "number": "45111",
           "name": "ERIKO JÁCOME",
           "party": "PSDB",
-          "votes": 45834,
-          "pct": 2.37,
+          "votes": 45875,
+          "pct": 2.36,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1969,8 +1969,8 @@
           "number": "43222",
           "name": "UBALDO FERNANDES",
           "party": "PV",
-          "votes": 44709,
-          "pct": 2.31,
+          "votes": 44748,
+          "pct": 2.3,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -1980,7 +1980,7 @@
           "number": "15678",
           "name": "WALTER ALVES",
           "party": "MDB",
-          "votes": 44151,
+          "votes": 44216,
           "pct": 2.28,
           "elected": false,
           "status": "",
@@ -1991,8 +1991,8 @@
           "number": "22555",
           "name": "LUÍZ EDUARDO",
           "party": "PL",
-          "votes": 39285,
-          "pct": 2.03,
+          "votes": 39916,
+          "pct": 2.06,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -2002,7 +2002,7 @@
           "number": "22111",
           "name": "ADJUTO DIAS",
           "party": "PL",
-          "votes": 37864,
+          "votes": 37874,
           "pct": 1.95,
           "elected": false,
           "status": "",
@@ -2013,7 +2013,7 @@
           "number": "22777",
           "name": "CAMILA ARAÚJO",
           "party": "PL",
-          "votes": 31396,
+          "votes": 31435,
           "pct": 1.62,
           "elected": false,
           "status": "",
@@ -2024,7 +2024,7 @@
           "number": "22000",
           "name": "JORGE DO ROSÁRIO",
           "party": "PL",
-          "votes": 24166,
+          "votes": 24199,
           "pct": 1.25,
           "elected": false,
           "status": "",
@@ -2035,7 +2035,7 @@
           "number": "22123",
           "name": "TEREZINHA MAIA",
           "party": "PL",
-          "votes": 23798,
+          "votes": 23893,
           "pct": 1.23,
           "elected": false,
           "status": "",
@@ -2046,8 +2046,8 @@
           "number": "22110",
           "name": "GETÚLIO RÊGO",
           "party": "PL",
-          "votes": 21619,
-          "pct": 1.12,
+          "votes": 21626,
+          "pct": 1.11,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -2057,7 +2057,7 @@
           "number": "22444",
           "name": "GABRIEL CÉSAR",
           "party": "PL",
-          "votes": 20707,
+          "votes": 20713,
           "pct": 1.07,
           "elected": false,
           "status": "",
@@ -2068,7 +2068,7 @@
           "number": "45000",
           "name": "TAVEIRA JÚNIOR",
           "party": "PSDB",
-          "votes": 16817,
+          "votes": 16847,
           "pct": 0.87,
           "elected": false,
           "status": "",
@@ -2079,19 +2079,8 @@
           "number": "22762",
           "name": "ANNE LAGARTIXA",
           "party": "PL",
-          "votes": 15028,
-          "pct": 0.78,
-          "elected": false,
-          "status": "",
-          "vote_destination": "Válido"
-        },
-        {
-          "id": "200002533886",
-          "number": "22022",
-          "name": "JOSEMAR VARELA",
-          "party": "PL",
-          "votes": 14662,
-          "pct": 0.76,
+          "votes": 15046,
+          "pct": 0.77,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -2101,8 +2090,19 @@
           "number": "15222",
           "name": "IVAN JUNIOR",
           "party": "MDB",
-          "votes": 14612,
-          "pct": 0.75,
+          "votes": 14701,
+          "pct": 0.76,
+          "elected": false,
+          "status": "",
+          "vote_destination": "Válido"
+        },
+        {
+          "id": "200002533886",
+          "number": "22022",
+          "name": "JOSEMAR VARELA",
+          "party": "PL",
+          "votes": 14675,
+          "pct": 0.76,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -2112,8 +2112,8 @@
           "number": "50100",
           "name": "LOURENÇO",
           "party": "PSOL",
-          "votes": 14253,
-          "pct": 0.74,
+          "votes": 14270,
+          "pct": 0.73,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -2123,7 +2123,7 @@
           "number": "22456",
           "name": "BISPO PAULO LUIZ",
           "party": "PL",
-          "votes": 12556,
+          "votes": 12565,
           "pct": 0.65,
           "elected": false,
           "status": "",
@@ -2134,7 +2134,7 @@
           "number": "15133",
           "name": "DR ANTÔNIO JÁCOME",
           "party": "MDB",
-          "votes": 9392,
+          "votes": 9403,
           "pct": 0.48,
           "elected": false,
           "status": "",
@@ -2145,7 +2145,7 @@
           "number": "45444",
           "name": "DAIANA VALENTIM",
           "party": "PSDB",
-          "votes": 8725,
+          "votes": 8735,
           "pct": 0.45,
           "elected": false,
           "status": "",
@@ -2156,7 +2156,7 @@
           "number": "45700",
           "name": "LÉO SOUZA",
           "party": "PSDB",
-          "votes": 6567,
+          "votes": 6571,
           "pct": 0.34,
           "elected": false,
           "status": "",
@@ -2167,7 +2167,7 @@
           "number": "13000",
           "name": "PEDRO LOPES",
           "party": "PT",
-          "votes": 6207,
+          "votes": 6209,
           "pct": 0.32,
           "elected": false,
           "status": "",
@@ -2178,7 +2178,7 @@
           "number": "14000",
           "name": "FÁBIO SILVEIRA",
           "party": "MISSÃO",
-          "votes": 5953,
+          "votes": 5955,
           "pct": 0.31,
           "elected": false,
           "status": "",
@@ -2189,7 +2189,7 @@
           "number": "43100",
           "name": "MILKLEI DO PV",
           "party": "PV",
-          "votes": 5166,
+          "votes": 5168,
           "pct": 0.27,
           "elected": false,
           "status": "",
@@ -2211,7 +2211,7 @@
           "number": "15123",
           "name": "PROFESSOR EMERSON",
           "party": "MDB",
-          "votes": 3917,
+          "votes": 3922,
           "pct": 0.2,
           "elected": false,
           "status": "",
@@ -2222,7 +2222,7 @@
           "number": "13113",
           "name": "JULIANA GARCIA",
           "party": "PT",
-          "votes": 3708,
+          "votes": 3710,
           "pct": 0.19,
           "elected": false,
           "status": "",
@@ -2233,7 +2233,7 @@
           "number": "13777",
           "name": "ALINE JULIETE",
           "party": "PT",
-          "votes": 3525,
+          "votes": 3531,
           "pct": 0.18,
           "elected": false,
           "status": "",
@@ -2255,7 +2255,7 @@
           "number": "45222",
           "name": "EXPEDITO FERREIRA",
           "party": "PSDB",
-          "votes": 2782,
+          "votes": 2785,
           "pct": 0.14,
           "elected": false,
           "status": "",
@@ -2266,7 +2266,7 @@
           "number": "15180",
           "name": "ANA LUISA",
           "party": "MDB",
-          "votes": 2774,
+          "votes": 2776,
           "pct": 0.14,
           "elected": false,
           "status": "",
@@ -2277,7 +2277,7 @@
           "number": "22556",
           "name": "SARGENTO MANASSES",
           "party": "PL",
-          "votes": 2724,
+          "votes": 2728,
           "pct": 0.14,
           "elected": false,
           "status": "",
@@ -2288,8 +2288,8 @@
           "number": "22345",
           "name": "RENAN DA FEDERAL",
           "party": "PL",
-          "votes": 2618,
-          "pct": 0.14,
+          "votes": 2619,
+          "pct": 0.13,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -2299,7 +2299,7 @@
           "number": "45777",
           "name": "JONATA NASCIMENTO",
           "party": "PSDB",
-          "votes": 2557,
+          "votes": 2561,
           "pct": 0.13,
           "elected": false,
           "status": "",
@@ -2310,8 +2310,8 @@
           "number": "22422",
           "name": "MICHAEL DINIZ",
           "party": "PL",
-          "votes": 2425,
-          "pct": 0.13,
+          "votes": 2426,
+          "pct": 0.12,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -2332,7 +2332,7 @@
           "number": "15333",
           "name": "HOLDERLIN SILVA",
           "party": "MDB",
-          "votes": 2022,
+          "votes": 2032,
           "pct": 0.1,
           "elected": false,
           "status": "",
@@ -2343,7 +2343,7 @@
           "number": "11777",
           "name": "SIRLENO JUNIOR",
           "party": "PP",
-          "votes": 1952,
+          "votes": 1954,
           "pct": 0.1,
           "elected": false,
           "status": "",
@@ -2365,8 +2365,8 @@
           "number": "15100",
           "name": "ANGELA PAIVA",
           "party": "MDB",
-          "votes": 1840,
-          "pct": 0.09,
+          "votes": 1845,
+          "pct": 0.1,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -2376,7 +2376,7 @@
           "number": "18888",
           "name": "ÉDSON NEGRÃO",
           "party": "REDE",
-          "votes": 1821,
+          "votes": 1823,
           "pct": 0.09,
           "elected": false,
           "status": "",
@@ -2387,7 +2387,7 @@
           "number": "50123",
           "name": "ANA SOS PATINHAS",
           "party": "PSOL",
-          "votes": 1774,
+          "votes": 1780,
           "pct": 0.09,
           "elected": false,
           "status": "",
@@ -2398,7 +2398,7 @@
           "number": "15000",
           "name": "CLOVIS JUNIOR",
           "party": "MDB",
-          "votes": 1720,
+          "votes": 1722,
           "pct": 0.09,
           "elected": false,
           "status": "",
@@ -2409,7 +2409,7 @@
           "number": "15111",
           "name": "JUNIOR MARQUES",
           "party": "MDB",
-          "votes": 1467,
+          "votes": 1468,
           "pct": 0.08,
           "elected": false,
           "status": "",
@@ -2421,7 +2421,7 @@
           "name": "POLYANNA DANTAS",
           "party": "PP",
           "votes": 1453,
-          "pct": 0.08,
+          "pct": 0.07,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -2431,7 +2431,7 @@
           "number": "22522",
           "name": "GABRIEL RIBEIRO",
           "party": "PL",
-          "votes": 1433,
+          "votes": 1434,
           "pct": 0.07,
           "elected": false,
           "status": "",
@@ -2464,7 +2464,7 @@
           "number": "22190",
           "name": "SARGENTO RIVALDO",
           "party": "PL",
-          "votes": 1262,
+          "votes": 1271,
           "pct": 0.07,
           "elected": false,
           "status": "",
@@ -2475,7 +2475,7 @@
           "number": "13333",
           "name": "GERLAILSON ABRANTES (NENEM)",
           "party": "PT",
-          "votes": 1180,
+          "votes": 1182,
           "pct": 0.06,
           "elected": false,
           "status": "",
@@ -2530,7 +2530,7 @@
           "number": "43123",
           "name": "RONNY HOLANDA",
           "party": "PV",
-          "votes": 1008,
+          "votes": 1009,
           "pct": 0.05,
           "elected": false,
           "status": "",
@@ -2596,7 +2596,7 @@
           "number": "45084",
           "name": "GILVAN BALADA",
           "party": "PSDB",
-          "votes": 810,
+          "votes": 811,
           "pct": 0.04,
           "elected": false,
           "status": "",
@@ -2618,7 +2618,7 @@
           "number": "45456",
           "name": "REITORA LUDIMILLA",
           "party": "PSDB",
-          "votes": 768,
+          "votes": 769,
           "pct": 0.04,
           "elected": false,
           "status": "",
@@ -2629,7 +2629,7 @@
           "number": "44888",
           "name": "NATALIA LEOPOLDINA",
           "party": "UNIÃO",
-          "votes": 764,
+          "votes": 767,
           "pct": 0.04,
           "elected": false,
           "status": "",
@@ -2640,7 +2640,7 @@
           "number": "14777",
           "name": "RAYANNE FIGUEIREDO",
           "party": "MISSÃO",
-          "votes": 719,
+          "votes": 720,
           "pct": 0.04,
           "elected": false,
           "status": "",
@@ -2651,7 +2651,7 @@
           "number": "15155",
           "name": "SARA SANTOS",
           "party": "MDB",
-          "votes": 666,
+          "votes": 667,
           "pct": 0.03,
           "elected": false,
           "status": "",
@@ -2662,7 +2662,7 @@
           "number": "11666",
           "name": "MAJOR CARLA CÂMARA",
           "party": "PP",
-          "votes": 655,
+          "votes": 657,
           "pct": 0.03,
           "elected": false,
           "status": "",
@@ -2684,7 +2684,7 @@
           "number": "11711",
           "name": "BAMBAM",
           "party": "PP",
-          "votes": 615,
+          "votes": 616,
           "pct": 0.03,
           "elected": false,
           "status": "",
@@ -2717,7 +2717,7 @@
           "number": "80180",
           "name": "MILENNE BARBOSA",
           "party": "UP",
-          "votes": 524,
+          "votes": 525,
           "pct": 0.03,
           "elected": false,
           "status": "",
@@ -2728,7 +2728,7 @@
           "number": "44111",
           "name": "DEIVID SIMÃO",
           "party": "UNIÃO",
-          "votes": 502,
+          "votes": 503,
           "pct": 0.03,
           "elected": false,
           "status": "",
@@ -2772,7 +2772,7 @@
           "number": "45666",
           "name": "DRA KARINA PEREIRA",
           "party": "PSDB",
-          "votes": 441,
+          "votes": 443,
           "pct": 0.02,
           "elected": false,
           "status": "",
@@ -2805,7 +2805,7 @@
           "number": "50050",
           "name": "CARLINHOS DO GÁS",
           "party": "PSOL",
-          "votes": 408,
+          "votes": 409,
           "pct": 0.02,
           "elected": false,
           "status": "",
@@ -3113,7 +3113,7 @@
           "number": "50555",
           "name": "AURELIO OLIVEIRA",
           "party": "PSOL",
-          "votes": 151,
+          "votes": 152,
           "pct": 0.01,
           "elected": false,
           "status": "",
@@ -3157,7 +3157,7 @@
           "number": "18333",
           "name": "PAULO BINHO",
           "party": "REDE",
-          "votes": 135,
+          "votes": 136,
           "pct": 0.01,
           "elected": false,
           "status": "",
@@ -3201,7 +3201,18 @@
           "number": "25065",
           "name": "PROF. MARCELO FELIPPE",
           "party": "PRD",
-          "votes": 100,
+          "votes": 101,
+          "pct": 0.01,
+          "elected": false,
+          "status": "",
+          "vote_destination": "Válido"
+        },
+        {
+          "id": "200002533846",
+          "number": "65777",
+          "name": "GLECIO ROCHA - O REI DO BODE",
+          "party": "PCDOB",
+          "votes": 99,
           "pct": 0.01,
           "elected": false,
           "status": "",
@@ -3213,17 +3224,6 @@
           "name": "IVANILDA TENORIO",
           "party": "MDB",
           "votes": 95,
-          "pct": 0.01,
-          "elected": false,
-          "status": "",
-          "vote_destination": "Válido"
-        },
-        {
-          "id": "200002533846",
-          "number": "65777",
-          "name": "GLECIO ROCHA - O REI DO BODE",
-          "party": "PCDOB",
-          "votes": 92,
           "pct": 0.01,
           "elected": false,
           "status": "",
@@ -3311,7 +3311,7 @@
           "number": "25900",
           "name": "ALEXSANDRA XAVIER",
           "party": "PRD",
-          "votes": 41,
+          "votes": 42,
           "pct": 0.01,
           "elected": false,
           "status": "",
@@ -3346,51 +3346,51 @@
       "parties": [
         {
           "party": "PL",
-          "votes": 537549
+          "votes": 539156
         },
         {
           "party": "PT",
-          "votes": 282983
+          "votes": 283440
         },
         {
           "party": "PSDB",
-          "votes": 275360
+          "votes": 276034
         },
         {
           "party": "PP",
-          "votes": 254224
+          "votes": 255467
         },
         {
           "party": "PV",
-          "votes": 213486
+          "votes": 214209
         },
         {
           "party": "UNIÃO",
-          "votes": 189842
+          "votes": 190003
         },
         {
           "party": "MDB",
-          "votes": 138850
+          "votes": 139057
         },
         {
           "party": "PSOL",
-          "votes": 18051
+          "votes": 18077
         },
         {
           "party": "MISSÃO",
-          "votes": 7882
+          "votes": 7886
         },
         {
           "party": "PCDOB",
-          "votes": 4611
+          "votes": 4619
         },
         {
           "party": "PRD",
-          "votes": 3406
+          "votes": 3410
         },
         {
           "party": "REDE",
-          "votes": 2888
+          "votes": 2892
         },
         {
           "party": "CIDADANIA",
@@ -3398,15 +3398,15 @@
         },
         {
           "party": "UP",
-          "votes": 857
+          "votes": 858
         },
         {
           "party": "PSTU",
-          "votes": 656
+          "votes": 657
         },
         {
           "party": "SOLIDARIEDADE",
-          "votes": 604
+          "votes": 608
         }
       ]
     }
@@ -4374,17 +4374,17 @@
     },
     "ASSÚ": {
       "code": "16039",
-      "progress": 98.5,
-      "final": false,
-      "generated_at": "04/10/2026 · 20:49:53",
+      "progress": 100.0,
+      "final": true,
+      "generated_at": "04/10/2026 · 22:03:10",
       "candidates": [
         {
           "id": "280002542548",
           "number": "13",
           "name": "LULA",
           "party": "PT",
-          "votes": 23760,
-          "pct": 68.21,
+          "votes": 24169,
+          "pct": 68.39,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -4394,8 +4394,8 @@
           "number": "22",
           "name": "FLAVIO BOLSONARO",
           "party": "PL",
-          "votes": 9288,
-          "pct": 26.66,
+          "votes": 9376,
+          "pct": 26.53,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -4405,8 +4405,8 @@
           "number": "70",
           "name": "ESCRITOR AUGUSTO CURY",
           "party": "AVANTE",
-          "votes": 883,
-          "pct": 2.53,
+          "votes": 889,
+          "pct": 2.52,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -4416,8 +4416,8 @@
           "number": "14",
           "name": "RENAN SANTOS",
           "party": "MISSÃO",
-          "votes": 627,
-          "pct": 1.8,
+          "votes": 628,
+          "pct": 1.78,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -4427,8 +4427,8 @@
           "number": "55",
           "name": "RONALDO CAIADO",
           "party": "PSD",
-          "votes": 223,
-          "pct": 0.64,
+          "votes": 224,
+          "pct": 0.63,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -7062,17 +7062,17 @@
     },
     "EXTREMOZ": {
       "code": "16713",
-      "progress": 99.14,
-      "final": false,
-      "generated_at": "04/10/2026 · 20:51:51",
+      "progress": 100.0,
+      "final": true,
+      "generated_at": "04/10/2026 · 22:04:08",
       "candidates": [
         {
           "id": "280002542548",
           "number": "13",
           "name": "LULA",
           "party": "PT",
-          "votes": 15649,
-          "pct": 50.44,
+          "votes": 15787,
+          "pct": 50.38,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -7082,8 +7082,8 @@
           "number": "22",
           "name": "FLAVIO BOLSONARO",
           "party": "PL",
-          "votes": 13545,
-          "pct": 43.66,
+          "votes": 13692,
+          "pct": 43.7,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -7093,7 +7093,7 @@
           "number": "70",
           "name": "ESCRITOR AUGUSTO CURY",
           "party": "AVANTE",
-          "votes": 929,
+          "votes": 938,
           "pct": 2.99,
           "elected": false,
           "status": "",
@@ -7104,7 +7104,7 @@
           "number": "14",
           "name": "RENAN SANTOS",
           "party": "MISSÃO",
-          "votes": 599,
+          "votes": 606,
           "pct": 1.93,
           "elected": false,
           "status": "",
@@ -7115,7 +7115,7 @@
           "number": "55",
           "name": "RONALDO CAIADO",
           "party": "PSD",
-          "votes": 250,
+          "votes": 254,
           "pct": 0.81,
           "elected": false,
           "status": "",
@@ -7126,7 +7126,7 @@
           "number": "30",
           "name": "ZEMA",
           "party": "NOVO",
-          "votes": 15,
+          "votes": 16,
           "pct": 0.05,
           "elected": false,
           "status": "",
@@ -7137,7 +7137,7 @@
           "number": "16",
           "name": "HERTZ DIAS",
           "party": "PSTU",
-          "votes": 14,
+          "votes": 15,
           "pct": 0.05,
           "elected": false,
           "status": "",
@@ -11094,17 +11094,17 @@
     },
     "MAXARANGUAPE": {
       "code": "17493",
-      "progress": 81.25,
-      "final": false,
-      "generated_at": "04/10/2026 · 20:50:40",
+      "progress": 100.0,
+      "final": true,
+      "generated_at": "04/10/2026 · 22:00:08",
       "candidates": [
         {
           "id": "280002542548",
           "number": "13",
           "name": "LULA",
           "party": "PT",
-          "votes": 3944,
-          "pct": 61.41,
+          "votes": 4958,
+          "pct": 60.85,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -11114,8 +11114,8 @@
           "number": "22",
           "name": "FLAVIO BOLSONARO",
           "party": "PL",
-          "votes": 2159,
-          "pct": 33.62,
+          "votes": 2810,
+          "pct": 34.49,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -11125,8 +11125,8 @@
           "number": "70",
           "name": "ESCRITOR AUGUSTO CURY",
           "party": "AVANTE",
-          "votes": 185,
-          "pct": 2.88,
+          "votes": 231,
+          "pct": 2.84,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -11136,8 +11136,8 @@
           "number": "14",
           "name": "RENAN SANTOS",
           "party": "MISSÃO",
-          "votes": 66,
-          "pct": 1.03,
+          "votes": 72,
+          "pct": 0.88,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -11147,8 +11147,8 @@
           "number": "55",
           "name": "RONALDO CAIADO",
           "party": "PSD",
-          "votes": 56,
-          "pct": 0.87,
+          "votes": 65,
+          "pct": 0.8,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -11159,7 +11159,7 @@
           "name": "SAMARA",
           "party": "UP",
           "votes": 6,
-          "pct": 0.09,
+          "pct": 0.07,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -11170,7 +11170,7 @@
           "name": "ZEMA",
           "party": "NOVO",
           "votes": 5,
-          "pct": 0.08,
+          "pct": 0.06,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -11181,7 +11181,7 @@
           "name": "EDMILSON COSTA",
           "party": "PCB",
           "votes": 1,
-          "pct": 0.02,
+          "pct": 0.01,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -18006,17 +18006,17 @@
     },
     "TENENTE ANANIAS": {
       "code": "18791",
-      "progress": 92.59,
-      "final": false,
-      "generated_at": "04/10/2026 · 20:58:32",
+      "progress": 100.0,
+      "final": true,
+      "generated_at": "04/10/2026 · 22:07:48",
       "candidates": [
         {
           "id": "280002542548",
           "number": "13",
           "name": "LULA",
           "party": "PT",
-          "votes": 3902,
-          "pct": 65.31,
+          "votes": 4324,
+          "pct": 65.04,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -18026,8 +18026,8 @@
           "number": "22",
           "name": "FLAVIO BOLSONARO",
           "party": "PL",
-          "votes": 1903,
-          "pct": 31.85,
+          "votes": 2132,
+          "pct": 32.07,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -18037,8 +18037,8 @@
           "number": "70",
           "name": "ESCRITOR AUGUSTO CURY",
           "party": "AVANTE",
-          "votes": 90,
-          "pct": 1.51,
+          "votes": 103,
+          "pct": 1.55,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -18048,7 +18048,7 @@
           "number": "14",
           "name": "RENAN SANTOS",
           "party": "MISSÃO",
-          "votes": 55,
+          "votes": 61,
           "pct": 0.92,
           "elected": false,
           "status": "",
@@ -18059,7 +18059,7 @@
           "number": "55",
           "name": "RONALDO CAIADO",
           "party": "PSD",
-          "votes": 21,
+          "votes": 23,
           "pct": 0.35,
           "elected": false,
           "status": "",
@@ -18486,17 +18486,17 @@
     },
     "TOUROS": {
       "code": "18856",
-      "progress": 91.3,
-      "final": false,
-      "generated_at": "04/10/2026 · 21:51:38",
+      "progress": 100.0,
+      "final": true,
+      "generated_at": "04/10/2026 · 22:05:20",
       "candidates": [
         {
           "id": "280002542548",
           "number": "13",
           "name": "LULA",
           "party": "PT",
-          "votes": 11779,
-          "pct": 58.21,
+          "votes": 13200,
+          "pct": 59.18,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -18506,8 +18506,8 @@
           "number": "22",
           "name": "FLAVIO BOLSONARO",
           "party": "PL",
-          "votes": 7573,
-          "pct": 37.43,
+          "votes": 8127,
+          "pct": 36.44,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -18517,8 +18517,8 @@
           "number": "70",
           "name": "ESCRITOR AUGUSTO CURY",
           "party": "AVANTE",
-          "votes": 493,
-          "pct": 2.44,
+          "votes": 548,
+          "pct": 2.46,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -18528,8 +18528,8 @@
           "number": "14",
           "name": "RENAN SANTOS",
           "party": "MISSÃO",
-          "votes": 234,
-          "pct": 1.16,
+          "votes": 256,
+          "pct": 1.15,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -18539,19 +18539,8 @@
           "number": "55",
           "name": "RONALDO CAIADO",
           "party": "PSD",
-          "votes": 136,
+          "votes": 149,
           "pct": 0.67,
-          "elected": false,
-          "status": "",
-          "vote_destination": "Válido"
-        },
-        {
-          "id": "280002541457",
-          "number": "16",
-          "name": "HERTZ DIAS",
-          "party": "PSTU",
-          "votes": 4,
-          "pct": 0.02,
           "elected": false,
           "status": "",
           "vote_destination": "Válido"
@@ -18561,7 +18550,18 @@
           "number": "80",
           "name": "SAMARA",
           "party": "UP",
-          "votes": 4,
+          "votes": 6,
+          "pct": 0.03,
+          "elected": false,
+          "status": "",
+          "vote_destination": "Válido"
+        },
+        {
+          "id": "280002541457",
+          "number": "16",
+          "name": "HERTZ DIAS",
+          "party": "PSTU",
+          "votes": 5,
           "pct": 0.02,
           "elected": false,
           "status": "",
@@ -19690,6 +19690,17 @@
       "confirmed": true
     },
     {
+      "id": "change-gov-ASSU",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "ASSÚ mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 49.80%.",
+      "display_value": "FATIMA BEZERRA → CADU DE LULA",
+      "progress": 100.0,
+      "confirmed": true
+    },
+    {
       "id": "change-gov-BARAUNA",
       "type": "change",
       "type_label": "Mudou desde 2022",
@@ -19982,6 +19993,17 @@
       "office": "gov",
       "headline": "ESPÍRITO SANTO mudou de liderança",
       "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ÁLVARO DIAS aparece em 1º com 41.02%.",
+      "display_value": "FATIMA BEZERRA → ÁLVARO DIAS",
+      "progress": 100.0,
+      "confirmed": true
+    },
+    {
+      "id": "change-gov-EXTREMOZ",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "EXTREMOZ mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ÁLVARO DIAS aparece em 1º com 38.25%.",
       "display_value": "FATIMA BEZERRA → ÁLVARO DIAS",
       "progress": 100.0,
       "confirmed": true
@@ -20433,6 +20455,17 @@
       "office": "gov",
       "headline": "MARTINS mudou de liderança",
       "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 57.18%.",
+      "display_value": "FATIMA BEZERRA → CADU DE LULA",
+      "progress": 100.0,
+      "confirmed": true
+    },
+    {
+      "id": "change-gov-MAXARANGUAPE",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "MAXARANGUAPE mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 40.64%.",
       "display_value": "FATIMA BEZERRA → CADU DE LULA",
       "progress": 100.0,
       "confirmed": true
@@ -21219,6 +21252,17 @@
       "confirmed": true
     },
     {
+      "id": "change-gov-TENENTE ANANIAS",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "TENENTE ANANIAS mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 42.04%.",
+      "display_value": "FATIMA BEZERRA → CADU DE LULA",
+      "progress": 100.0,
+      "confirmed": true
+    },
+    {
       "id": "change-gov-TENENTE LAURENTINO CRUZ",
       "type": "change",
       "type_label": "Mudou desde 2022",
@@ -21248,6 +21292,17 @@
       "headline": "TIMBAÚBA DOS BATISTAS mudou de liderança",
       "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 53.86%.",
       "display_value": "FATIMA BEZERRA → CADU DE LULA",
+      "progress": 100.0,
+      "confirmed": true
+    },
+    {
+      "id": "change-gov-TOUROS",
+      "type": "change",
+      "type_label": "Mudou desde 2022",
+      "office": "gov",
+      "headline": "TOUROS mudou de liderança",
+      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 56.77%.",
+      "display_value": "FATIMA BEZERRA → ALLYSON",
       "progress": 100.0,
       "confirmed": true
     },
@@ -21527,28 +21582,6 @@
       "confirmed": true
     },
     {
-      "id": "change-gov-EXTREMOZ",
-      "type": "change",
-      "type_label": "Mudou desde 2022",
-      "office": "gov",
-      "headline": "EXTREMOZ mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ÁLVARO DIAS aparece em 1º com 38.25%.",
-      "display_value": "FATIMA BEZERRA → ÁLVARO DIAS",
-      "progress": 99.14,
-      "confirmed": false
-    },
-    {
-      "id": "change-gov-ASSU",
-      "type": "change",
-      "type_label": "Mudou desde 2022",
-      "office": "gov",
-      "headline": "ASSÚ mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 49.81%.",
-      "display_value": "FATIMA BEZERRA → CADU DE LULA",
-      "progress": 98.5,
-      "confirmed": false
-    },
-    {
       "id": "change-gov-TIBAU DO SUL",
       "type": "change",
       "type_label": "Mudou desde 2022",
@@ -21557,39 +21590,6 @@
       "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ÁLVARO DIAS aparece em 1º com 39.32%.",
       "display_value": "FATIMA BEZERRA → ÁLVARO DIAS",
       "progress": 97.62,
-      "confirmed": false
-    },
-    {
-      "id": "change-gov-TENENTE ANANIAS",
-      "type": "change",
-      "type_label": "Mudou desde 2022",
-      "office": "gov",
-      "headline": "TENENTE ANANIAS mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 41.94%.",
-      "display_value": "FATIMA BEZERRA → CADU DE LULA",
-      "progress": 92.59,
-      "confirmed": false
-    },
-    {
-      "id": "change-gov-TOUROS",
-      "type": "change",
-      "type_label": "Mudou desde 2022",
-      "office": "gov",
-      "headline": "TOUROS mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, ALLYSON aparece em 1º com 56.04%.",
-      "display_value": "FATIMA BEZERRA → ALLYSON",
-      "progress": 91.3,
-      "confirmed": false
-    },
-    {
-      "id": "change-gov-MAXARANGUAPE",
-      "type": "change",
-      "type_label": "Mudou desde 2022",
-      "office": "gov",
-      "headline": "MAXARANGUAPE mudou de liderança",
-      "summary": "Em 2022, FATIMA BEZERRA liderou o município no 1º turno. Em 2026, CADU DE LULA aparece em 1º com 40.97%.",
-      "display_value": "FATIMA BEZERRA → CADU DE LULA",
-      "progress": 81.25,
       "confirmed": false
     }
   ],
