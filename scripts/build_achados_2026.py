@@ -136,7 +136,14 @@ def main():
       progress_values=[statewide[o]['progress'] for o in ('gov','sen','depf','depe')];overall=sum(progress_values)/len(progress_values) if progress_values else 0
       status='final' if progress_values and all(statewide[o]['final'] for o in ('gov','sen','depf','depe')) else ('live' if overall>0 else 'waiting')
       parn=next((r for n,r in municipal['pres'].items() if norm(n)=='PARNAMIRIM'),None);findings=build_findings(hist,municipal,statewide);source_stamp=max([statewide[o].get('generated_at','') for o in statewide]+[''])
-      data={'status':status,'generated_at':now,'source_generated_at':source_stamp,'progress':round(overall,2),'message':('Resultados oficiais de 2026 carregados para comparação.' if overall>0 else 'Aguardando o início da divulgação oficial dos resultados de 2026.'),'source':'Tribunal Superior Eleitoral · EA20','offices':statewide,'municipal_pres':municipal['pres'],'parnamirim':parn,'municipal_coverage':{o:len(municipal[o]) for o in municipal},'findings':findings,'methodology_version':'1.0'}
+      evolution=previous.get('evolution',{}) if isinstance(previous,dict) else {}
+      for o in ('pres','gov','sen'):
+       cur=statewide.get(o,{})
+       if cur.get('candidates') and cur.get('progress',0)>0:
+        seq=evolution.setdefault(o,[])
+        snap={'time':cur.get('generated_at') or now,'progress':round(cur.get('progress',0),2),'candidates':cur.get('candidates',[])[:8]}
+        if not seq or seq[-1].get('progress')!=snap['progress'] or [(x.get('number'),x.get('votes')) for x in seq[-1].get('candidates',[])]!=[(x.get('number'),x.get('votes')) for x in snap['candidates']]:seq.append(snap)
+      data={'status':status,'generated_at':now,'source_generated_at':source_stamp,'progress':round(overall,2),'message':('Resultados oficiais de 2026 carregados para comparação.' if overall>0 else 'Aguardando o início da divulgação oficial dos resultados de 2026.'),'source':'Tribunal Superior Eleitoral · EA20','offices':statewide,'municipal_pres':municipal['pres'],'parnamirim':parn,'municipal_coverage':{o:len(municipal[o]) for o in municipal},'findings':findings,'evolution':evolution,'methodology_version':'1.1'}
       OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8');print('OK',status,'progress',overall,'findings',len(findings))
     except Exception as e:
       if previous and previous.get('status') in ('live','final'):
