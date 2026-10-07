@@ -1,0 +1,2989 @@
+{
+  "source": "Tribunal Superior Eleitoral · snapshots EA20 preservados pelo Achados 2026",
+  "election_date": "2026-10-04",
+  "generated_at": "2026-10-07T07:55:54+00:00",
+  "series": {
+    "pres": [
+      {
+        "time": "04/10/2026 · 18:26:45",
+        "progress": 27.33,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 316815,
+            "pct": 61.1
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 173499,
+            "pct": 33.46
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 14319,
+            "pct": 2.76
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 8669,
+            "pct": 1.67
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 4117,
+            "pct": 0.79
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 362,
+            "pct": 0.07
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 310,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 133,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 18:46:17",
+        "progress": 44.65,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 521212,
+            "pct": 60.31
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 295879,
+            "pct": 34.23
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 23890,
+            "pct": 2.76
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 14521,
+            "pct": 1.68
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 6966,
+            "pct": 0.81
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 638,
+            "pct": 0.07
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 503,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 235,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 18:58:11",
+        "progress": 52.37,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 615933,
+            "pct": 60.18
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 351558,
+            "pct": 34.35
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 28213,
+            "pct": 2.76
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 17271,
+            "pct": 1.69
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 8305,
+            "pct": 0.81
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 755,
+            "pct": 0.07
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 615,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 271,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 19:17:09",
+        "progress": 69.8,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 840860,
+            "pct": 59.95
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 484736,
+            "pct": 34.56
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 38690,
+            "pct": 2.76
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 23925,
+            "pct": 1.71
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 11368,
+            "pct": 0.81
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 1052,
+            "pct": 0.08
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 838,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 379,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 19:26:17",
+        "progress": 80.21,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 975745,
+            "pct": 59.74
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 567745,
+            "pct": 34.76
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 45214,
+            "pct": 2.77
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 28029,
+            "pct": 1.72
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 13151,
+            "pct": 0.81
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 1229,
+            "pct": 0.08
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 984,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 445,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 19:32:06",
+        "progress": 83.56,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 1020139,
+            "pct": 59.7
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 594226,
+            "pct": 34.77
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 47528,
+            "pct": 2.78
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 29440,
+            "pct": 1.72
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 13752,
+            "pct": 0.8
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 1283,
+            "pct": 0.08
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 1026,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 469,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 20:07:56",
+        "progress": 86.24,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 1056326,
+            "pct": 59.75
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 613909,
+            "pct": 34.73
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 49153,
+            "pct": 2.78
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 30509,
+            "pct": 1.73
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 14205,
+            "pct": 0.8
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 1323,
+            "pct": 0.07
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 1053,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 489,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 20:24:46",
+        "progress": 92.26,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 1135207,
+            "pct": 59.74
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 660357,
+            "pct": 34.75
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 52833,
+            "pct": 2.78
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 32746,
+            "pct": 1.72
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 15141,
+            "pct": 0.8
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 1420,
+            "pct": 0.07
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 1123,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 527,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 20:39:36",
+        "progress": 93.48,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 1152332,
+            "pct": 59.72
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 670716,
+            "pct": 34.76
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 53597,
+            "pct": 2.78
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 33239,
+            "pct": 1.72
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 15374,
+            "pct": 0.8
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 1448,
+            "pct": 0.08
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 1142,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 536,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 20:52:06",
+        "progress": 96.17,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 1188480,
+            "pct": 59.77
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 690618,
+            "pct": 34.73
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 55081,
+            "pct": 2.77
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 34057,
+            "pct": 1.71
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 15775,
+            "pct": 0.79
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 1481,
+            "pct": 0.07
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 1180,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 550,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 21:02:18",
+        "progress": 98.93,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 1225303,
+            "pct": 59.76
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 712537,
+            "pct": 34.75
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 56826,
+            "pct": 2.77
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 35021,
+            "pct": 1.71
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 16250,
+            "pct": 0.79
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 1514,
+            "pct": 0.07
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 1216,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 565,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 21:07:06",
+        "progress": 99.04,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 1226567,
+            "pct": 59.76
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 713482,
+            "pct": 34.76
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 56878,
+            "pct": 2.77
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 35057,
+            "pct": 1.71
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 16267,
+            "pct": 0.79
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 1517,
+            "pct": 0.07
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 1219,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 567,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 21:32:53",
+        "progress": 99.3,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 1229145,
+            "pct": 59.74
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 715601,
+            "pct": 34.78
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 56979,
+            "pct": 2.77
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 35108,
+            "pct": 1.71
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 16299,
+            "pct": 0.79
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 1519,
+            "pct": 0.07
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 1219,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 567,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 21:55:03",
+        "progress": 99.75,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 1234398,
+            "pct": 59.74
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 718714,
+            "pct": 34.78
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 57231,
+            "pct": 2.77
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 35215,
+            "pct": 1.7
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 16376,
+            "pct": 0.79
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 1522,
+            "pct": 0.07
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 1226,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 570,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 22:09:43",
+        "progress": 99.99,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 1237802,
+            "pct": 59.75
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 720383,
+            "pct": 34.77
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 57360,
+            "pct": 2.77
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 35257,
+            "pct": 1.7
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 16405,
+            "pct": 0.79
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 1525,
+            "pct": 0.07
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 1228,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 572,
+            "pct": 0.03
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 22:53:55",
+        "progress": 100.0,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "LULA",
+            "party": "PT",
+            "votes": 1237963,
+            "pct": 59.75
+          },
+          {
+            "number": "22",
+            "name": "FLAVIO BOLSONARO",
+            "party": "PL",
+            "votes": 720493,
+            "pct": 34.77
+          },
+          {
+            "number": "70",
+            "name": "ESCRITOR AUGUSTO CURY",
+            "party": "AVANTE",
+            "votes": 57367,
+            "pct": 2.77
+          },
+          {
+            "number": "14",
+            "name": "RENAN SANTOS",
+            "party": "MISSÃO",
+            "votes": 35261,
+            "pct": 1.7
+          },
+          {
+            "number": "55",
+            "name": "RONALDO CAIADO",
+            "party": "PSD",
+            "votes": 16407,
+            "pct": 0.79
+          },
+          {
+            "number": "30",
+            "name": "ZEMA",
+            "party": "NOVO",
+            "votes": 1525,
+            "pct": 0.07
+          },
+          {
+            "number": "80",
+            "name": "SAMARA",
+            "party": "UP",
+            "votes": 1228,
+            "pct": 0.06
+          },
+          {
+            "number": "16",
+            "name": "HERTZ DIAS",
+            "party": "PSTU",
+            "votes": 572,
+            "pct": 0.03
+          }
+        ]
+      }
+    ],
+    "gov": [
+      {
+        "time": "04/10/2026 · 18:25:44",
+        "progress": 26.61,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 181238,
+            "pct": 37.43
+          },
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 167385,
+            "pct": 34.57
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 134669,
+            "pct": 27.81
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 328,
+            "pct": 0.07
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 326,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 108,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 88,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 60,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 18:45:59",
+        "progress": 44.65,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 306399,
+            "pct": 37.02
+          },
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 290198,
+            "pct": 35.06
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 229544,
+            "pct": 27.73
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 588,
+            "pct": 0.07
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 553,
+            "pct": 0.07
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 187,
+            "pct": 0.02
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 186,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 100,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 18:58:40",
+        "progress": 52.53,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 362258,
+            "pct": 36.85
+          },
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 349464,
+            "pct": 35.54
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 269507,
+            "pct": 27.41
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 726,
+            "pct": 0.07
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 663,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 228,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 214,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 115,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 19:16:23",
+        "progress": 69.24,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 488051,
+            "pct": 36.64
+          },
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 480739,
+            "pct": 36.09
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 360418,
+            "pct": 27.06
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 1009,
+            "pct": 0.08
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 918,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 313,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 278,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 149,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 19:31:38",
+        "progress": 83.39,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 595083,
+            "pct": 36.41
+          },
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 593463,
+            "pct": 36.31
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 442546,
+            "pct": 27.08
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 1230,
+            "pct": 0.08
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 1158,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 387,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 355,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 187,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 19:32:07",
+        "progress": 83.56,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 595948,
+            "pct": 36.38
+          },
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 594947,
+            "pct": 36.32
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 443924,
+            "pct": 27.1
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 1233,
+            "pct": 0.08
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 1158,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 387,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 355,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 187,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 20:08:05",
+        "progress": 87.0,
+        "candidates": [
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 623502,
+            "pct": 36.41
+          },
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 622383,
+            "pct": 36.34
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 463113,
+            "pct": 27.04
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 1302,
+            "pct": 0.08
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 1222,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 405,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 373,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 191,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 20:24:38",
+        "progress": 92.25,
+        "candidates": [
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 669494,
+            "pct": 36.75
+          },
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 661019,
+            "pct": 36.29
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 487377,
+            "pct": 26.76
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 1364,
+            "pct": 0.07
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 1272,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 432,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 394,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 202,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 20:39:59",
+        "progress": 93.44,
+        "candidates": [
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 678595,
+            "pct": 36.71
+          },
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 671281,
+            "pct": 36.31
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 495170,
+            "pct": 26.78
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 1378,
+            "pct": 0.07
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 1301,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 441,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 402,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 212,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 20:50:49",
+        "progress": 95.98,
+        "candidates": [
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 697727,
+            "pct": 36.67
+          },
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 690969,
+            "pct": 36.31
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 510380,
+            "pct": 26.82
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 1415,
+            "pct": 0.07
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 1334,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 447,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 418,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 221,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 21:02:10",
+        "progress": 98.93,
+        "candidates": [
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 723143,
+            "pct": 36.79
+          },
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 712467,
+            "pct": 36.24
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 526169,
+            "pct": 26.77
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 1458,
+            "pct": 0.07
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 1375,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 460,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 429,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 226,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 21:04:49",
+        "progress": 99.04,
+        "candidates": [
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 723634,
+            "pct": 36.77
+          },
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 713298,
+            "pct": 36.25
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 527066,
+            "pct": 26.78
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 1458,
+            "pct": 0.07
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 1380,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 462,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 429,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 226,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 21:32:20",
+        "progress": 99.3,
+        "candidates": [
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 726511,
+            "pct": 36.83
+          },
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 714232,
+            "pct": 36.21
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 528027,
+            "pct": 26.77
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 1460,
+            "pct": 0.07
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 1380,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 462,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 430,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 226,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 21:51:09",
+        "progress": 99.75,
+        "candidates": [
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 731387,
+            "pct": 36.92
+          },
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 716397,
+            "pct": 36.16
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 529495,
+            "pct": 26.73
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 1464,
+            "pct": 0.07
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 1387,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 463,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 431,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 227,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 22:07:29",
+        "progress": 99.99,
+        "candidates": [
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 733738,
+            "pct": 36.94
+          },
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 718206,
+            "pct": 36.16
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 530484,
+            "pct": 26.71
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 1466,
+            "pct": 0.07
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 1388,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 464,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 434,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 227,
+            "pct": 0.01
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 22:51:10",
+        "progress": 100.0,
+        "candidates": [
+          {
+            "number": "44",
+            "name": "ALLYSON",
+            "party": "UNIÃO",
+            "votes": 733809,
+            "pct": 36.94
+          },
+          {
+            "number": "13",
+            "name": "CADU DE LULA",
+            "party": "PT",
+            "votes": 718300,
+            "pct": 36.16
+          },
+          {
+            "number": "22",
+            "name": "ÁLVARO DIAS",
+            "party": "PL",
+            "votes": 530580,
+            "pct": 26.71
+          },
+          {
+            "number": "80",
+            "name": "ARINALDA DO MLB",
+            "party": "UP",
+            "votes": 1466,
+            "pct": 0.07
+          },
+          {
+            "number": "16",
+            "name": "DÁRIO BARBOSA",
+            "party": "PSTU",
+            "votes": 1388,
+            "pct": 0.07
+          },
+          {
+            "number": "27",
+            "name": "GODEIRO LINHARESS",
+            "party": "DC",
+            "votes": 464,
+            "pct": 0.02
+          },
+          {
+            "number": "36",
+            "name": "RODRIGO DE BOLSONARO",
+            "party": "AGIR",
+            "votes": 434,
+            "pct": 0.02
+          },
+          {
+            "number": "29",
+            "name": "HENRIQUE LYRA",
+            "party": "PCO",
+            "votes": 227,
+            "pct": 0.01
+          }
+        ]
+      }
+    ],
+    "sen": [
+      {
+        "time": "04/10/2026 · 18:25:44",
+        "progress": 26.61,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 261288,
+            "pct": 29.45
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 163702,
+            "pct": 18.45
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 157893,
+            "pct": 17.8
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 141504,
+            "pct": 15.95
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 126339,
+            "pct": 14.24
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 24547,
+            "pct": 2.77
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 5019,
+            "pct": 0.57
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 3421,
+            "pct": 0.39
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 18:45:59",
+        "progress": 44.65,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 447497,
+            "pct": 29.57
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 269616,
+            "pct": 17.81
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 268027,
+            "pct": 17.71
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 251356,
+            "pct": 16.61
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 215206,
+            "pct": 14.22
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 40692,
+            "pct": 2.69
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 8917,
+            "pct": 0.59
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 5916,
+            "pct": 0.39
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 18:58:40",
+        "progress": 52.54,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 528393,
+            "pct": 29.42
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 318931,
+            "pct": 17.76
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 317610,
+            "pct": 17.68
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 300468,
+            "pct": 16.73
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 256341,
+            "pct": 14.27
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 49272,
+            "pct": 2.74
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 10455,
+            "pct": 0.58
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 7061,
+            "pct": 0.39
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 19:16:23",
+        "progress": 69.24,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 707729,
+            "pct": 29.19
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 431064,
+            "pct": 17.78
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 424515,
+            "pct": 17.51
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 410550,
+            "pct": 16.93
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 348486,
+            "pct": 14.37
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 67602,
+            "pct": 2.79
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 14486,
+            "pct": 0.6
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 9668,
+            "pct": 0.4
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 19:31:38",
+        "progress": 83.39,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 870443,
+            "pct": 29.28
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 528148,
+            "pct": 17.77
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 512837,
+            "pct": 17.25
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 509917,
+            "pct": 17.15
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 425190,
+            "pct": 14.3
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 83265,
+            "pct": 2.8
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 18367,
+            "pct": 0.62
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 11817,
+            "pct": 0.4
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 19:32:08",
+        "progress": 83.56,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 872704,
+            "pct": 29.29
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 528991,
+            "pct": 17.76
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 513786,
+            "pct": 17.25
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 511580,
+            "pct": 17.17
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 425858,
+            "pct": 14.29
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 83445,
+            "pct": 2.8
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 18390,
+            "pct": 0.62
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 11831,
+            "pct": 0.4
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 20:08:06",
+        "progress": 87.0,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 910572,
+            "pct": 29.25
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 552847,
+            "pct": 17.76
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 536358,
+            "pct": 17.23
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 534757,
+            "pct": 17.18
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 445210,
+            "pct": 14.3
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 87823,
+            "pct": 2.82
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 19318,
+            "pct": 0.62
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 12862,
+            "pct": 0.41
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 20:24:39",
+        "progress": 92.25,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 965715,
+            "pct": 29.2
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 586387,
+            "pct": 17.73
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 572040,
+            "pct": 17.3
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 570032,
+            "pct": 17.24
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 471259,
+            "pct": 14.25
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 93717,
+            "pct": 2.83
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 20363,
+            "pct": 0.62
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 13472,
+            "pct": 0.41
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 20:38:29",
+        "progress": 93.27,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 977987,
+            "pct": 29.2
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 593912,
+            "pct": 17.73
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 578500,
+            "pct": 17.27
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 577905,
+            "pct": 17.25
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 477547,
+            "pct": 14.26
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 95058,
+            "pct": 2.84
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 20622,
+            "pct": 0.62
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 13636,
+            "pct": 0.41
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 20:50:49",
+        "progress": 95.98,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 1008611,
+            "pct": 29.19
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 612024,
+            "pct": 17.72
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 597655,
+            "pct": 17.3
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 595668,
+            "pct": 17.24
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 492693,
+            "pct": 14.26
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 98295,
+            "pct": 2.85
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 21189,
+            "pct": 0.61
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 13921,
+            "pct": 0.4
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 21:01:00",
+        "progress": 98.76,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 1038598,
+            "pct": 29.16
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 630826,
+            "pct": 17.71
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 617772,
+            "pct": 17.34
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 614443,
+            "pct": 17.25
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 506819,
+            "pct": 14.23
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 101819,
+            "pct": 2.86
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 22027,
+            "pct": 0.62
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 14276,
+            "pct": 0.4
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 21:04:49",
+        "progress": 99.04,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 1042227,
+            "pct": 29.17
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 632305,
+            "pct": 17.7
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 620109,
+            "pct": 17.36
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 616052,
+            "pct": 17.24
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 507869,
+            "pct": 14.22
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 102149,
+            "pct": 2.86
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 22122,
+            "pct": 0.62
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 14301,
+            "pct": 0.4
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 21:32:20",
+        "progress": 99.3,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 1045766,
+            "pct": 29.2
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 632971,
+            "pct": 17.67
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 622795,
+            "pct": 17.39
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 617257,
+            "pct": 17.24
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 508403,
+            "pct": 14.2
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 102301,
+            "pct": 2.86
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 22140,
+            "pct": 0.62
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 14306,
+            "pct": 0.4
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 21:51:09",
+        "progress": 99.75,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 1051749,
+            "pct": 29.24
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 634572,
+            "pct": 17.64
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 627377,
+            "pct": 17.44
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 619047,
+            "pct": 17.21
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 509822,
+            "pct": 14.17
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 102584,
+            "pct": 2.85
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 22181,
+            "pct": 0.62
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 14318,
+            "pct": 0.4
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 22:07:30",
+        "progress": 99.99,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 1054851,
+            "pct": 29.25
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 635854,
+            "pct": 17.63
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 630071,
+            "pct": 17.47
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 620278,
+            "pct": 17.2
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 510616,
+            "pct": 14.16
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 102806,
+            "pct": 2.85
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 22233,
+            "pct": 0.62
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 14334,
+            "pct": 0.4
+          }
+        ]
+      },
+      {
+        "time": "04/10/2026 · 22:51:10",
+        "progress": 100.0,
+        "candidates": [
+          {
+            "number": "200",
+            "name": "STYVENSON VALENTIM",
+            "party": "PODE",
+            "votes": 1055000,
+            "pct": 29.25
+          },
+          {
+            "number": "131",
+            "name": "SAMANDA DE LULA",
+            "party": "PT",
+            "votes": 635924,
+            "pct": 17.63
+          },
+          {
+            "number": "555",
+            "name": "ZENAIDE MAIA",
+            "party": "PSD",
+            "votes": 630159,
+            "pct": 17.47
+          },
+          {
+            "number": "222",
+            "name": "CORONEL HÉLIO",
+            "party": "PL",
+            "votes": 620354,
+            "pct": 17.2
+          },
+          {
+            "number": "123",
+            "name": "RAFAEL MOTTA",
+            "party": "PDT",
+            "votes": 510674,
+            "pct": 14.16
+          },
+          {
+            "number": "444",
+            "name": "TÉRCIO TINÔCO",
+            "party": "UNIÃO",
+            "votes": 102834,
+            "pct": 2.85
+          },
+          {
+            "number": "500",
+            "name": "SANDRO PIMENTEL",
+            "party": "PSOL",
+            "votes": 22237,
+            "pct": 0.62
+          },
+          {
+            "number": "501",
+            "name": "SONIA GODEIRO",
+            "party": "PSOL",
+            "votes": 14338,
+            "pct": 0.4
+          }
+        ]
+      }
+    ]
+  }
+}
