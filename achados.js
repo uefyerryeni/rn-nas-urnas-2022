@@ -156,4 +156,4 @@ async function renderPresidentMap(){
 }
 $('#publishPresidentMap')?.addEventListener('click',()=>{publishKind='presmap';$('#publishKind').value='presmap';syncPublisherSources();$('#publicar')?.scrollIntoView({behavior:'smooth',block:'start'})});
 
-$('#evolutionOffice')?.addEventListener('change',()=>{renderEvolution();if(publishKind==='evolution')renderAnyPublisher()});$('#evolutionTime')?.addEventListener('input',()=>{renderEvolution();if(publishKind==='evolution')renderAnyPublisher()});$('#publishEvolution')?.addEventListener('click',()=>{publishKind='evolution';$('#publishKind').value='evolution';syncPublisherSources();$('#publicar')?.scrollIntoView({behavior:'smooth',block:'start')});
+$('#evolutionOffice')?.addEventListener('change',()=>{renderEvolution();if(publishKind==='evolution')renderAnyPublisher()});$('#evolutionTime')?.addEventListener('input',()=>{renderEvolution();if(publishKind==='evolution')renderAnyPublisher()});$('#publishEvolution')?.addEventListener('click',()=>{publishKind='evolution';$('#publishKind').value='evolution';syncPublisherSources();$('#publicar')?.scrollIntoView({behavior:'smooth',block:'start'})});
