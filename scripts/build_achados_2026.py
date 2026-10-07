@@ -4,7 +4,7 @@ import json, re, unicodedata, urllib.request, urllib.error
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'data'/'achados-2026.json';HIST=ROOT/'data'/'eleicoes-2022.json'
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'data'/'achados-2026.json';HIST=ROOT/'data'/'eleicoes-2022.json';EVOL=ROOT/'data'/'evolucao-2026.json'
 BASE='https://resultados.tse.jus.br/oficial/ele2026';FED='6257';STATE='6259';ELF='006257';ELS='006259'
 CONFIG=f'{BASE}/{FED}/config/mun-e{ELF}-cm.json'
 OFFICES={'pres':{'cargo':'0001','label':'Presidente','election':FED,'el':ELF},'gov':{'cargo':'0003','label':'Governador','election':STATE,'el':ELS},'sen':{'cargo':'0005','label':'Senado','election':STATE,'el':ELS},'depf':{'cargo':'0006','label':'Deputado federal','election':STATE,'el':ELS},'depe':{'cargo':'0007','label':'Deputado estadual','election':STATE,'el':ELS}}
@@ -137,6 +137,9 @@ def main():
       status='final' if progress_values and all(statewide[o]['final'] for o in ('gov','sen','depf','depe')) else ('live' if overall>0 else 'waiting')
       parn=next((r for n,r in municipal['pres'].items() if norm(n)=='PARNAMIRIM'),None);findings=build_findings(hist,municipal,statewide);source_stamp=max([statewide[o].get('generated_at','') for o in statewide]+[''])
       evolution=previous.get('evolution',{}) if isinstance(previous,dict) else {}
+      if EVOL.exists():
+       try:evolution=json.loads(EVOL.read_text(encoding='utf-8')).get('series',evolution)
+       except Exception as e:print('Histórico preservado não carregado:',e)
       for o in ('pres','gov','sen'):
        cur=statewide.get(o,{})
        if cur.get('candidates') and cur.get('progress',0)>0:
